@@ -1,0 +1,64 @@
+<%= turbo_frame_tag "modal" do %>
+  <div 
+    class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50" 
+    data-controller="modal" 
+    data-modal-target="overlay"
+    data-action="click->modal#closeBg"
+  >
+    <!-- Modal Content -->
+    <div class="bg-slate-800 rounded-lg text-sm p-6 w-96 shadow-lg text-white text-start space-y-3">
+      <span class="font-bold block">Add a link to verify</span>
+      <span class="block">Link to your content</span>
+
+      <%= form_with model: Contest, url: contest_create_path, method: :post, class: "space-y-3" do |f| %>
+        <input class="rounded-xl bg-black/20 w-full" type="text" name="contest[url]">
+        
+        <!-- separator -->
+        <div class="border-b w-full border-white/20"></div>
+
+        <span class="block">Rewards</span>
+        <div class="">
+          <% @rewards.each do |desc| %>
+            <% if desc[:to].present? %>
+              <p class="text-xs">
+                <%= desc[:from] %> - <%= desc[:to] %> views = 
+                <img class="w-4 h-4 inline" src="/fan.png" alt=""> 
+                <span class="text-amber-400">+ <%= desc[:delta] %></span>
+              </p>
+            <% else %>
+              <p class="text-xs"><%= desc[:from] %>+ views = 
+                <img class="w-4 h-4 inline" src="/fan.png" alt=""> 
+                <span class="text-amber-400">+ <%= desc[:delta] %></span>
+              </p>
+            <% end %>
+          <% end %>
+        </div>
+
+        <span class="block">Number of views</span>
+        <select id="icon-select" class="block w-full appearance-none bg-black/20 rounded-xl py-2 px-3 border-transparent focus:outline-none focus:ring-transparent">
+          <% @rewards.each do |desc, index| %>
+          <option class="text-white bg-black/20" value="<%= index %>"<% if index == 0 %> selected<% end %>>
+            <span>
+              <% if desc[:to].present? %>
+                <%= desc[:from] %> - <%= desc[:to] %>
+              <% else %>
+                <%= desc[:from] %>+
+              <% end %>
+            </span>
+          </option>
+          <% end %>
+        </select>
+
+        <!--div class="flex space-x-2">
+          <input class="rounded" type="checkbox" name="" id="">
+          <span class="text=xs text-white/50">I understand that if I provide incorrect data, i will lose access to this functionality</span>
+        </div-->
+
+        <div class="flex flex-col justify-center space-y-3">
+          <%= f.submit "Add", class: "px-4 py-2 text-center block bg-amber-400 text-black rounded hover:bg-blue-700 font-semibold", data: { action: "click->modal#close", turbo_method: "post" } %>
+          <div class="px-4 py-2 block bg-black/20 text-white/70 rounded hover:bg-gray-300 font-semibold text-center" data-action="click->modal#close">Back</div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<% end %>

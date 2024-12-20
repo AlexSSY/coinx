@@ -1,0 +1,95 @@
+<div class="text-white w-full px-4 space-y-2 mt-4">
+
+  <div class="p-4 rounded-2xl items-center bg-black/20 flex justify-between">
+    <div class="text-xl">
+      <span class="block">Hello,</span>
+      <span class="block font-bold"><%= current_user&.full_name || "-" %></span>
+    </div>
+    <%= tag.img src: "/user.png", class: "w-16 h-16" %>
+  </div>
+
+  <!-- Separator -->
+  <div class="!my-4 flex flex-col justify-center">
+    <div class="border-b border-slate-700"></div>
+  </div>
+
+  <!-- My ID -->
+  <div 
+    class="p-4 rounded-2xl items-center bg-black/20 flex justify-between"
+    data-controller="clipboard" 
+    data-clipboard-content-value="<%= current_user_id %>" 
+    data-action="click->clipboard#copy"
+  >
+    <div class="flex items-center space-x-1">
+      <span class="font-bold text-xl">#</span>
+      <span>My ID</span>
+    </div>
+    <span class="text-white/50 cursor-pointer">
+      <i class="fa-solid fa-copy"></i>
+      <%= current_user_id %>
+    </span>
+  </div>
+
+  <!-- Language-->
+  <!--div class="p-4 rounded-2xl items-center bg-black/20 flex justify-between cursor-pointer">
+    <div class="flex items-center space-x-2">
+      <span class="font-bold text-xl">
+        <i class="fa-solid fa-language"></i>
+      </span>
+      <span>Language</span>
+    </div>
+    <span class="text-white/50">
+      us English
+    </span>
+  </div-->
+
+  <!-- Invite friends-->
+  <%= link_to friends_path, class: "p-4 rounded-2xl items-center bg-black/20 flex justify-between" do %>
+    <div class="flex items-center space-x-2">
+      <span class="font-bold text-xl">
+        <i class="fa-solid fa-users"></i>
+      </span>
+      <span>Invite Friends</span>
+    </div>
+    <span class="text-white/50">
+      click
+    </span>
+  <% end %>
+
+  <!-- Contact support-->
+  <%= link_to contact_support_path, class: "p-4 rounded-2xl items-center bg-black/20 flex justify-between cursor-pointer", data: { turbo_frame: "modal" } do %>
+    <div class="flex items-center space-x-2">
+      <span class="font-bold text-xl">
+        <i class="fa-solid fa-headset"></i>
+      </span>
+      <span>Contact Support</span>
+    </div>
+    <span class="text-white/50">
+      click
+    </span>
+  <% end %>
+
+  <!-- Legal information-->
+  <%= link_to legal_information_path, class: "p-4 rounded-2xl items-center bg-black/20 flex justify-between cursor-pointer", data: { turbo_frame: "modal" } do %>
+    <div class="flex items-center space-x-2">
+      <span class="font-bold text-xl">
+        <i class="fa-solid fa-scale-balanced"></i>
+      </span>
+      <span>Legal Information</span>
+    </div>
+    <span class="text-white/50">
+      click
+    </span>
+  <% end %>
+
+  <!-- soon -->
+  <div class="p-4 rounded-2xl items-center bg-black/20 text-amber-400/50">
+    <div class="flex items-center space-x-2">
+      <span class="font-bold text-xl">
+        <i class="fa-solid fa-trophy"></i>
+      </span>
+      <span>Ratings & Leagues (soon)</span>
+    </div>
+  </div>
+
+</div>

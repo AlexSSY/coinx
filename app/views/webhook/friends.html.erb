@@ -1,0 +1,83 @@
+<div class="text-white mt-4 w-full px-4 space-y-4">
+
+  <!-- welcome text -->
+  <div class="space-y-1">
+    <span class="block w-full text-center font-bold text-2xl">Invite Friends!</span>
+    <span class="block w-full text-center">You and your friend will receive bonuses</span>
+  </div>
+
+  <!-- links and other invite stuff -->
+  <div class="p-4 rounded-xl bg-black/20 space-y-2">
+    <span class="block w-full font-bold text-2xl">Your invite Link</span>
+    <button class="bg-white/10 rounded-xl p-3 w-full flex justify-between items-center">
+      <span class="text-white/50">https://t.me/tonix_dapp_bot?start=<%= current_user_id | 1234567890 %></span>
+      <i class="fa-solid fa-copy"></i>
+    </button>
+    <div class="flex space-x-2">
+      <button class="flex-grow space-x-2 rounded-xl bg-amber-400 font-semibold text-black p-3">
+        <i class="fa-solid fa-user-plus"></i>
+        <span>Invite a friend</span>
+      </button>
+      <button class="rounded-xl bg-amber-400 text-black p-3 w-12">
+        <i class="fa-solid fa-copy"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Friends list -->
+  <%= link_to friends_list_path, class: "flex-grow flex items-center justify-center space-x-2 rounded-xl bg-amber-400 font-semibold text-black p-3 w-full", data: { turbo_frame: "modal" } do %>
+    <i class="fa-solid fa-list"></i>
+    <span>Open Friends List</span>
+  <% end %>
+
+  <!-- Referral rewards -->
+
+  <% 
+    rewards = [
+      {
+        level: 1,
+        tonix: 100,
+        mh: 30
+      },
+      {
+        level: 2,
+        tonix: 50,
+        mh: 15
+      },
+      {
+        level: 3,
+        tonix: 15,
+        mh: 1
+      },
+    ]
+  %>
+
+  <div class="p-4 rounded-xl bg-black/20 space-y-2">
+    <span class="block w-full font-bold text-2xl">Referral Rewards</span>
+    <% 3.times do |i| %>
+    <div class="p-3 rounded-xl bg-white/10 flex items-center space-x-4">
+      <div class="flex-none space-y-1 flex flex-col items-center">
+        <span class="text-xs text-white/50">Level</span>
+        <span class="font-bold text-xl"><%= rewards[i][:level] %></span>
+      </div>
+
+      <div class="flex-grow justify-center space-x-2 py-1 px-4 rounded-xl bg-black/20 flex">
+        <div class="space-y-1 flex flex-col items-center">
+          <span class="text-sm font-bold text-amber-400"><%= rewards[i][:tonix] %></span>
+          <span class="font-bold text-xs"><%= "TONIX" %></span>
+        </div>
+        <img class="w-10 h-10" src="/fan.png">
+      </div>
+
+      <div class="flex-grow justify-center items-center space-x-2 py-1 px-4 rounded-xl bg-black/20 flex">
+        <div class="space-y-1 flex flex-col items-center">
+          <span class="text-sm font-bold text-amber-400"><%= rewards[i][:mh] %></span>
+          <span class="font-bold text-xs"><%= "MH/s" %></span>
+        </div>
+        <%= tag.img src: "/bolt.gif", class: "w-8 h-8" %>
+      </div>
+    </div>
+    <% end %>
+    <%= link_to "Learn more", friends_learn_more_path, class: "flex items-center justify-center w-full space-x-2 rounded-xl bg-amber-400 font-semibold text-black p-3", data: { turbo_frame: "modal" } %>
+  </div>
+</div>

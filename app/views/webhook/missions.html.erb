@@ -1,0 +1,179 @@
+<div class="text-white mt-4 w-full px-4 space-y-4" data-controller="tabs">
+  <!-- welcome text -->
+  <div class="space-y-1">
+    <span class="block w-full text-center font-bold text-2xl">New Missions</span>
+    <span class="block w-full text-center">Complete tasks and earn more</span>
+  </div>
+
+  <!-- Tabs -->
+  <div class="p-2 rounded-xl bg-black/20 flex">
+    <% [ { title: "promo", highlight: false }, { title: "ref", highlight: true }, { title: "contest", highlight: true } ].each do |desc| %>
+    <span class="block relative py-2 flex-grow rounded-xl text-sm font-bold text-white/60 text-center cursor-pointer" data-tabs-target="tab" data-action="click->tabs#select">
+      <%= desc[:title].capitalize %>
+      <% if desc[:highlight] %>
+      <div class="absolute w-3 h-3 rounded-full bg-red-500 top-1 right-1"></div>
+      <% end %>
+    </span>
+    <% end %>
+  </div>
+
+  <!-- Tab bodies -->
+
+  <!-- tab-1-promo -->
+  <div class="space-y-4 hidden" data-tabs-target="body">
+    <% [
+        { img: "/bolt.gif", title: "Boost Mining Power", amount: 25000, gh: 50, completed: false },
+        { img: "/duck.gif", title: "Welcome Bonus", amount: 25000, gh: nil, completed: true }
+      ].each do |desc| 
+    %>
+    <div class="p-2 rounded-xl bg-black/20 flex justify-between items-center text-sm">
+      <div class="flex space-x-2">
+        <%= tag.img src: desc[:img], class: "w-10 h-10" %>
+        <div class="">
+          <span>
+            <%= desc[:title] %>
+          </span>
+          <div class="flex space-x-2">
+            <div class="flex space-x-1 items-center">
+              <img class="w-4 h-4" src="/fan.png">
+              <span><%= format_large_number(desc[:amount]) %> TONIX</span>
+            </div>
+            <% if desc[:gh].present? %>
+            <div class="flex space-x-1 items-center">
+              <img class="w-4 h-4" src="/bolt.gif">
+              <span><%= desc[:gh] %> GH/s</span>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div>
+        <% if desc[:completed] %>
+          <div class="rounded-full bg-green-700 py-1 px-4 text-xl text-black">
+            <i class="fa-regular fa-circle-check"></i>
+          </div>
+        <% else %>
+          <button class="rounded-full bg-amber-400/10 py-1 px-3 text-sm font-bold text-white/80">
+            <img class="w-8 h-8" src="/gift.png">
+          </button>
+        <% end %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+
+  <!-- tab-2-ref -->
+  <div class="space-y-4 hidden" data-tabs-target="body">
+    <div class="p-2 rounded-xl bg-black/20 flex justify-between items-center">
+      <span>Friends (Lv. 1)</span>
+      <span>0</span>
+    </div>
+
+    <% [
+        { img: "/duck.gif", title: "Invite 1 Friend", amount: 100, gh: nil, completed: false },
+        { img: "/duck.gif", title: "Invite 3 Friend", amount: 300, gh: nil, completed: false },
+        { img: "/duck.gif", title: "Invite 10 Friends", amount: 500, gh: nil, completed: false },
+        { img: "/duck.gif", title: "Invite 25 Friends", amount: 1000, gh: nil, completed: false },
+        { img: "/duck.gif", title: "Invite 50 Friends", amount: 2500, gh: nil, completed: false },
+        { img: "/duck.gif", title: "Invite 100 Friends", amount: 3000, gh: 10, completed: false },
+        { img: "/duck.gif", title: "Invite 500 Friends", amount: 7000, gh: 30, completed: false },
+        { img: "/duck.gif", title: "Invite 1000 Friends", amount: 10000, gh: 50, completed: false },
+        { img: "/duck.gif", title: "Invite 10000 Friends", amount: 100000, gh: 150, completed: false },
+      ].each do |desc| 
+    %>
+    <div class="p-2 rounded-xl bg-black/20 space-y-1">
+      <div class="flex justify-between items-center text-sm">
+        <div class="flex space-x-2">
+          <%= tag.img src: desc[:img], class: "w-10 h-10" %>
+          <div class="">
+            <span>
+              <%= desc[:title] %>
+            </span>
+            <div class="flex space-x-2">
+              <div class="flex space-x-1 items-center">
+                <img class="w-4 h-4" src="/fan.png">
+                <span><%= format_large_number(desc[:amount]) %> TONIX</span>
+              </div>
+              <% if desc[:gh].present? %>
+              <div class="flex space-x-1 items-center">
+                <img class="w-4 h-4" src="/bolt.gif">
+                <span><%= desc[:gh] %> GH/s</span>
+              </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div>
+          <% if desc[:completed] %>
+            <div class="rounded-full bg-green-700 py-1 px-4 text-xl text-black">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+          <% else %>
+            <button class="rounded-full bg-amber-400/10 py-1 px-3 text-sm font-bold text-white/80">
+              <img class="w-8 h-8" src="/gift.png">
+            </button>
+          <% end %>
+        </div>
+      </div>
+      <div class="w-full h-2 rounded-full overflow-hidden bg-transparent relative">
+        <div class="absolute h-2 left-0 top-0 bg-blue-500" style="width: 1%"></div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+
+  <!-- tab-3-contest -->
+  <div class="space-y-4 hidden" data-tabs-target="body">
+    <span class="block w-full text-center font-bold text-2xl">Tell others about TONIX App</span>
+
+    <div class="flex justify-center">
+      <%= tag.img src: "/inst.svg", class: "w-12 h-12" %>
+      <%= tag.img src: "/ytube.svg", class: "w-12 h-12" %>
+      <%= tag.img src: "/tiktok.svg", class: "w-12 h-12" %>
+    </div>
+
+    <div class="border-y border-blue-500 py-4 flex flex-col items-center mx-8">
+      <span>And get up to</span>
+      <div class="flex items-center space-x-2">
+        <%= tag.img src: "/fan.png", class: "w-8 h-8" %>
+        <span class="text-2xl text-amber-400 font-bold">10 000 000</span>
+      </div>
+      <span>TONIX for each video</span>
+    </div>
+
+    <%= link_to add_content_and_earn_path, class: "rounded-xl bg-amber-400 text-black p-3 flex items-center justify-center font-semibold space-x-2 mx-auto", data: { turbo_frame: "modal" } do %>
+      <i class="fa-solid fa-plus"></i>
+      <span>Add Content and earn</span>
+    <% end %>
+
+    <div class="py-2 px-4 rounded-xl bg-black/20 flex flex-col space-y-2 items-center text-sm">
+      <span class="text-2xl font-bold">Rules</span>
+      <div class="flex space-x-1">
+        <span>1.</span>
+        <p>
+          <span class="font-bold">Create content:</span> Make a fan video about TONIX App for YouTube Shorts, Instagram Reels, or TikTok.
+        </p>
+      </div>
+      <div class="flex space-x-1">
+        <span>2.</span>
+        <p>
+          <span class="font-bold">Include your ID or invite Link:</span> Attach your ID or invite link to the video description.
+        </p>
+      </div>
+      <span class="block p-3 rounded-xl text-center w-full bg-white/10">Get Your invite Link on Friends section</span>
+      <div class="flex space-x-1">
+        <span>3.</span>
+        <p>
+          <span class="font-bold">Send the Link:</span> Once your video reaches 100+ views, send us the link.
+        </p>
+      </div>
+      <div class="flex space-x-1">
+        <span>4.</span>
+        <p>
+          <span class="font-bold">Earn Rewards:</span> The more views your video gets, the better your reward. You can earn up to <span class="font-bold">10, 000, 000 TONIX</span> for single video.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>

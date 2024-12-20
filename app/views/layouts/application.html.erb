@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for(:title) || "Coinx" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <script src="https://kit.fontawesome.com/db676a09bb.js" crossorigin="anonymous"></script>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body class="bg-slate-800">
+    <turbo-frame id="toast-frame">
+      <!-- Empty by default -->
+    </turbo-frame>
+
+      <!-- Main Container -->
+    <div class="mb-[96px] w-full flex flex-col items-center justify-start">
+      <%= yield %>
+
+      <!-- Bottom Navigation -->
+      <div class="fixed bottom-0 w-full px-7 mb-2">
+        <div class="flex bg-black px-3 py-2 rounded-2xl text-white text-base">
+          <% class_list = "flex flex-grow flex-col space-y-1 items-center py-2" + (current_page?(wallet_path) ? " text-amber-400 bg-white/5 rounded-xl" : "") %>
+          <%= link_to wallet_path, class: class_list do %>
+            <i class="fa-solid fa-wallet text-xl"></i>
+            <p class="text-xs">Wallet</p>
+          <% end %>
+
+          <% class_list = "flex flex-grow flex-col space-y-1 items-center py-2" + (current_page?(friends_path) ? " text-amber-400 bg-white/5 rounded-xl" : "") %>
+          <%= link_to friends_path, class: class_list do %>
+            <i class="fa-solid fa-user-group text-xl"></i>
+            <p class="text-xs">Friends</p>
+          <% end %>
+
+          <% class_list = "flex flex-grow flex-col space-y-1 items-center py-2" + ((current_page?(root_path) || current_page?(home_path)) ? " text-amber-400 bg-white/5 rounded-xl" : "") %>
+          <%= link_to root_path, class: class_list do %>
+            <i class="fa-solid fa-circle text-xl"></i>
+            <p class="text-xs">Home</p>
+          <% end %>
+
+          <% class_list = "flex flex-grow flex-col space-y-1 items-center py-2" + (current_page?(missions_path) ? " text-amber-400 bg-white/5 rounded-xl" : "") %>
+          <%= link_to missions_path, class: class_list do %>
+            <i class="fa-solid fa-bullseye text-xl"></i>
+            <p class="text-xs">Missions</p>
+          <% end %>
+          
+          <% class_list = "flex flex-grow flex-col space-y-1 items-center py-2" + (current_page?(more_path) ? " text-amber-400 bg-white/5 rounded-xl" : "") %>
+          <%= link_to more_path, class: class_list do %>
+            <i class="fa-solid fa-sliders text-xl"></i>
+            <p class="text-xs">More</p>
+          <% end %>
+        </div> 
+      </div>
+    </div>
+
+  <%= turbo_frame_tag "modal" %>
+  </body>
+</html>

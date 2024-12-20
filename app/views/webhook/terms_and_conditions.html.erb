@@ -1,0 +1,63 @@
+<%= turbo_frame_tag "modal" do %>
+   <div 
+    class="fixed inset-0 h-screen w-full bg-slate-800 text-white p-6 space-y-3 text-center z-50 overflow-y-auto" 
+    data-controller="modal" 
+    data-modal-target="overlay"
+    data-action="click->modal#closeBg"
+  >
+    <!-- <--<< Back -->
+    <div class="flex justify-end w-full">
+      <button class="px-4 py-2 flex items-center space-x-2 bg-black/20 text-white/70 rounded hover:bg-gray-300 font-semibold" data-action="click->modal#close">
+        <i class="fa-solid fa-arrow-left-long"></i>
+        <span>Back</span>
+      </button>
+    </div>
+
+    <span class="block text-base font-bold">Terms and Conditions</span>
+
+    <span class="text-xs block text-white/50">Last updated: 07/04/2024</span>
+
+    <span class="text-xs block">1. Introduction</span>
+    <p class="text-xs block text-white/50">
+      These Terms and Conditions ("Terms") constitute a legally binding agreement
+      between you ("User, "you", or "your") and TONIX.PRO ("Company", "we", "us", or "our").
+      By accessing starting, installing, or using any part of the TONIX app or related services
+      (collectively, the "Service"), you agree to be bound by these Terms. If you do not agree
+      to these Terms, you must not access or use the Service.
+    </p>
+
+    <span class="text-xs block">2. Eligibility</span>
+    <div>
+      <p class="text-xs block text-white/50">
+        The Service is intended solely for Users who are 18 years of age or older. By using the Service, you represent and warrant that you are at least 18 years old and that all registration information you submit is accurate and truthful. The Company reserves the right to terminate your account and your access to the Service if we have any reason to believe that you are under 18 years old or that you have provided false or misleading information.
+      </p>
+      <p class="text-xs block text-white/50">
+        You are solely responsible for maintaining the confidentiality of your account credentials, including your password, and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account or any other breach of security. We are not liable for any loss or damage arising from your failure to protect your account information.
+      </p>
+    </div>
+
+    <span class="text-xs block">3. Service Description</span>
+    <div>
+      <p class="text-xs block text-white/50">
+        TONIX provides a digital platform that enables Users to mine Toncoin (TON) and TONIX tokens through various activities such as missions, referrals, and renting power boosters. The Service is designed to be accessible via the TONIX app, available through Telegram, and potentially other supported platforms.
+      </p>
+      <ul class="text-xs block text-white/50">
+        <li>
+          The Service allows users to participate in a Mine-to-Earn ecosystem where they can engage in mining activities without the need for specialized hardware. Users can also enhance their mining capabilities through additional in-app activities and interactions, including inviting friends and completing specific tasks designed to boost their Mining Power.
+        </li>
+        <li>
+          The Service is provided on an "as-is" and "as-available" basis. While we strive to provide a reliable and uninterrupted service, we do not guarantee that the Service will always be available or free from errors, bugs, or disruptions. The Company is not liable for any downtime, data loss, or other issues that may arise from the use of the Service.
+        </li>
+        <li>
+          The Company reserves the right to modify, suspend, or discontinue any part of the Service at any time, with or without notice, and without liability to you or any third party. This includes, but is not limited to, changes to the mining algorithms, reward structures, withdrawal policies, and any other features or functionalities of the Service. Users are responsible for regularly reviewing the Service and staying informed of any changes.
+        </li>
+        <li>
+          The Company reserves the right to impose limits or restrictions on the use of the Service. This may include limiting the number of accounts per user, capping the amount of Mining Power available to each user, or restricting access to certain features. Any attempt to circumvent these restrictions, such as by creating multiple accounts or using unauthorized tools, is strictly prohibited and may result in account suspension or termination.
+        </li>
+        <li>
+          The Service may integrate with third-party services, such as payment processors or analytics providers. The Company is not responsible for the availability, accuracy, or performance of these third-party services. Your use of third-party services is governed by their respective third-party terms and policies.
+        </li>
+      </ul>
+    </div>
+  </div>
+<% end %>

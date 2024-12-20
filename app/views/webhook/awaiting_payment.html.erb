@@ -1,0 +1,69 @@
+<%= turbo_frame_tag "modal" do %>
+  <div 
+    class="fixed inset-0 h-screen w-full bg-slate-800 text-white p-6 space-y-3 text-center z-50 overflow-y-auto" 
+    data-controller="modal" 
+    data-modal-target="overlay"
+    data-action="click->modal#closeBg"
+  >
+    <!-- Order details -->
+    <div class="rounded-xl bg-black/20 p-4 space-y-4">
+      <div class="flex justify-between">
+        <span class="text-xl font-bold">Order Details</span>
+        <button class="px-4 py-2 block bg-white/10 text-white/70 rounded hover:bg-gray-300" data-action="click->modal#close">Back</button>
+      </div>
+      <div class="text-sm">
+        <div class="flex justify-between">
+          <span>Mining Power:</span>
+          <span>100 GH/s ⚡</span>
+        </div>
+        <div class="flex justify-between">
+          <span>Rent period:</span>
+          <span>30 days</span>
+        </div>
+        <div class="flex justify-between">
+          <span>Total profit:</span>
+          <span>~25,378 TON</span>
+        </div>
+        <div class="flex justify-between">
+          <span>Daily profit:</span>
+          <span>~0,849 TON</span>
+        </div>
+        <div class="flex justify-between">
+          <span>Price:</span>
+          <span>10 TON</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment QR -->
+    <div class="rounded-xl bg-black/20 p-4 space-y-4">
+      <span class="text-xl font-bold block text-start">Payment</span>
+      <p class="text-sm text-white/50 text-center">Send TON to the provided deposit address from your personal wallet. Send only Toncoin (TON), other assets will be lost forever.</p>
+      <%= tag.img src: "/fake_qr.png", class: "mx-auto" %>
+      <span class="text-xl text-center block"><span class="text-2xl font-bold">10</span> TON</span>
+      <div class="space-y-2">
+        <span class="text-white/50 text-sm text-center block">Send 10 TON to this address:</span>
+        <div class="cursor-pointer flex justify-center items-center">
+          <span class="text-xs">UQCdrBBB6gB21kxzUha60fSUeDjaJCj6irkBFzWQkrc1fAxo</span>
+          <i class="fa-solid fa-copy text-white/50"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment QR -->
+    <div class="rounded-xl bg-black/20 p-4 space-y-4">
+      <div class="flex items-center space-x-3">
+        <span class="text-xl font-bold block text-start">Awaiting Payment</span>
+        <div class="w-8 h-8 border-4 border-white/70 border-t-transparent rounded-full animate-spin"></div>
+      </div>
+      <div class="space-y-1 text-center text-white/50 text-sm">
+        <p>
+            Please note that the procedure for confirming a deposit takes 15 minutes on average.
+          </p>
+          <p>
+            If the amount sent by you is less than the minimum amount for a deposit with this payment system, then such a payment will be considered as a donation.
+          </p>
+        </div>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,3 @@
+tg: bin/rails runner telegram/bot.rb
+web: bin/rails server -p 3000
+css: bin/rails tailwindcss:watch

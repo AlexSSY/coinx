@@ -1,0 +1,12 @@
+<div 
+  class="fixed flex items-center space-x-2 top-4 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white p-3 rounded-xl shadow-lg animate-fade"
+  data-controller="toast" 
+  data-action="animationend->toast#hide"
+>
+  <% if type == :alert %>
+  <i class="fa-solid fa-circle-exclamation text-red-500 block"></i>
+  <% elsif type == :success %>
+  <i class="fa-solid fa-circle-check text-green-500 block"></i>
+  <% end %>
+  <span class="text-sm"><%= message %></span>
+</div>

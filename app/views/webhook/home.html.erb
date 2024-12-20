@@ -1,0 +1,87 @@
+<!-- Top Balances -->
+<div class="w-full space-y-2 px-4 py-4">
+
+  <!-- Balance 1 -->
+  <div class="flex items-center justify-between bg-black/30 rounded-xl p-3">
+    <div class="flex items-center space-x-2">
+      <!-- Icon -->
+      <!--div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+        <span class="text-lg font-bold">V</span>
+      </div-->
+      <img src="/toncoin-ton-logo.svg" alt="ton-icon" class="w-10 h-10">
+      <!-- Balance Text -->
+      <div>
+        <p class="text-sm text-slate-300">Balance</p>
+        <p class="text-sm font-bold text-slate-200"><%= current_user.ton %> TON</p>
+      </div>
+    </div>
+    <div>
+      <%= link_to withdraw_path, class: "py-3 px-4 bg-amber-300/50 rounded-xl flex items-center justify-center", data: { turbo_frame: "modal" } do %>
+        <!--span class="text-gray-300 text-xl">🔒</span-->
+        <i class="text-lg fa-solid fa-wallet text-slate-200"></i>
+      <% end %>
+    </div>
+  </div>
+
+  <!-- Balance 2 -->
+  <div class="flex items-center justify-between bg-black/30 rounded-lg p-3">
+    <div class="flex items-center space-x-2">
+      <!-- Icon -->
+      <!--div class="w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center">
+        <span class="text-lg font-bold">V</span>
+      </div-->
+      <img src="/fan.png" alt="ton-icon" class="w-10 h-10">
+      <!-- Balance Text -->
+      <div>
+        <p class="text-sm text-gray-300">Balance</p>
+        <p class="text-sm font-bold text-slate-200"><%= current_user.tonix %> TONIX</p>
+      </div>
+    </div>
+    <div>
+      <%= link_to withdraw_path, class: "py-3 px-4 bg-amber-300/50 rounded-xl flex items-center justify-center", data: { turbo_frame: "modal" } do %>
+        <!--span class="text-gray-300 text-xl">🔒</span-->
+        <i class="text-lg fa-solid fa-wallet text-slate-200"></i>
+      <% end %>
+    </div>
+  </div>
+
+</div>
+
+<div data-controller="fan" data-fan-mining-started-value="<%= current_user_mining_started? %>">
+  <!-- Centered Icon -->
+  <div class="relative mb-2">
+    <!-- Circle with Image -->
+    <div class="rounded-full bg-transparent flex items-center justify-center relative" data-action="click->fan#fanClicked">
+      <div src="/fan.png" alt="Fan Icon" class="w-64 h-64 rounded-full inset-0 bg-[url('/fan.png')] bg-cover" data-fan-target="fan"></div>
+      <div class="absolute z-100 bg-[length:300px_300px] bg-center bg-[url('fan.png')] rounded-full w-16 h-16"></div>
+    </div>
+  </div>
+
+  <!-- Balance with Speed -->
+  <div class="text-center mb-4">
+    <p class="text-2xl font-semibold text-gray-100">
+      <span class="font-roboto-mono" data-fan-target="average">0.0000000000</span>
+      <span class="text-amber-300 text-center">TON</span>
+    </p>
+    <p class="text-gray-400 text-sm">⚙️ <%= current_user.gh %> GH/s ⚡</p>
+  </div>
+</div>
+
+<!-- Action Buttons -->
+<% if current_user_mining_started? %>
+  <div class="flex space-x-4 w-full px-4">
+    <%= link_to claim_path, class: "flex-1 bg-amber-400 text-black text-center font-semibold py-3 rounded-2xl space-x-2", data: { turbo_frame: "modal" } do %>
+      <i class="fa-duotone fa-solid fa-coins text-xl"></i>
+      <span>Claim</span>
+    <% end %>
+    <%= link_to boost_path, class: "flex-1 bg-amber-400 text-black text-center font-semibold py-3 rounded-2xl space-x-2", data: { turbo_frame: "modal" } do %>
+      <i class="fa-solid fa-circle-up text-xl"></i>
+      <span>Boost</span>
+    <% end %>
+  <% else %>
+    <%= button_to start_mining_path, class: "bg-amber-400 text-black text-center font-semibold py-3 px-12 rounded-2xl space-x-2", form_class: "w-full flex justify-center" do %>
+      <i class="fa-solid fa-circle-up text-xl"></i>
+      <span>Start Mining</span>
+    <% end %>
+  <% end %>
+</div>

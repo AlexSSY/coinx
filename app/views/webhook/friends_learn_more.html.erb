@@ -1,0 +1,31 @@
+<%= turbo_frame_tag "modal" do %>
+  <div 
+    class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50" 
+    data-controller="modal" 
+    data-modal-target="overlay"
+    data-action="click->modal#closeBg"
+  >
+    <!-- Modal Content -->
+    <div class="bg-slate-800 rounded-lg p-6 w-96 shadow-lg text-white text-start space-y-3">
+      <span class="block font-bold">Referral Rewards</span>
+      <p class="text-sm text-white/50">
+        Our referral program has 3 levels of support, providing you with the opportunity to earn bonuses for inviting friends:
+      </p>
+      <p class="text-sm text-white/50">
+        1. <span class="text-white">Level 1:</span> You receive a bonus for each friend who registers using your referral link.
+      </p>
+      <p class="text-sm text-white/50">
+        2. <span class="text-white">Level 2:</span> You receive an additional bonus when friends of your referred friends also register and start using the program.
+      </p>
+      <p class="text-sm text-white/50">
+        3. <span class="text-white">Level 3:</span> You receive a bonus when friends of the second level invite new participants.
+      </p>
+      <p class="text-sm text-white/50">
+        Thus, you earn rewards not only for your direct invitations but also for the activity of all subsequent levels in your network.
+      </p>
+      <div class="flex flex-col justify-center space-y-3">
+        <button class="px-4 py-2 block bg-black/20 text-white/70 rounded hover:bg-gray-300 font-semibold" data-action="click->modal#close">Back</button>
+      </div>
+    </div>
+  </div>
+<% end %>
