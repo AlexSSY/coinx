@@ -9,28 +9,31 @@
     <div class="rounded-xl bg-black/20 p-4 space-y-4">
       <div class="flex justify-between">
         <span class="text-xl font-bold">Order Details</span>
-        <button class="px-4 py-2 block bg-white/10 text-white/70 rounded hover:bg-gray-300" data-action="click->modal#close">Back</button>
+        <button class="px-4 py-2 block bg-white/10 text-white/70 rounded hover:bg-gray-300" data-action="click->modal#close">
+          <i class="fa-solid fa-arrow-left-long"></i>
+          <span>Back</span>
+        </button>
       </div>
       <div class="text-sm">
         <div class="flex justify-between">
           <span>Mining Power:</span>
-          <span>100 GH/s ⚡</span>
+          <span><%= @mining_power %> GH/s ⚡</span>
         </div>
         <div class="flex justify-between">
           <span>Rent period:</span>
-          <span>30 days</span>
+          <span><%= @rent_period %> days</span>
         </div>
         <div class="flex justify-between">
           <span>Total profit:</span>
-          <span>~25,378 TON</span>
+          <span>~<%= format("%.3f", @total_profit) %> TON</span>
         </div>
         <div class="flex justify-between">
           <span>Daily profit:</span>
-          <span>~0,849 TON</span>
+          <span>~<%= format("%.3f", @daily_profit) %> TON</span>
         </div>
         <div class="flex justify-between">
           <span>Price:</span>
-          <span>10 TON</span>
+          <span><%= @price %> TON</span>
         </div>
       </div>
     </div>
@@ -38,19 +41,34 @@
     <!-- Payment QR -->
     <div class="rounded-xl bg-black/20 p-4 space-y-4">
       <span class="text-xl font-bold block text-start">Payment</span>
-      <p class="text-sm text-white/50 text-center">Send TON to the provided deposit address from your personal wallet. Send only Toncoin (TON), other assets will be lost forever.</p>
-      <%= tag.img src: "/fake_qr.png", class: "mx-auto" %>
-      <span class="text-xl text-center block"><span class="text-2xl font-bold">10</span> TON</span>
+      <p class="text-sm text-white/50 text-center">
+        Send TON to the provided deposit address from your personal wallet. Send only Toncoin (TON), 
+        other assets will be lost forever.
+      </p>
+      <canvas 
+        class="mx-auto"
+        data-controller="qr" 
+        data-qr-data-value="<%= current_user.ton_address %>"
+      >
+      </canvas>
+      <span class="text-xl text-center block"><span class="text-2xl font-bold"><%= @price %></span> TON</span>
       <div class="space-y-2">
         <span class="text-white/50 text-sm text-center block">Send 10 TON to this address:</span>
-        <div class="cursor-pointer flex justify-center items-center">
-          <span class="text-xs">UQCdrBBB6gB21kxzUha60fSUeDjaJCj6irkBFzWQkrc1fAxo</span>
+        <div class="cursor-pointer flex justify-center space-x-2 items-center">
+          <span 
+            data-controller="clipboard" 
+            data-clipboard-content-value="<%= current_user.ton_address %>"
+            class="text-xs break-all"
+            data-action="click->clipboard#copy"
+          >
+            <%= current_user.ton_address %>
+          </span>
           <i class="fa-solid fa-copy text-white/50"></i>
         </div>
       </div>
     </div>
 
-    <!-- Payment QR -->
+    <!-- Await area -->
     <div class="rounded-xl bg-black/20 p-4 space-y-4">
       <div class="flex items-center space-x-3">
         <span class="text-xl font-bold block text-start">Awaiting Payment</span>

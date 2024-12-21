@@ -10,7 +10,8 @@ export default class extends Controller {
 
   connect() {
     this.mining = 0
-    this.speed = 1
+    this.tapSpeed = 0
+    this.speed = 1 * this.ghAmountValue
 
     if (this.miningStartedValue) {
       fetch("/mining/get")
@@ -20,7 +21,7 @@ export default class extends Controller {
         })
 
       setInterval(() => {
-        this.mining = this.mining + 0.0000000001 * this.speed
+        this.mining = this.mining + 0.0000000001 * (this.speed + this.tapSpeed)
         this.averageTarget.textContent = this.mining.toFixed(10)
       }, 1)
 
@@ -59,9 +60,9 @@ export default class extends Controller {
     // this.fanTarget.classList.add("!animate-zoom-rotate")
     // this.fanTarget.classList.add("!animate-zoom-out-in")
     clearTimeout(this.speedHandler)
-    this.speed = 5
+    this.tapSpeed = 5
     this.speedHandler = setTimeout(() => {
-      this.speed = 1
+      this.tapSpeed = 0
       // this.fanTarget.classList.remove("!animate-zoom-rotate")
       // this.fanTarget.classList.remove("!animate-zoom-out-in")
     }, 1000)

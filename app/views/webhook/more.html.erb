@@ -20,18 +20,20 @@
     data-clipboard-content-value="<%= current_user_id %>" 
     data-action="click->clipboard#copy"
   >
-    <div class="flex items-center space-x-1">
-      <span class="font-bold text-xl">#</span>
+    <div class="flex items-center space-x-[15px]">
+      <span class="font-bold text-xl">
+        <i class="fa-solid fa-user"></i>
+      </span>
       <span>My ID</span>
     </div>
-    <span class="text-white/50 cursor-pointer">
+    <span class="text-white/50 cursor-pointer space-x-1">
       <i class="fa-solid fa-copy"></i>
-      <%= current_user_id %>
+      <span><%= current_user_id %></span>
     </span>
   </div>
 
   <!-- Language-->
-  <!--div class="p-4 rounded-2xl items-center bg-black/20 flex justify-between cursor-pointer">
+  <div class="p-4 rounded-2xl items-center bg-black/20 flex justify-between cursor-pointer">
     <div class="flex items-center space-x-2">
       <span class="font-bold text-xl">
         <i class="fa-solid fa-language"></i>
@@ -41,7 +43,7 @@
     <span class="text-white/50">
       us English
     </span>
-  </div-->
+  </div>
 
   <!-- Invite friends-->
   <%= link_to friends_path, class: "p-4 rounded-2xl items-center bg-black/20 flex justify-between" do %>
@@ -52,7 +54,7 @@
       <span>Invite Friends</span>
     </div>
     <span class="text-white/50">
-      click
+      <i class="fa-solid fa-hand-pointer"></i>
     </span>
   <% end %>
 
@@ -65,7 +67,7 @@
       <span>Contact Support</span>
     </div>
     <span class="text-white/50">
-      click
+      <i class="fa-solid fa-hand-pointer"></i>
     </span>
   <% end %>
 
@@ -78,7 +80,7 @@
       <span>Legal Information</span>
     </div>
     <span class="text-white/50">
-      click
+      <i class="fa-solid fa-hand-pointer"></i>
     </span>
   <% end %>
 

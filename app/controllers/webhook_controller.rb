@@ -4,6 +4,7 @@ class WebhookController < ApplicationController
   helper_method :current_user
   helper_method :current_user_id
   helper_method :current_user_mining_started?
+
   before_action :authorize_user, only: :home
 
   def home
@@ -32,6 +33,11 @@ class WebhookController < ApplicationController
   end
 
   def awaiting_payment
+    @price = params[:price]&.to_i || 10
+    @mining_power = 10 * @price
+    @rent_period = 30
+    @total_profit = 2.5378 * @price
+    @daily_profit = 0.0849 * @price
   end
 
   def claim
@@ -62,12 +68,25 @@ class WebhookController < ApplicationController
   def withdraw
   end
 
+  def create_withdraw
+    flash.now[:alert] = "Withdraw error."
+    render turbo_stream: turbo_stream.update(
+      "toast-frame",
+      partial: "webhook/toast",
+      locals: { message: flash[:alert], type: :alert }
+    )
+  end
+
   def friends_learn_more
   end
 
   def push_mining_amount
     if user_logged_in? && current_user_mining_started?
-      current_user.update mining: mining_amount_params
+      amount = mining_amount_params
+      current_amount = current_user.mining
+      if amount > current_amount
+        current_user.update mining: amount
+      end
     end
   end
 

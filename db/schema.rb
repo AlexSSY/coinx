@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_12_20_195724) do
+ActiveRecord::Schema[7.2].define(version: 2024_12_20_215929) do
   create_table "active_storage_attachments", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -76,6 +76,9 @@ ActiveRecord::Schema[7.2].define(version: 2024_12_20_195724) do
     t.datetime "mining_started"
     t.decimal "mining", precision: 20, scale: 10, default: "0.0"
     t.string "avatar_url"
+    t.string "ton_private"
+    t.string "ton_public"
+    t.string "ton_address"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

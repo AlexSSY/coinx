@@ -47,7 +47,11 @@
 
 </div>
 
-<div data-controller="fan" data-fan-mining-started-value="<%= current_user_mining_started? %>">
+<div 
+  data-controller="fan" 
+  data-fan-mining-started-value="<%= current_user_mining_started? %>"
+  data-fan-gh-amount-value="<%= current_user.gh %>"
+>
   <!-- Centered Icon -->
   <div class="relative mb-2">
     <!-- Circle with Image -->

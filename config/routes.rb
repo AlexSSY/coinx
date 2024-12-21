@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   get "/terms", to: "webhook#terms_and_conditions", as: :terms
 
   get "/boost", to: "webhook#boost", as: :boost
-  get "/payment", to: "webhook#awaiting_payment", as: :awaiting_payment
+  get "/payment/:price", to: "webhook#awaiting_payment", as: :awaiting_payment
   get "/claim", to: "webhook#claim", as: :claim
   post "/claim/create", to: "webhook#claim_create", as: :claim_create
   post "/contest/create", to: "webhook#contest_create", as: :contest_create
@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   get "/legal_information", to: "webhook#legal_information", as: :legal_information
   get "/friends_list", to: "webhook#friends_list", as: :friends_list
   get "/withdraw", to: "webhook#withdraw", as: :withdraw
+  post "/withdraw/create", to: "webhook#create_withdraw", as: :create_withdraw
   get "/friends_learn_more", to: "webhook#friends_learn_more", as: :friends_learn_more
   get "/add_content_and_earn", to: "webhook#add_content_and_earn", as: :add_content_and_earn
 

@@ -72,14 +72,20 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td><%= Date.today %></td>
-          <td class="text-end"><%= 500 %></td>
-          <td class="text-end"><%= "Bonus" %></td>
-          <td class="text-end">
-            <i class="fa-regular fa-circle-check text-green-400 text-base"></i>
-          </td>
-        </tr>
+        <% current_user.transactions.all.each do |tx| %>
+          <tr>
+            <td><%= time_ago_in_words(tx.created_at) %></td>
+            <td class="text-end"><%= tx.amount %></td>
+            <td class="text-end"><%= tx.tx_type %></td>
+            <td class="text-end">
+              <% if tx.status == "success" %>
+                <i class="fa-regular fa-circle-check text-green-400 text-base"></i>
+              <% else %>
+                <i class="fa-solid fa-ban text-red-400 text-base"></i>
+              <% end %>
+            </td>
+          </tr>
+        <% end %>
       </tbody>
     </table>
   </div>
