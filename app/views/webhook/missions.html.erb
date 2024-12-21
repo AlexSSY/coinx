@@ -1,13 +1,17 @@
 <div class="text-white mt-4 w-full px-4 space-y-4" data-controller="tabs">
   <!-- welcome text -->
   <div class="space-y-1">
-    <span class="block w-full text-center font-bold text-2xl">New Missions</span>
-    <span class="block w-full text-center">Complete tasks and earn more</span>
+    <span class="block w-full text-center font-bold text-2xl"><%= t("missions.title") %></span>
+    <span class="block w-full text-center"><%= t("missions.subtitle") %></span>
   </div>
 
   <!-- Tabs -->
   <div class="p-2 rounded-xl bg-black/20 flex">
-    <% [ { title: "promo", highlight: false }, { title: "ref", highlight: true }, { title: "contest", highlight: true } ].each do |desc| %>
+    <% [ 
+      { title: t("missions.tabs.tab1"), highlight: false }, 
+      { title: t("missions.tabs.tab2"), highlight: true }, 
+      { title: t("missions.tabs.tab3"), highlight: true } 
+    ].each do |desc| %>
     <span class="block relative py-2 flex-grow rounded-xl text-sm font-bold text-white/60 text-center cursor-pointer" data-tabs-target="tab" data-action="click->tabs#select">
       <%= desc[:title].capitalize %>
       <% if desc[:highlight] %>
@@ -22,8 +26,8 @@
   <!-- tab-1-promo -->
   <div class="space-y-4 hidden" data-tabs-target="body">
     <% [
-        { img: "/bolt.gif", title: "Boost Mining Power", amount: 25000, gh: 50, completed: false },
-        { img: "/duck.gif", title: "Welcome Bonus", amount: 25000, gh: nil, completed: true }
+        { img: "/bolt.gif", title: t("missions.bodies.tab1.item1"), amount: 25000, gh: 50, completed: false },
+        { img: "/duck.gif", title: t("missions.bodies.tab1.item2"), amount: 25000, gh: nil, completed: true }
       ].each do |desc| 
     %>
     <div class="p-2 rounded-xl bg-black/20 flex justify-between items-center text-sm">
@@ -65,20 +69,20 @@
   <!-- tab-2-ref -->
   <div class="space-y-4 hidden" data-tabs-target="body">
     <div class="p-2 rounded-xl bg-black/20 flex justify-between items-center">
-      <span>Friends (Lv. 1)</span>
+      <span><%= t("missions.bodies.tab2.friends") %></span>
       <span>0</span>
     </div>
 
     <% [
-        { img: "/duck.gif", title: "Invite 1 Friend", amount: 100, gh: nil, completed: false },
-        { img: "/duck.gif", title: "Invite 3 Friend", amount: 300, gh: nil, completed: false },
-        { img: "/duck.gif", title: "Invite 10 Friends", amount: 500, gh: nil, completed: false },
-        { img: "/duck.gif", title: "Invite 25 Friends", amount: 1000, gh: nil, completed: false },
-        { img: "/duck.gif", title: "Invite 50 Friends", amount: 2500, gh: nil, completed: false },
-        { img: "/duck.gif", title: "Invite 100 Friends", amount: 3000, gh: 10, completed: false },
-        { img: "/duck.gif", title: "Invite 500 Friends", amount: 7000, gh: 30, completed: false },
-        { img: "/duck.gif", title: "Invite 1000 Friends", amount: 10000, gh: 50, completed: false },
-        { img: "/duck.gif", title: "Invite 10000 Friends", amount: 100000, gh: 150, completed: false },
+        { img: "/duck.gif", title: t("missions.bodies.tab2.item1"), amount: 100, gh: nil, completed: false },
+        { img: "/duck.gif", title: t("missions.bodies.tab2.item2"), amount: 300, gh: nil, completed: false },
+        { img: "/duck.gif", title: t("missions.bodies.tab2.item3"), amount: 500, gh: nil, completed: false },
+        { img: "/duck.gif", title: t("missions.bodies.tab2.item4"), amount: 1000, gh: nil, completed: false },
+        { img: "/duck.gif", title: t("missions.bodies.tab2.item5"), amount: 2500, gh: nil, completed: false },
+        { img: "/duck.gif", title: t("missions.bodies.tab2.item6"), amount: 3000, gh: 10, completed: false },
+        { img: "/duck.gif", title: t("missions.bodies.tab2.item7"), amount: 7000, gh: 30, completed: false },
+        { img: "/duck.gif", title: t("missions.bodies.tab2.item8"), amount: 10000, gh: 50, completed: false },
+        { img: "/duck.gif", title: t("missions.bodies.tab2.item9"), amount: 100000, gh: 150, completed: false },
       ].each do |desc| 
     %>
     <div class="p-2 rounded-xl bg-black/20 space-y-1">
@@ -124,7 +128,7 @@
 
   <!-- tab-3-contest -->
   <div class="space-y-4 hidden" data-tabs-target="body">
-    <span class="block w-full text-center font-bold text-2xl">Tell others about TONIX App</span>
+    <span class="block w-full text-center font-bold text-2xl"><%= t("missions.bodies.tab3.title") %></span>
 
     <div class="flex justify-center">
       <%= tag.img src: "/inst.svg", class: "w-12 h-12" %>
@@ -133,21 +137,21 @@
     </div>
 
     <div class="border-y border-blue-500 py-4 flex flex-col items-center mx-8">
-      <span>And get up to</span>
+      <span><%= t("missions.bodies.tab3.get_up") %></span>
       <div class="flex items-center space-x-2">
         <%= tag.img src: "/fan.png", class: "w-8 h-8" %>
         <span class="text-2xl text-amber-400 font-bold">10 000 000</span>
       </div>
-      <span>TONIX for each video</span>
+      <span><%= t("missions.bodies.tab3.each_video") %></span>
     </div>
 
     <%= link_to add_content_and_earn_path, class: "rounded-xl bg-amber-400 text-black p-3 flex items-center justify-center font-semibold space-x-2 mx-auto", data: { turbo_frame: "modal" } do %>
       <i class="fa-solid fa-plus"></i>
-      <span>Add Content and earn</span>
+      <span><%= t("missions.bodies.tab3.button") %></span>
     <% end %>
 
     <div class="py-2 px-4 rounded-xl bg-black/20 flex flex-col space-y-2 items-center text-sm">
-      <span class="text-2xl font-bold">Rules</span>
+      <span class="text-2xl font-bold"><%= t("missions.bodies.tab3.rules.title") %></span>
       <div class="flex space-x-1">
         <span>1.</span>
         <p>

@@ -16,8 +16,8 @@
     <link rel="apple-touch-icon" href="/icon.png">
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <script src="https://kit.fontawesome.com/db676a09bb.js" crossorigin="anonymous"></script>
     <%= javascript_importmap_tags %>
+    <script src="https://kit.fontawesome.com/db676a09bb.js" crossorigin="anonymous"></script>
   </head>
 
   <body 
@@ -36,36 +36,36 @@
       <!-- Bottom Navigation -->
       <div class="fixed bottom-0 w-full px-7 mb-2">
         <div class="flex bg-slate-900 px-3 py-2 rounded-2xl text-white text-base">
-          <% class_list = "flex flex-grow flex-col space-y-1 items-center py-2" + (current_page?(wallet_path) ? " text-amber-400 bg-white/5 rounded-xl" : "") %>
+          <% class_list = "flex flex-1 flex-col space-y-1 items-center py-2" + (current_page?(wallet_path) ? " text-amber-400 bg-white/5 rounded-xl" : "") %>
           <%= link_to wallet_path, class: class_list do %>
             <i class="fa-solid fa-wallet text-xl"></i>
-            <p class="text-xs">Wallet</p>
+            <p class="text-xs capitalize"><%= t("main_menu.wallet") %></p>
           <% end %>
 
-          <% class_list = "flex flex-grow flex-col space-y-1 items-center py-2" + (current_page?(friends_path) ? " text-amber-400 bg-white/5 rounded-xl" : "") %>
+          <% class_list = "flex flex-1 flex-col space-y-1 items-center py-2" + (current_page?(friends_path) ? " text-amber-400 bg-white/5 rounded-xl" : "") %>
           <%= link_to friends_path, class: class_list do %>
             <i class="fa-solid fa-user-group text-xl"></i>
-            <p class="text-xs">Friends</p>
+            <p class="text-xs capitalize"><%= t("main_menu.friends") %></p>
           <% end %>
 
-          <% class_list = "flex flex-grow flex-col space-y-1 items-center py-2" + ((current_page?(root_path) || current_page?(home_path)) ? " text-amber-400 bg-white/5 rounded-xl" : "") %>
+          <% class_list = "flex flex-1 flex-col space-y-1 items-center py-2" + ((current_page?(root_path) || current_page?(home_path)) ? " text-amber-400 bg-white/5 rounded-xl" : "") %>
           <%= link_to root_path, class: class_list do %>
             <svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path fill="none" stroke="currentColor" stroke-width="3" d="M12,15 C13.6568542,15 15,13.6568542 15,12 C15,10.3431458 13.6568542,9 12,9 C10.3431458,9 9,10.3431458 9,12 C9,13.6568542 10.3431458,15 12,15 Z M15,12 C19,15 20,19 20,19 M12,23 C18.0751322,23 23,18.0751322 23,12 C23,5.92486775 18.0751322,1 12,1 C5.92486775,1 1,5.92486775 1,12 C1,18.0751322 5.92486775,23 12,23 Z M12,9 C15,4 19,3 19,3 M12,15 C9,19 5,20 5,20 M9,12 C5,9 4,5 4,5"/>
             </svg>
-            <p class="text-xs">Home</p>
+            <p class="text-xs capitalize"><%= t("main_menu.home") %></p>
           <% end %>
 
-          <% class_list = "flex flex-grow flex-col space-y-1 items-center py-2" + (current_page?(missions_path) ? " text-amber-400 bg-white/5 rounded-xl" : "") %>
+          <% class_list = "flex flex-1 flex-col space-y-1 items-center py-2" + (current_page?(missions_path) ? " text-amber-400 bg-white/5 rounded-xl" : "") %>
           <%= link_to missions_path, class: class_list do %>
             <i class="fa-solid fa-bullseye text-xl"></i>
-            <p class="text-xs">Missions</p>
+            <p class="text-xs capitalize"><%= t("main_menu.missions") %></p>
           <% end %>
           
-          <% class_list = "flex flex-grow flex-col space-y-1 items-center py-2" + (current_page?(more_path) ? " text-amber-400 bg-white/5 rounded-xl" : "") %>
+          <% class_list = "flex flex-1 flex-col space-y-1 items-center py-2" + (current_page?(more_path) ? " text-amber-400 bg-white/5 rounded-xl" : "") %>
           <%= link_to more_path, class: class_list do %>
             <i class="fa-solid fa-sliders text-xl"></i>
-            <p class="text-xs">More</p>
+            <p class="text-xs capitalize"><%= t("main_menu.more") %></p>
           <% end %>
         </div> 
       </div>

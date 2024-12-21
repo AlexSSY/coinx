@@ -7,16 +7,16 @@
   >
     <!-- Modal Content -->
     <div class="bg-slate-800 rounded-lg p-6 w-96 shadow-lg text-white text-center space-y-3">
-      <span class="text-base font-bold mb-4">Need Help?</span>
+      <span class="text-base font-bold mb-4"><%= t("contact_support.title") %></span>
       <p class="text-white/70 mb-6 text-sm">
-        For any questions related to Tonix. service work and cooperation, write to us.
+        <%= t("contact_support.subtitle") %>
       </p>
       <div class="flex flex-col justify-center space-y-3">
         <%= link_to SiteParameter.fetch('support_tg'), class: "px-4 py-2 flex items-center justify-center space-x-2 bg-amber-400 text-black font-semibold rounded hover:bg-blue-700", data: { action: "click->modal#close" } do %>
           <i class="fa-brands fa-telegram text-xl"></i>
-          <span>Contact via Telegram</span>
+          <span><%= t("contact_support.contact_button") %></span>
         <% end %>
-        <button class="px-4 py-2 block bg-black/20 text-white/70 rounded hover:bg-gray-300 font-semibold" data-action="click->modal#close">Back</button>
+        <button class="px-4 py-2 block bg-black/20 text-white/70 rounded hover:bg-gray-300 font-semibold" data-action="click->modal#close"><%= t("contact_support.back_button") %></button>
       </div>
     </div>
   </div>

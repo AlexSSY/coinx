@@ -28,4 +28,63 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  
+  more:
+    hello: "hello"
+    language: "language"
+    invite_friends: "invite friends"
+    contact_support: "contact support"
+    legal_information: "legal information"
+    ratings_and_leagues_soon: "Ratings & Leagues (soon)"
+
+  contact_support:
+    title: "Need Help?"
+    subtitle: "For any questions related to Tonix. service work and cooperation, write to us."
+    contact_button: "Contact via Telegram"
+    back_button: "Back"
+
+  legal_information:
+    title: "Legal Information"
+    terms: "Terms and Conditions"
+    privacy: "Privacy Policy"
+    kyc: "KYC Policy"
+    acceptable: "Acceptable Use Policy"
+    gdpr: "GDPR Compliance Statement"
+    back_button: "Back"
+
+  missions:
+    title: "New Missions"
+    subtitle: "Complete tasks and earn more"
+    tabs:
+      tab1: "promo"
+      tab2: "ref"
+      tab3: "contest"
+    bodies:
+      tab1:
+        item1: "Boost Mining Power"
+        item2: "Welcome Bonus"
+      tab2:
+        friends: "Friends (Lv. 1)"
+        item1: "Invite 1 Friend"
+        item2: "Invite 3 Friends"
+        item3: "Invite 10 Friends"
+        item4: "Invite 25 Friends"
+        item5: "Invite 50 Friends"
+        item6: "Invite 100 Friends"
+        item7: "Invite 500 Friends"
+        item8: "Invite 1000 Friends"
+        item9: "Invite 10000 friends"
+      tab3:
+        title: "Tell others about TONIX App"
+        get_up: "And get up to"
+        each_video: "TONIX for each video"
+        button: "Add Content and earn"
+        rules:
+          title: "Rules"
+  
+  main_menu:
+    wallet: "wallet"
+    friends: "friends"
+    home: "home"
+    missions: "missions"
+    more: "more"

@@ -1,0 +1,16 @@
+<%= turbo_frame_tag "modal" do %>
+  <div 
+    class="fixed text-white inset-0 bg-black bg-opacity-50 flex items-center backdrop-blur-sm z-50" 
+    data-controller="modal" 
+    data-modal-target="overlay"
+    data-action="click->modal#closeBg"
+  >
+    <div class="mx-5 flex-grow text-center space-y-3 bg-black/80 rounded-xl p-3">
+      <% @languages.each do |language| %>
+        <%= link_to more_path(locale: language[:code]), data: { action: "click->modal#close", turbo: false } do %>
+          <p class="underline"><%= language[:name] %></p>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+<% end %>

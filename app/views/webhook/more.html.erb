@@ -2,7 +2,7 @@
 
   <div class="p-4 rounded-2xl items-center bg-black/20 flex justify-between">
     <div class="text-xl">
-      <span class="block">Hello,</span>
+      <span class="block capitalize"><%= t("more.hello") %>,</span>
       <span class="block font-bold"><%= current_user&.full_name || "-" %></span>
     </div>
     <%= tag.img src: "/user.png", class: "w-16 h-16" %>
@@ -24,7 +24,7 @@
       <span class="font-bold text-xl">
         <i class="fa-solid fa-user"></i>
       </span>
-      <span>My ID</span>
+      <span>ID</span>
     </div>
     <span class="text-white/50 cursor-pointer space-x-1">
       <i class="fa-solid fa-copy"></i>
@@ -33,17 +33,18 @@
   </div>
 
   <!-- Language-->
-  <div class="p-4 rounded-2xl items-center bg-black/20 flex justify-between cursor-pointer">
+  <%= link_to language_path, class: "p-4 rounded-2xl items-center bg-black/20 flex justify-between cursor-pointer", data: { turbo_frame: "modal" } do %>
     <div class="flex items-center space-x-2">
       <span class="font-bold text-xl">
         <i class="fa-solid fa-language"></i>
       </span>
-      <span>Language</span>
+      <span class="capitalize"><%= t("more.language") %></span>
     </div>
     <span class="text-white/50">
-      us English
+      <% current_locale = @languages.find { |item| item[:code] == @locale } %>
+      <%= current_locale[:name].capitalize %>
     </span>
-  </div>
+  <% end %>
 
   <!-- Invite friends-->
   <%= link_to friends_path, class: "p-4 rounded-2xl items-center bg-black/20 flex justify-between" do %>
@@ -51,7 +52,7 @@
       <span class="font-bold text-xl">
         <i class="fa-solid fa-users"></i>
       </span>
-      <span>Invite Friends</span>
+      <span class="capitalize"><%= t("more.invite_friends") %></span>
     </div>
     <span class="text-white/50">
       <i class="fa-solid fa-hand-pointer"></i>
@@ -64,7 +65,7 @@
       <span class="font-bold text-xl">
         <i class="fa-solid fa-headset"></i>
       </span>
-      <span>Contact Support</span>
+      <span class="capitalize"><%= t("more.contact_support") %></span>
     </div>
     <span class="text-white/50">
       <i class="fa-solid fa-hand-pointer"></i>
@@ -77,7 +78,7 @@
       <span class="font-bold text-xl">
         <i class="fa-solid fa-scale-balanced"></i>
       </span>
-      <span>Legal Information</span>
+      <span class="capitalize"><%= t("more.legal_information") %></span>
     </div>
     <span class="text-white/50">
       <i class="fa-solid fa-hand-pointer"></i>
@@ -90,7 +91,7 @@
       <span class="font-bold text-xl">
         <i class="fa-solid fa-trophy"></i>
       </span>
-      <span>Ratings & Leagues (soon)</span>
+      <span><%= t("more.ratings_and_leagues_soon") %></span>
     </div>
   </div>
 

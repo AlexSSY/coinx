@@ -27,6 +27,10 @@ class WebhookController < ApplicationController
   end
 
   def more
+    @languages = [
+      { code: "en", name: "English" },
+      { code: "ru", name: "Русский" }
+    ]
   end
 
   def boost
@@ -63,6 +67,13 @@ class WebhookController < ApplicationController
   end
 
   def friends_list
+  end
+
+  def language
+    @languages = [
+      { code: "en", name: "English" },
+      { code: "ru", name: "Русский" }
+    ]
   end
 
   def withdraw
