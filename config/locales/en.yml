@@ -81,6 +81,11 @@ en:
         button: "Add Content and earn"
         rules:
           title: "Rules"
+          rule1:
+            title: "Create content:"
+            content: >
+              Make a fan video about TONIX App 
+              for YouTube Shorts, Instagram Reels, or TikTok.
   
   main_menu:
     wallet: "wallet"
