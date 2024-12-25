@@ -7,15 +7,24 @@
   >
     <!-- Modal Content -->
     <div class="bg-slate-800 rounded-lg p-6 w-96 shadow-lg text-white text-center space-y-3">
-      <span class="font-bold mb-4">Claim TON to Wallet Balance</span>
+      <span class="font-bold mb-4"><%= t("claim.title") %></span>
       <p class="text-white/70 mb-6 text-sm">
-        Once claimed, the mined TON will be deducted from your mining balance and will be credited to your wallet balance.
+        <%= t("claim.subtitle") %>
       </p>
-      <span class="font-bold mb-4">Minimum claim amount is 0.015 TON</span>
+      <span class="font-bold mb-4"><%= t("claim.min_amount") %> 0.015 TON</span>
       <div class="flex flex-col justify-center space-y-3">
-        <%= link_to "Claim", claim_create_path, class: "px-4 py-2 block bg-amber-400 text-black font-semibold rounded hover:bg-blue-700", data: { action: "click->modal#close", turbo_frame: "modal", turbo_method: "post" } %>
-        <button class="px-4 py-2 block bg-black/20 text-white/70 rounded hover:bg-gray-300 font-semibold" data-action="click->modal#close">Back</button>
+        <%= tag.div t("claim.claim_button"), id: "claim-button", class: "px-4 py-2 block bg-amber-400 text-black font-semibold rounded hover:bg-blue-700", data: { action: "click->modal#close" } %>
+        <button class="px-4 py-2 block bg-black/20 text-white/70 rounded hover:bg-gray-300 font-semibold" data-action="click->modal#close"><%= t("claim.back_button") %></button>
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+    document.querySelector("#claim-button").addEventListener("click", function() {
+      const fanController = Stimulus.getControllerForElementAndIdentifier(document.querySelector('[data-controller="fan"]'), "fan")
+      
+      if (fanController) {
+        fanController.claim()
+      }
+  })
+  </script>
 <% end %>

@@ -20,7 +20,11 @@ class WebhookController < ApplicationController
   def missions
   end
 
+  def kyc
+  end
+
   def friends
+    @invite_link = "https://t.me/tonix_dapp_bot?start=#{current_user_id}"
   end
 
   def wallet
@@ -71,21 +75,60 @@ class WebhookController < ApplicationController
 
   def language
     @languages = [
-      { code: "en", name: "English" },
-      { code: "ru", name: "Русский" }
+      { code: "en", flag: "🇺🇸", name: "English" },
+      { code: "ru", flag: "🇷🇺", name: "Русский" }
     ]
   end
 
   def withdraw
   end
 
+  def deposit_first
+  end
+
   def create_withdraw
-    flash.now[:alert] = "Withdraw error."
-    render turbo_stream: turbo_stream.update(
-      "toast-frame",
-      partial: "webhook/toast",
-      locals: { message: flash[:alert], type: :alert }
-    )
+    assembly = create_withdraw_params[:assembly]
+    amount = create_withdraw_params[:amount].to_f
+    # address = create_withdraw_params[:address]
+
+    if assembly == "ton" && amount < 0.35 ||
+        assembly == "tonix" && amount < 150_000 ||
+        current_user.send(assembly) < amount
+      flash.now[:alert] = t("errors.withdraw.msg")
+      render turbo_stream: turbo_stream.update(
+        "toast-frame",
+        partial: "webhook/toast",
+        locals: { message: flash[:alert], type: :alert }
+      )
+    else
+      render turbo_stream: turbo_stream.replace("modal", partial: "deposit_first")
+
+      # tx = Transaction.new(
+      #   user_id: current_user.id,
+      #   tx_type: :outgoing,
+      #   sender: "your_account",
+      #   receiver: address,
+      #   assembly: assembly,
+      #   amount: amount,
+      #   status: :success
+      # )
+
+      # if tx.save
+      #   flash.now[:notice] = t("notices.withdraw.msg")
+      #   render turbo_stream: turbo_stream.update(
+      #     "toast-frame",
+      #     partial: "webhook/toast",
+      #     locals: { message: flash[:notice], type: :success }
+      #   )
+      # else
+      #   flash.now[:alert] = t("errors.withdraw.msg2")
+      #   render turbo_stream: turbo_stream.update(
+      #     "toast-frame",
+      #     partial: "webhook/toast",
+      #     locals: { message: flash[:alert], type: :alert }
+      #   )
+      # end
+    end
   end
 
   def friends_learn_more
@@ -101,17 +144,47 @@ class WebhookController < ApplicationController
     end
   end
 
+  def privacy_policy
+  end
+
+  def acceptable_use_policy
+  end
+
+  def gdpr_compliance_statement
+  end
+
   def get_mining_amount
     render json: { amount: (user_logged_in? ? current_user.mining : 0.0) }
   end
 
+  def push_native_tx
+    unless Transaction.where(tx_hash: push_native_tx_params[:tx_hash]).exists?
+      transaction = Transaction.new(push_native_tx_params) do |tx|
+        tx.user_id = current_user.id
+      end
+
+      if transaction.save
+        render json: { msg: t("notice.push_native_tx.msg") }
+      else
+        render json: { msg: t("errors.push_native_tx.msg") }, status: :unprocessable_entity
+      end
+    end
+  end
+
   def claim_create
-    flash.now[:alert] = "Claim amount too small"
-    render turbo_stream: turbo_stream.update(
-      "toast-frame",
-      partial: "webhook/toast",
-      locals: { message: flash[:alert], type: :alert }
-    )
+    @min_claim_amount = 0.000001# 0.015
+
+    if current_user.mining < @min_claim_amount
+      render(
+        json: { msg: t("errors.claim.too_small") },
+        status: :unprocessable_entity
+      )
+    else
+      current_user.claim
+      render(
+        json: { msg: t("notices.claim.msg") }
+      )
+    end
   end
 
   def terms_and_conditions
@@ -121,14 +194,14 @@ class WebhookController < ApplicationController
     contest = Contest.new contest_params
 
     if contest.save
-      flash.now[:notice] = "Your link Sent Successfully"
+      flash.now[:notice] = t("notices.contest.msg")
       render turbo_stream: turbo_stream.update(
         "toast-frame",
         partial: "webhook/toast",
         locals: { message: flash[:notice], type: :success }
       )
     else
-      flash.now[:alert] = "Error happened while link sended"
+      flash.now[:alert] = t("errors.contest.msg")
       render turbo_stream: turbo_stream.update(
         "toast-frame",
         partial: "webhook/toast",
@@ -156,8 +229,24 @@ class WebhookController < ApplicationController
 
   private
 
+  def push_native_tx_params
+    params.require(:transaction).permit(
+        :tx_type,
+        :sender,
+        :receiver,
+        :assembly,
+        :amount,
+        :status,
+        :tx_hash
+      )
+  end
+
   def mining_amount_params
     params.require(:amount)
+  end
+
+  def create_withdraw_params
+    params.require(:withdraw).permit(:assembly, :amount, :address)
   end
 
   def contest_params

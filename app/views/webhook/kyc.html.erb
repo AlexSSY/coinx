@@ -1,0 +1,133 @@
+<%= turbo_frame_tag "modal" do %>
+   <div 
+    class="fixed inset-0 h-screen w-full bg-slate-800 text-xs text-white/50 p-6 space-y-4 text-start z-50 overflow-y-auto" 
+    data-controller="modal" 
+    data-modal-target="overlay"
+    data-action="click->modal#closeBg"
+  >
+    <!-- <--<< Back -->
+    <div class="flex justify-end w-full">
+      <button class="px-4 py-2 flex items-center space-x-2 bg-black/20 text-white/70 rounded hover:bg-gray-300 font-semibold" data-action="click->modal#close">
+        <i class="fa-solid fa-arrow-left-long"></i>
+        <span>Back</span>
+      </button>
+    </div>
+
+    <div class="p-6 text-gray-300">
+      <h1 class="text-base font-bold mb-4">KYC Policy</h1>
+      <p class="text-sm text-gray-600 mb-6">Last updated: 07/04/2024</p>
+      <p class="mb-4">
+        This Know Your Customer ("KYC") Policy outlines the procedures and practices employed by 
+        <strong>TONIX.PRO</strong> ("Company", "we", "us", or "our") to verify the identity of our users and to 
+        monitor their activities on the TONIX platform ("Platform"). Our commitment to preventing fraud, money 
+        laundering, terrorist financing, and other illegal activities is paramount. As such, this KYC Policy has 
+        been established in accordance with applicable laws and regulations, and it is designed to ensure that 
+        the TONIX platform remains a secure and compliant environment for all users.
+      </p>
+
+      <h2 class="text-base font-semibold mt-6 mb-4">1. Purpose and Scope of the KYC Policy</h2>
+      <p class="mb-4">
+        The primary purpose of this KYC Policy is to establish a comprehensive framework that governs the process 
+        of verifying the identity of users on the TONIX platform. This policy is intended to prevent the misuse 
+        of our services for illicit activities, including but not limited to money laundering, fraud, and terrorist 
+        financing. This policy applies to all users of the TONIX platform, irrespective of their location or the 
+        nature of their transactions. Compliance with this KYC Policy is mandatory, and continued use of the TONIX 
+        platform signifies acceptance of and adherence to these procedures.
+      </p>
+
+      <h2 class="text-base font-semibold mt-6 mb-4">2. Legal and Regulatory Compliance</h2>
+      <p class="mb-4">
+        TONIX.PRO is committed to complying with all applicable laws, regulations, and guidelines pertaining to 
+        KYC, anti-money laundering ("AML"), and counter-terrorist financing ("CTF"). This includes but is not 
+        limited to the provisions set forth by the Financial Action Task Force ("FATF"), the European Union’s 
+        Anti-Money Laundering Directives, and other relevant national and international regulatory bodies. The 
+        Company reserves the right to update or amend this KYC Policy as necessary to ensure continued compliance 
+        with legal requirements and best practices.
+      </p>
+
+      <h2 class="text-base font-semibold mt-6 mb-4">3. KYC Verification Process</h2>
+      <p class="mb-4">
+        The KYC verification process at TONIX is designed to establish the true identity of each user and to 
+        ensure that the information provided by users is accurate and up-to-date. The verification process is 
+        tiered, with different levels of verification required based on the user’s activity on the platform.
+      </p>
+
+      <h3 class="text-xl font-semibold mt-4 mb-2">Step 1: Basic Verification</h3>
+      <p class="mb-4">
+        Basic verification is required for all users upon registration on the TONIX platform. This initial step 
+        involves the collection of fundamental personal information, including but not limited to:
+      </p>
+      <ul class="list-disc list-inside mb-4">
+        <li>Full legal name</li>
+        <li>Date of birth</li>
+        <li>Nationality</li>
+        <li>Residential address</li>
+        <li>Contact information (e.g., email address, phone number)</li>
+      </ul>
+      <p class="mb-4">
+        Users are required to upload a clear, legible copy of a government-issued identification document (e.g., 
+        passport, national ID card, or driver’s license). The document must be valid, unexpired, and must clearly 
+        display the user’s full name, date of birth, and photograph. This step is essential to confirm the identity 
+        of the user and to ensure that the account is being operated by the rightful individual.
+      </p>
+
+      <h3 class="text-xl font-semibold mt-4 mb-2">Step 2: Enhanced Verification</h3>
+      <p class="mb-4">
+        Enhanced verification is mandatory for users engaging in higher-value transactions or utilizing specific 
+        features on the TONIX platform. This step includes the following additional requirements:
+      </p>
+      <ul class="list-disc list-inside mb-4">
+        <li>
+          Submission of a recent utility bill, bank statement, or similar document that serves as proof of address. 
+          The document must be issued within the last three months and must display the user’s full name and 
+          residential address.
+        </li>
+        <li>
+          A photograph of the user holding their government-issued ID next to a handwritten note containing a 
+          unique code provided by TONIX during the verification process. This photograph must be clear and legible, 
+          with all details visible.
+        </li>
+      </ul>
+      <p class="mb-4">
+        Additionally, the information provided by the user during this step will be cross-referenced with external 
+        databases to confirm its accuracy. This enhanced verification is critical for ensuring the legitimacy of 
+        the user’s activities on the platform and for mitigating the risk of fraudulent transactions.
+      </p>
+
+      <h3 class="text-xl font-semibold mt-4 mb-2">Step 3: Source of Funds Verification</h3>
+      <p class="mb-4">
+        For users conducting transactions that exceed specific thresholds, TONIX requires verification of the source 
+        of funds. This step is necessary to ensure that the funds being used on the platform are derived from legitimate 
+        sources and are not associated with criminal activity. Users may be required to provide one or more of the 
+        following documents:
+      </p>
+      <ul class="list-disc list-inside mb-4">
+        <li>Bank statements showing the origin of the funds</li>
+        <li>Proof of business ownership (e.g., business registration documents, tax returns)</li>
+        <li>Employment records or pay stubs</li>
+        <li>Inheritance documents</li>
+        <li>Investment portfolios or asset ownership records</li>
+      </ul>
+      <p class="mb-4">
+        The documentation provided must clearly demonstrate the origin and legitimacy of the funds. In cases where the 
+        documentation is deemed insufficient or unclear, TONIX reserves the right to request additional information or 
+        clarification. Failure to provide satisfactory evidence of the source of funds may result in the suspension or 
+        termination of the user’s account.
+      </p>
+
+      <!-- Repeat similar structure for other sections of the policy -->
+
+      <h2 class="text-base font-semibold mt-6 mb-4">13. Contact Information</h2>
+      <p class="mb-4">
+        If you have any questions or concerns regarding this KYC Policy, or if you need assistance with the verification 
+        process, please contact us at:
+      </p>
+      <p class="mb-4">
+        Telegram: <a href="https://t.me/TonixMiningSupport" class="text-blue-500 hover:underline">@TonixMiningSupport</a> <br />
+        Email: <a href="mailto:support@tonix.pro" class="text-blue-500 hover:underline">support@tonix.pro</a>
+      </p>
+    </div>
+
+    
+  </div>
+<% end %>

@@ -1,0 +1,153 @@
+<%= turbo_frame_tag "modal" do %>
+   <div 
+    class="fixed inset-0 h-screen w-full bg-slate-800 text-xs text-white/50 p-6 space-y-4 text-start z-50 overflow-y-auto" 
+    data-controller="modal" 
+    data-modal-target="overlay"
+    data-action="click->modal#closeBg"
+  >
+    <!-- <--<< Back -->
+    <div class="flex justify-end w-full">
+      <button class="px-4 py-2 flex items-center space-x-2 bg-black/20 text-white/70 rounded hover:bg-gray-300 font-semibold" data-action="click->modal#close">
+        <i class="fa-solid fa-arrow-left-long"></i>
+        <span>Back</span>
+      </button>
+    </div>
+
+    <p class="text-base font-bold"><%= t("privacy.title") %></p>
+    <p><%= t("privacy.last_updated") %> 07/04/2024</p>
+    <p><%= t("privacy.body") %></p>
+
+    <!-- Introduction -->
+    <p class="text-white">1. <%= t("privacy.items.item1.title") %></p>
+    <div class="space-y-2">
+      <p><%= t("privacy.items.item1.body") %></p>
+      <ul class="space-y-1">
+        <li>
+          <span class="font-bold"><%= t("privacy.items.item1.ul.li_1.title") %></span>
+          <span><%= t("privacy.items.item1.ul.li_1.body") %></span>
+        </li>
+        <li>
+          <span class="font-bold"><%= t("privacy.items.item1.ul.li_2.title") %></span>
+          <span><%= t("privacy.items.item1.ul.li_2.body") %></span>
+        </li>
+        <li>
+          <span class="font-bold"><%= t("privacy.items.item1.ul.li_3.title") %></span>
+          <span><%= t("privacy.items.item1.ul.li_3.body") %></span>
+        </li>
+        <li>
+          <span class="font-bold"><%= t("privacy.items.item1.ul.li_4.title") %></span>
+          <span><%= t("privacy.items.item1.ul.li_4.body") %></span>
+        </li>
+        <li>
+          <span class="font-bold"><%= t("privacy.items.item1.ul.li_5.title") %></span>
+          <span><%= t("privacy.items.item1.ul.li_5.body") %></span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- How We Use Your Information -->
+    <p class="text-white">2. <%= t("privacy.items.item2.title") %></p>
+    <div class="space-y-2">
+      <p><%= t("privacy.items.item2.body") %></p>
+      <ul class="space-y-1">
+        <li>
+          <span><%= t("privacy.items.item2.ul.li_1") %></span>
+        </li>
+        <li>
+          <span><%= t("privacy.items.item2.ul.li_2") %></span>
+        </li>
+        <li>
+          <span><%= t("privacy.items.item2.ul.li_3") %></span>
+        </li>
+        <li>
+          <span><%= t("privacy.items.item2.ul.li_4") %></span>
+        </li>
+        <li>
+          <span><%= t("privacy.items.item2.ul.li_5") %></span>
+        </li>
+        <li>
+          <span><%= t("privacy.items.item2.ul.li_6") %></span>
+        </li>
+        <li>
+          <span><%= t("privacy.items.item2.ul.li_7") %></span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Sharing of Information -->
+    <p class="text-white">3. <%= t("privacy.items.item3.title") %></p>
+    <div class="space-y-2">
+      <p><%= t("privacy.items.item3.body") %></p>
+      <ul class="space-y-1">
+        <li>
+          <span class="font-bold"><%= t("privacy.items.item3.ul.li_1.title") %></span>
+          <span><%= t("privacy.items.item3.ul.li_1.body") %></span>
+        </li>
+        <li>
+          <span class="font-bold"><%= t("privacy.items.item3.ul.li_2.title") %></span>
+          <span><%= t("privacy.items.item3.ul.li_2.body") %></span>
+        </li>
+        <li>
+          <span class="font-bold"><%= t("privacy.items.item3.ul.li_3.title") %></span>
+          <span><%= t("privacy.items.item3.ul.li_3.body") %></span>
+        </li>
+        <li>
+          <span class="font-bold"><%= t("privacy.items.item3.ul.li_4.title") %></span>
+          <span><%= t("privacy.items.item3.ul.li_4.body") %></span>
+        </li>
+        <li>
+          <span class="font-bold"><%= t("privacy.items.item3.ul.li_5.title") %></span>
+          <span><%= t("privacy.items.item3.ul.li_5.body") %></span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Data Retention -->
+    <p class="text-white">4. <%= t("privacy.items.item4.title") %></p>
+    <p><%= t("privacy.items.item4.body") %></p>
+
+     <!-- Data Security -->
+    <p class="text-white">5. <%= t("privacy.items.item5.title") %></p>
+    <p><%= t("privacy.items.item5.body") %></p>
+
+    <!-- Your Rights and Choices -->
+    <p class="text-white">6. <%= t("privacy.items.item6.title") %></p>
+    <div class="space-y-2">
+      <p><%= t("privacy.items.item6.body") %></p>
+      <ul class="space-y-1">
+        <li>
+          <span><%= t("privacy.items.item6.ul.li_1") %></span>
+        </li>
+        <li>
+          <span><%= t("privacy.items.item6.ul.li_2") %></span>
+        </li>
+        <li>
+          <span><%= t("privacy.items.item6.ul.li_3") %></span>
+        </li>
+        <li>
+          <span><%= t("privacy.items.item6.ul.li_4") %></span>
+        </li>
+        <li>
+          <span><%= t("privacy.items.item6.ul.li_5") %></span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- International Data Transfers -->
+    <p class="text-white">7. <%= t("privacy.items.item7.title") %></p>
+    <p><%= t("privacy.items.item7.body") %></p>
+
+    <!-- Cookies and Tracking Technologies -->
+    <p class="text-white">8. <%= t("privacy.items.item8.title") %></p>
+    <p><%= t("privacy.items.item8.body") %></p>
+
+    <!-- Changes to This Privacy Policy -->
+    <p class="text-white">9. <%= t("privacy.items.item9.title") %></p>
+    <p><%= t("privacy.items.item9.body") %></p>
+
+    <!-- Contact Information -->
+    <p class="text-white">10. <%= t("privacy.items.item10.title") %></p>
+    <p><%= t("privacy.items.item10.body") %></p>
+    
+  </div>
+<% end %>

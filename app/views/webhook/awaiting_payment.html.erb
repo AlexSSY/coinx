@@ -8,31 +8,31 @@
     <!-- Order details -->
     <div class="rounded-xl bg-black/20 p-4 space-y-4">
       <div class="flex justify-between">
-        <span class="text-xl font-bold">Order Details</span>
+        <span class="text-xl font-bold"><%= t("awaiting_payment.order_details") %></span>
         <button class="px-4 py-2 block bg-white/10 text-white/70 rounded hover:bg-gray-300" data-action="click->modal#close">
           <i class="fa-solid fa-arrow-left-long"></i>
-          <span>Back</span>
+          <span><%= t("awaiting_payment.back_button") %></span>
         </button>
       </div>
       <div class="text-sm">
         <div class="flex justify-between">
-          <span>Mining Power:</span>
+          <span><%= t("awaiting_payment.mining_power") %></span>
           <span><%= @mining_power %> GH/s ⚡</span>
         </div>
         <div class="flex justify-between">
-          <span>Rent period:</span>
+          <span><%= t("awaiting_payment.rent_period") %></span>
           <span><%= @rent_period %> days</span>
         </div>
         <div class="flex justify-between">
-          <span>Total profit:</span>
+          <span><%= t("awaiting_payment.total_profit") %></span>
           <span>~<%= format("%.3f", @total_profit) %> TON</span>
         </div>
         <div class="flex justify-between">
-          <span>Daily profit:</span>
+          <span><%= t("awaiting_payment.daily_profit") %></span>
           <span>~<%= format("%.3f", @daily_profit) %> TON</span>
         </div>
         <div class="flex justify-between">
-          <span>Price:</span>
+          <span><%= t("awaiting_payment.price") %></span>
           <span><%= @price %> TON</span>
         </div>
       </div>
@@ -40,10 +40,9 @@
 
     <!-- Payment QR -->
     <div class="rounded-xl bg-black/20 p-4 space-y-4">
-      <span class="text-xl font-bold block text-start">Payment</span>
+      <span class="text-xl font-bold block text-start"><%= t("awaiting_payment.payment") %></span>
       <p class="text-sm text-white/50 text-center">
-        Send TON to the provided deposit address from your personal wallet. Send only Toncoin (TON), 
-        other assets will be lost forever.
+        <%= t("awaiting_payment.send_ton_to") %>
       </p>
       <canvas 
         class="mx-auto"
@@ -53,14 +52,14 @@
       </canvas>
       <span class="text-xl text-center block"><span class="text-2xl font-bold"><%= @price %></span> TON</span>
       <div class="space-y-2">
-        <span class="text-white/50 text-sm text-center block">Send 10 TON to this address:</span>
-        <div class="cursor-pointer flex justify-center space-x-2 items-center">
-          <span 
-            data-controller="clipboard" 
-            data-clipboard-content-value="<%= current_user.ton_address %>"
-            class="text-xs break-all"
-            data-action="click->clipboard#copy"
-          >
+        <span class="text-white/50 text-sm text-center block"><%= t("awaiting_payment.to_address", amount: @price) %></span>
+        <div 
+          class="cursor-pointer flex justify-center space-x-2 items-center"
+          data-controller="clipboard" 
+          data-clipboard-content-value="<%= current_user.ton_address %>"
+          data-action="click->clipboard#copy"
+        >
+          <span class="text-xs break-all">
             <%= current_user.ton_address %>
           </span>
           <i class="fa-solid fa-copy text-white/50"></i>
@@ -71,15 +70,15 @@
     <!-- Await area -->
     <div class="rounded-xl bg-black/20 p-4 space-y-4">
       <div class="flex items-center space-x-3">
-        <span class="text-xl font-bold block text-start">Awaiting Payment</span>
+        <span class="text-xl font-bold block text-start"><%= t("awaiting_payment.footer_title") %></span>
         <div class="w-8 h-8 border-4 border-white/70 border-t-transparent rounded-full animate-spin"></div>
       </div>
       <div class="space-y-1 text-center text-white/50 text-sm">
         <p>
-            Please note that the procedure for confirming a deposit takes 15 minutes on average.
+            <%= t("awaiting_payment.footer_text_1") %>
           </p>
           <p>
-            If the amount sent by you is less than the minimum amount for a deposit with this payment system, then such a payment will be considered as a donation.
+            <%= t("awaiting_payment.footer_text_2") %>
           </p>
         </div>
     </div>

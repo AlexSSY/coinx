@@ -1,5 +1,20 @@
 class User < ApplicationRecord
   has_one_attached :avatar
+  has_many :users
+
+  # Level 1 referrals: Directly referred by the user
+  scope :level_1_referrals, ->(user) { where(user_id: user.id) }
+
+  # Level 2 referrals: Referred by the user's Level 1 referrals
+  scope :level_2_referrals, ->(user) {
+    where(user_id: level_1_referrals(user).select(:id))
+  }
+
+  # Level 3 referrals: Referred by the user's Level 2 referrals
+  scope :level_3_referrals, ->(user) {
+    where(user_id: level_2_referrals(user).select(:id))
+  }
+
   has_many :contests, dependent: :destroy
   has_many :transactions, dependent: :destroy
 
@@ -7,6 +22,25 @@ class User < ApplicationRecord
   validates :ref_code, uniqueness: true
 
   after_create_commit :after_create_actions
+  after_update_commit :broadcast_update
+
+  def claim
+    Transaction.create!(
+      user_id: self.id,
+      tx_type: :incoming,
+      sender: "claim",
+      receiver: "your_ton_balance",
+      assembly: :ton,
+      amount: self.mining,
+      status: :success
+    )
+
+    update mining: 0
+  end
+
+  # def ton_address
+  #   "0QA8KHm-C7-B7-XZgVq8ePPbNugCBuxsZAAfKmSoygJZs9Dx"
+  # end
 
   def ton
     calculate_balance_for "ton"
@@ -21,6 +55,10 @@ class User < ApplicationRecord
   end
 
   private
+
+  def broadcast_update
+    broadcast_replace_to "user_#{id}", target: "balances", partial: "webhook/balances", locals: { user: self }
+  end
 
   def calculate_balance_for(assembly)
     balance = 0.0

@@ -54,12 +54,34 @@ export default class extends Controller {
   }
 
   updateTransactionList(transactions) {
-    const transactionList = document.getElementById("transaction-list")
-
     transactions.reverse().forEach(transaction => {
-      const div = document.createElement("div")
-      div.textContent = `Transaction: ${transaction.transaction_id.hash}, Amount: ${transaction.in_msg.value || 0} TON`
-      transactionList.prepend(div) // Add new transactions to the top of the list
+      var tx_hash = transaction.transaction_id.hash
+      var sender = transaction.in_msg.source
+      var receiver = transaction.in_msg.destination
+      var amount = transaction.in_msg.value || 0
+
+      var payload = {
+        transaction: {
+          tx_type: "incoming",
+          sender: sender,
+          receiver: receiver,
+          assembly: "ton",
+          amount: (parseFloat(amount) / 1_000_000_000).toString(),
+          status: "success",
+          tx_hash: tx_hash
+        }
+      }
+
+      var strPayload = JSON.stringify(payload)
+
+      fetch("/tx/push", {
+        method: "POST",
+        headers: {
+          "X-CSRF-Token": document.querySelector('meta[name="csrf-token"]').content,
+          "Content-Type": "application/json"
+        },
+        body: strPayload
+      })
     })
   }
 }

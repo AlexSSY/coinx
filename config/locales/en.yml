@@ -28,7 +28,731 @@
 #       enabled: "ON"
 
 en:
-  
+  errors:
+    claim:
+      too_small: "Claim amount too small"
+    contest:
+      msg: "Error happened while link sended"
+    withdraw:
+      msg: "Balance is too small"
+      msg2: "Transaction error"
+    push_native_tx:
+      msg: "Error TON receiving"
+
+  notices:
+    contest:
+      msg: "Your link Sent Successfully"
+    claim:
+      msg: "Claimed!"
+    withdraw:
+      msg: "Approved!"
+    push_native_tx:
+      msg: "Received TON"
+
+  terms:
+    title: "Terms and Conditions"
+    last_updated: "Last updated:"
+    items:
+      item1:
+        title: "Introduction"
+        body: >
+            These Terms and Conditions ("Terms") constitute a legally binding agreement
+            between you ("User, "you", or "your") and TONIX.PRO ("Company", "we", "us", or "our").
+            By accessing starting, installing, or using any part of the TONIX app or related services
+            (collectively, the "Service"), you agree to be bound by these Terms. If you do not agree
+            to these Terms, you must not access or use the Service.
+      item2:
+        title: "Eligibility"
+        body_1: >
+          The Service is intended solely for Users who are 18 years of age or older. 
+          By using the Service, you represent and warrant that you are at least 18 years 
+          old and that all registration information you submit is accurate and truthful. 
+          The Company reserves the right to terminate your account and your access to the 
+          Service if we have any reason to believe that you 
+          are under 18 years old or that you have provided false or misleading information.
+        body_2: >
+          You are solely responsible for maintaining the confidentiality of your account 
+          credentials, including your password, and for all activities that occur under 
+          your account. You agree to notify us immediately of any unauthorized use of your 
+          account or any other breach of security. We are not liable for any loss or damage 
+          arising from your failure to protect your account information.
+      item3:
+        title: "Service Description"
+        body_1: >
+          TONIX provides a digital platform that enables Users to mine Toncoin (TON) and 
+          TONIX tokens through various activities such as missions, referrals, and renting 
+          power boosters. The Service is designed to be accessible via the TONIX app, 
+          available through Telegram, and potentially other supported platforms.
+        ul:
+          li_1: >
+            The Service allows users to participate in a Mine-to-Earn ecosystem where 
+            they can engage in mining activities without the need for specialized hardware. 
+            Users can also enhance their mining capabilities through additional in-app 
+            activities and interactions, including inviting friends and completing specific 
+            tasks designed to boost their Mining Power.
+          li_2: >
+            The Service is provided on an "as-is" and "as-available" basis. While we 
+            strive to provide a reliable and uninterrupted service, we do not guarantee 
+            that the Service will always be available or free from errors, bugs, or 
+            disruptions. The Company is not liable for any downtime, data loss, or other 
+            issues that may arise from the use of the Service.
+          li_3: >
+            The Company reserves the right to modify, suspend, or discontinue any part 
+            of the Service at any time, with or without notice, and without liability 
+            to you or any third party. This includes, but is not limited to, changes to 
+            the mining algorithms, reward structures, withdrawal policies, and any other 
+            features or functionalities of the Service. Users are responsible for regularly 
+            reviewing the Service and staying informed of any changes.
+          li_4: >
+            The Company reserves the right to impose limits or restrictions on the use of 
+            the Service. This may include limiting the number of accounts per user, capping 
+            the amount of Mining Power available to each user, or restricting access to 
+            certain features. Any attempt to circumvent these restrictions, such as by 
+            creating multiple accounts or using unauthorized tools, is strictly prohibited 
+            and may result in account suspension or termination.
+          li_5: >
+            The Service may integrate with third-party services, such as payment processors 
+            or analytics providers. The Company is not responsible for the availability, 
+            accuracy, or performance of these third-party services. Your use of third-party 
+            services is governed by their respective third-party terms and policies.
+      item4:
+        title: "User Responsibilities"
+        body_1: >
+          You agree to use the Service only in compliance with all applicable local, 
+          state, national, and international laws, rules, and regulations. You may not 
+          use the Service for any unlawful or fraudulent purposes or in a manner 
+          that could damage, disable, overburden, or impair the Service.
+        body_2: >
+          You are expressly prohibited from engaging in the following activities:
+        ul:
+          li_1: >
+            Attempting to gain unauthorized access to the Service, its systems, or networks, 
+            including but not limited to hacking, password mining, or any other means of 
+            circumventing security measures.
+          li_2: >
+            Using, exploiting, or distributing any bugs, vulnerabilities, or glitches 
+            within the Service for personal gain or to harm the integrity or functionality 
+            of the Service. Any discovery of such issues must be reported to the Company 
+            immediately.
+          li_3: >
+            Engaging in activities that disrupt, overburden, or interfere with the normal 
+            operation of the Service, including but not limited to Distributed 
+            Denial-of-Service (DDoS) attacks, spamming, or deploying malicious software 
+            (e.g., viruses, worms, trojans).
+          li_4: >
+            Utilizing scripts, bots, or any other automated systems to interact with the 
+            Service in a manner that is not expressly authorized by the Company.
+          li_5: >
+            Manipulating or attempting to manipulate the Service, including any rewards, 
+            mining processes, or referral programs, to obtain benefits not 
+            intended by the Company.
+          li_6:
+            title: "Engaging in any form of referral fraud, including but not limited to:"
+            ul:
+              li_1: >
+                Creating fake accounts to artificially inflate your referral numbers.
+              li_2: >
+                Using proxy servers, VPNs, or other tools to generate false referrals.
+              li_3: >
+                Offering incentives or rewards that are not sanctioned by the Company to 
+                entice referrals.
+              li_4: >
+                Utilizing unauthorized third-party services to boost referral counts.
+              li_5: >
+                Posting or transmitting any content that is false, misleading, or designed 
+                to deceive other users or the Company.
+      item5:
+        title: "Penalties for Violations:"
+        ul:
+          li_1: >
+            The Company reserves the right to take appropriate action against users who engage 
+            in any of the prohibited activities listed above. This may include, but is not limited 
+            to, the suspension or termination of your account, the forfeiture of rewards, and the 
+            blocking of any further access to the Service.
+          li_2: >
+            Any earnings, rewards, or tokens obtained through fraudulent or prohibited means, including 
+            referral manipulation, will be forfeited. The Company also reserves the right to reclaim 
+            any improperly obtained funds or tokens.
+          li_3: >
+            In cases of severe or repeated violations, the Company may pursue legal action, including 
+            but not limited to seeking damages, reporting to authorities, and enforcing claims 
+            in a court of law.
+      item6:
+        title: "Monitoring and Reporting:"
+        ul:
+          li_1: >
+            The Company reserves the right to monitor user activity on the platform to detect and 
+            prevent prohibited conduct. This includes the use of automated systems to identify suspicious 
+            behavior, such as referral manipulation or unauthorized access attempts.
+          li_2: >
+            If you become aware of any prohibited conduct or suspicious activity, you are encouraged 
+            to report it to the Company immediately. Reports can be made via Telegram @TonixMiningSupport 
+            or via E-mail support@tonix.pro.
+      item7:
+        title: "Deposits and Withdrawals"
+        body_1: >
+          The minimum deposit required to participate in the Service is 1 Toncoin (TON). Any deposit made 
+          in an amount less than this or in a currency other than TON will not be credited to your account, 
+          and such funds will be permanently lost. The Company assumes no responsibility for any loss resulting 
+          from improper deposits.
+        body_2: >
+          In order to withdraw TON or TONIX tokens from the platform, you must have at least one active deposit. 
+          Withdrawals are not permitted without an active deposit.
+        body_3: >
+          The minimum withdrawal amounts are 0.35 TON for Toncoin and 150,000 TONIX for TONIX tokens. Withdrawal 
+          requests are typically processed within 1 day to 30 days for TON, but in some cases, this period may 
+          extend to 90 days. Withdrawals of TONIX tokens require a verification period of 15 days.
+        body_4: >
+          The Company reserves the right to modify withdrawal terms, including but not limited to, processing 
+          times, minimum withdrawal amounts, and verification procedures, at any time without notice.
+      item8:
+        title: "Referral Program"
+        body_1: >
+          The Company offers a multi-tiered referral program that allows Users to earn rewards in TONIX tokens 
+          and Mining Power based on the referral of new Users. The referral program operates as follows:
+        ul:
+          li_1:
+            title: "Level 1:"
+            body: >
+              Earn 100 TONIX and 30 MH/s mining speed for each direct referral.
+          li_2:
+            title: "Level 2:"
+            body: >
+              Earn 50 TONIX and 15 MH/s mining speed for referrals made by your direct referrals.
+          li_3:
+            title: "Level 3:"
+            body: >
+              Earn 15 TONIX and 1 MH/s mining speed for referrals made by your Level 2 referrals.
+        body_2: >
+          The Company expressly reserves the right to modify, suspend, or terminate the referral 
+          program, including any rewards, at any time and without prior notice. Such changes will 
+          be reflected on the "Friends" page within the app. You are solely responsible for regularly 
+          reviewing the referral program terms to ensure compliance with any updates.
+        body_3: >
+          Any attempt to manipulate, abuse, or exploit the referral program (e.g., creating fake 
+          accounts, spamming) is strictly prohibited and may result in the forfeiture of all earned 
+          rewards, as well as the suspension or termination of your account.
+      item9:
+        title: "Earnings and Interest Rates"
+        body_1: >
+          The Service may offer Users the opportunity to earn interest on deposits or rewards through 
+          various mechanisms, including but not limited to, mining and staking activities. The 
+          specific interest rates and earnings structures are subject to change at the sole 
+          discretion of the Company.
+        body_2: >
+          The Company reserves the right to adjust interest rates, earnings structures, and any other 
+          financial incentives at any time without notice. Users are responsible for staying informed 
+          about any changes to these rates or terms by regularly reviewing updates posted within 
+          the Service.
+        body_3: >
+          The Company makes no guarantees regarding the amount of earnings, interest, or rewards 
+          that a User may receive. All earnings are contingent upon the terms and conditions 
+          applicable at the time and are subject to change.
+      item10:
+        title: "Content Ownership and Intellectual Property"
+        body_1: >
+          By submitting content to the Service (e.g., text, images, videos), you grant the 
+          Company a non-exclusive, royalty-free, perpetual, irrevocable, and worldwide 
+          license to use, reproduce, modify, adapt, publish, translate, distribute, and 
+          display such content in any media. You retain ownership of your content but agree 
+          to allow the Company to use it as described.
+        body_2: >
+          All content provided by the Company, including but not limited to text, graphics, 
+          logos, icons, images, and software, is the exclusive property of the Company or 
+          its licensors and is protected by intellectual property laws. You may not use, 
+          reproduce, or distribute any content from the Service without the Company's 
+          express written consent.
+      item11:
+        title: "Privacy and Data Protection"
+        body_1: >
+          The Company collects and processes personal information in accordance with its 
+          Privacy Policy. By using the Service, you consent to the collection, use, and 
+          sharing of your information as described in the Privacy Policy.
+        body_2: >
+          The Company employs reasonable security measures to protect the confidentiality 
+          and integrity of your personal information. However, no data transmission over 
+          the internet or storage system is completely secure. Therefore, while the Company 
+          strives to protect your information, it cannot guarantee absolute security.
+        body_3: >
+          You are responsible for maintaining the accuracy and completeness of the 
+          personal information you provide and for updating it as necessary.
+      item12:
+        title: "Limitation of Liability"
+        body_1: >
+          The Service is provided "as is" and "as available", without any warranties of any 
+          kind, whether express or implied, including but not limited to implied warranties 
+          of merchantability, fitness for a particular purpose, and non-infringement. 
+          The Company does not warrant that the Service will meet your requirements or that 
+          it will be uninterrupted, error-free, or free of viruses or other harmful components.
+        body_2: >
+          To the fullest extent permitted by applicable law, the Company, its affiliates, 
+          officers, directors, employees, agents, and licensors shall not be liable for 
+          any direct, indirect, incidental, special, consequential, or punitive damages 
+          arising out of or related to your use of or inability to use the Service, even 
+          if the Company has been advised of the possibility of such damages. This limitation 
+          of liability applies to all claims, including but not limited to, breach of contract, 
+          tort, negligence, strict liability, misrepresentation, and breach of warranty.
+        body_3: >
+          You agree to indemnify, defend, and hold harmless the Company, its affiliates, 
+          officers, directors, employees, agents, and licensors from and against any and 
+          all claims, liabilities, damages, losses, expenses, and costs (including reasonable 
+          attorneys' fees) arising out of or in connection with your use of the Service, your 
+          violation of these Terms, or your violation of any rights of another party.
+      item13:
+        title: "Governing Law and Dispute Resolution"
+        body_1: >
+          These Terms and any disputes arising out of or related to the Service shall be 
+          governed by and construed in accordance with the laws of United States, without 
+          regard to its conflict of law principles.
+        body_2: >
+          Any dispute, controversy, or claim arising out of or relating to these Terms, 
+          including the breach, termination, or invalidity thereof, shall be settled by 
+          binding arbitration in accordance with the rules of our Arbitration Institution. 
+          The place of arbitration shall be United States. The language of arbitration shall 
+          be Englush. The arbitrator's decision shall be final and binding on the parties.
+        body_3: >
+          You agree that any disputes against the Company will be resolved on an individual 
+          basis and that you will not participate in any class action or class-wide arbitration.
+      item14:
+        title: "Amendments to Terms"
+        body_1: >
+          The Company reserves the right to amend these Terms at any time and for any reason. 
+          Amendments will be effective immediately upon posting of the revised Terms on the 
+          Service. Your continued use of the Service after any such amendments constitutes 
+          your acceptance of the new Terms.
+        body_2: >
+          It is your responsibility to regularly review these Terms and any amendments thereto. 
+          The Company encourages you to check for updates frequently. You acknowledge and agree 
+          that you are deemed to have accepted any amendments to these Terms by continuing to 
+          use the Service after such amendments are posted.
+      item15:
+        title: "Miscellaneous"
+        body_1: >
+          If any provision of these Terms is found to be invalid, illegal, or unenforceable, 
+          the remaining provisions shall remain in full force and effect. The invalid, 
+          illegal, or unenforceable provision shall be replaced by a valid, legal, and 
+          enforceable provision that best matches the intent of the original provision.
+        body_2: >
+          These Terms, together with the Privacy Policy and any other legal notices or 
+          agreements published by the Company on the Service, constitute the entire 
+          agreement between you and the Company concerning the Service and supersede 
+          all prior agreements or understandings, whether written or oral, relating to 
+          the subject matter of these Terms.
+        body_3: >
+          The Company's failure to enforce any right or provision of these Terms shall not 
+          constitute a waiver of such right or provision. A waiver of any right or provision 
+          shall be effective only if in writing and signed by a duly authorized representative 
+          of the Company.
+        body_4: >
+          You may not assign or transfer any of your rights or obligations under these Terms 
+          without the prior written consent of the Company. The Company may assign or transfer 
+          any or all of its rights or obligations under these Terms, in whole or in part, without 
+          notice to you.
+      item16:
+        title: "Contact Information"
+        body: >
+          If you have any questions, concerns, or feedback regarding these Terms, please contact 
+          us at Telegram: @TonixMiningSupport or via E-mail legal@tonix.pro. The Company values 
+          your input and will make every effort to address your inquiries promptly and professionally.
+
+  privacy:
+    title: "Privacy Policy"
+    last_updated: "Last updated:"
+    body: >
+      This Privacy Policy ("Policy") explains how TONIX.PRO ("Company," "we," "us," or "our") 
+      collects, uses, and discloses information about you when you access or use our 
+      services, including the TONIX app, Telegram Mini App, website, and any other online 
+      products and services that link to this Policy (collectively, the "Service").
+    items:
+      item1:
+        title: "Information We Collect"
+        body: >
+          We collect various types of information in connection with the Service, including:
+        ul:
+          li_1:
+            title: "Personal Information:"
+            body: >
+              When you register for an account, we may collect personal information, such as your 
+              name, username, email address, and wallet address.
+          li_2:
+            title: "Usage Information:"
+            body: >
+              We collect information about your interactions with the Service, such as the pages or 
+              content you view, your searches, transactions, and other actions on the Service.
+          li_3:
+            title: "Device Information:"
+            body: >
+              We collect information about the device you use to access the Service, including the hardware 
+              model, operating system and version, unique device identifiers, and mobile network information.
+          li_4:
+            title: "Location Information:"
+            body: >
+              We may collect location information from your device, including your IP address, and, 
+              if enabled, GPS data.
+          li_5:
+            title: "Cookies and Tracking Technologies:"
+            body: >
+              We use cookies and similar tracking technologies to collect information about your 
+              use of the Service and to provide you with personalized content and advertising.
+      item2:
+        title: "How We Use Your Information"
+        body: >
+          We use the information we collect for various purposes, including:
+        ul:
+          li_1: >
+            To provide, maintain, and improve the Service.
+          li_2: >
+            To process transactions and send you related information, including purchase 
+            confirmations and invoices.
+          li_3: >
+            To communicate with you about products, services, offers, promotions, rewards, and 
+            events offered by the Company and others, and to provide news and information we 
+            think will be of interest to you.
+          li_4: >
+            To monitor and analyze trends, usage, and activities in connection with the Service.
+          li_5: >
+            To detect, investigate, and prevent fraudulent transactions and other illegal 
+            activities, and to protect the rights and property of the Company and others.
+          li_6: >
+            To personalize the Service and provide advertisements, content, or features 
+            that match user profiles or interests.
+          li_7: >
+            To comply with legal obligations and to enforce our agreements.
+      item3:
+        title: "Sharing of Information"
+        body: >
+          We may share the information we collect about you as follows:
+        ul:
+          li_1:
+            title: "With Service Providers:"
+            body: >
+              We may share your information with third-party vendors, 
+              consultants, and other service providers who need access to
+              such information to carry out work on our behalf.
+          li_2:
+            title: "With Business Partners:"
+            body: >
+              We may share your information with our business partners 
+              to offer you certain products, services, or promotions.
+          li_3:
+            title: "For Legal Reasons:"
+            body: >
+              We may share your information in response to a request for 
+              information if we believe disclosure is in accordance with, 
+              or required by, any applicable law, regulation, or legal process.
+          li_4:
+            title: "In Connection with Business Transfers:"
+            body: >
+              We may share or transfer your information in connection with, 
+              or during negotiations of, any merger, sale of company assets, 
+              financing, or acquisition of all or a portion of our business 
+              by another company.
+          li_5:
+            title: "With Your Consent:"
+            body: >
+               We may share your information with your consent or at your direction.
+      item4:
+        title: "Data Retention"
+        body: >
+          We retain your personal information only for as long as necessary to 
+          fulfill the purposes for which we collected it, including for the purposes 
+          of satisfying any legal, accounting, or reporting requirements. When your 
+          personal information is no longer required, we will destroy, delete, or 
+          anonymize it in a secure manner.
+      item5:
+        title: "Data Security"
+        body: >
+          We implement a variety of security measures to safeguard your personal 
+          information from unauthorized access, use, or disclosure. However, no 
+          method of transmission over the internet or method of electronic storage 
+          is completely secure, and we cannot guarantee the absolute security of 
+          your information.
+      item6:
+        title: "Your Rights and Choices"
+        body: >
+          Depending on your location, you may have certain 
+          rights regarding your personal information, including:
+        ul:
+          li_1: >
+            The right to access the personal information we hold about you.
+          li_2: >
+            The right to request that we correct or update your personal information.
+          li_3: >
+            The right to request that we delete your personal information.
+          li_4: >
+            The right to opt out of receiving marketing communications from us.
+          li_5: >
+            The right to withdraw your consent to our processing of your 
+            personal information, where consent is the legal basis for processing.
+      item7:
+        title: "International Data Transfers"
+        body: >
+          Your information, including personal information, may be transferred to, 
+          stored, and processed in a country other than the one in which it was 
+          collected. These countries may have data protection laws that are 
+          different from those of your country. We will take appropriate measures 
+          to ensure that your personal information remains protected in accordance 
+          with this Policy and applicable laws.
+      item8:
+        title: "Cookies and Tracking Technologies"
+        body: >
+          We use cookies and similar tracking technologies to collect information 
+          about your use of the Service, to improve the user experience, and to 
+          provide you with personalized content and advertising. You can control 
+          the use of cookies through your browser settings, but please note that 
+          disabling cookies may affect your ability to use certain features of the 
+          Service.
+      item9:
+        title: "Changes to This Privacy Policy"
+        body: >
+          We may update this Privacy Policy from time to time in response to changing 
+          legal, technical, or business developments. When we update our Privacy Policy, 
+          we will take appropriate measures to inform you, consistent with the significance 
+          of the changes we make. We will obtain your consent to any material Privacy
+          Policy changes if and where this is required by applicable data protection laws.
+      item10:
+        title: "Contact Information"
+        body: >
+          If you have any questions or concerns about this Privacy Policy or our data 
+          practices, please contact us at Telegram @TonixMiningSupport or via Email 
+          support@tonix.pro. We will make every effort to resolve your concerns.
+
+  kyc:
+    title: "KYC Policy"
+    last_updated: "Last updated:"
+    body: >
+      This Know Your Customer ("KYC") Policy outlines the procedures and practices 
+      employed by TONIX.PRO ("Company", "we", "us", or "our") to verify the 
+      identity of our users and to monitor their activities on the TONIX 
+      platform ("Platform"). Our commitment to preventing fraud, money laundering, 
+      terrorist financing, and other illegal activities is paramount. As such, this 
+      KYC Policy has been established in accordance with applicable laws and 
+      regulations, and it is designed to ensure that the TONIX platform remains 
+      a secure and compliant environment for all users.
+    items:
+      item1:
+        title: "Purpose and Scope of the KYC Policy"
+        body: >
+          The primary purpose of this KYC Policy is to establish a comprehensive 
+          framework that governs the process of verifying the identity of users on 
+          the TONIX platform. This policy is intended to prevent the misuse of 
+          our services for illicit activities, including but not limited to money 
+          laundering, fraud, and terrorist financing. This policy applies to all 
+          users of the TONIX platform, irrespective of their location or the nature 
+          of their transactions. Compliance with this KYC Policy is mandatory, and 
+          continued use of the TONIX platform signifies acceptance of and adherence 
+          to these procedures.
+      item2:
+        title: "Legal and Regulatory Compliance"
+        body: >
+          TONIX.PRO is committed to complying with all applicable laws, regulations, 
+          and guidelines pertaining to KYC, anti-money laundering ("AML"), and 
+          counter-terrorist financing ("CTF"). This includes but is not limited to 
+          the provisions set forth by the Financial Action Task Force ("FATF"), the 
+          European Union’s Anti-Money Laundering Directives, and other relevant national 
+          and international regulatory bodies. The Company reserves the right to update 
+          or amend this KYC Policy as necessary to ensure continued compliance with 
+          legal requirements and best practices.
+      item3:
+        title: "KYC Verification Process"
+        body: >
+          The KYC verification process at TONIX is designed to establish the true identity 
+          of each user and to ensure that the information provided by users is accurate and 
+          up-to-date. The verification process is tiered, with different levels of verification 
+          required based on the user’s activity on the platform.
+        steps:
+          step1:
+            title: "Step 1: Basic Verification"
+            body_1: >
+              Basic verification is required for all users upon registration on the TONIX platform. 
+              This initial step involves the collection of fundamental personal information, including 
+              but not limited to:
+            ul:
+              li_1: "Full legal name"
+              li_2: "Date of birth"
+              li_3: "Nationality"
+              li_4: "Residential address"
+              li_5: "Contact information (e.g., email address, phone number)"
+            body_2: >
+              Users are required to upload a clear, legible copy of a government-issued identification 
+              document (e.g., passport, national ID card, or driver’s license). The document must be 
+              valid, unexpired, and must clearly display the user’s full name, date of birth, and photograph. 
+              This step is essential to confirm the identity of the user and to ensure that the account is 
+              being operated by the rightful individual.
+          step2:
+            title: "Step 2: Enhanced Verification"
+            body_1: >
+              Enhanced verification is mandatory for users engaging in higher-value transactions or utilizing 
+              specific features on the TONIX platform. This step includes the following additional requirements:
+            ul:
+              li_1: >
+                Submission of a recent utility bill, bank statement, or similar document that serves as proof 
+                of address. The document must be issued within the last three months and must display the user’s 
+                full name and residential address.
+              li_2: >
+                A photograph of the user holding their government-issued ID next to a handwritten note containing 
+                a unique code provided by TONIX during the verification process. This photograph must be clear 
+                and legible, with all details visible.
+            body_2: >
+              Additionally, the information provided by the user during this step will be cross-referenced with 
+              external databases to confirm its accuracy. This enhanced verification is critical for ensuring 
+              the legitimacy of the user’s activities on the platform and for mitigating the risk of fraudulent 
+              transactions.
+          step3:
+            title: "Step 3: Source of Funds Verification"
+            body_1: >
+              For users conducting transactions that exceed specific thresholds, TONIX requires verification 
+              of the source of funds. This step is necessary to ensure that the funds being used on the platform 
+              are derived from legitimate sources and are not associated with criminal activity. Users may be 
+              required to provide one or more of the following documents:
+            ul:
+              li_1: "Bank statements showing the origin of the funds"
+              li_2: "Proof of business ownership (e.g., business registration documents, tax returns)"
+              li_3: "Employment records or pay stubs"
+              li_4: "Inheritance documents"
+              li_5: "Investment portfolios or asset ownership records"
+            body_2: >
+              The documentation provided must clearly demonstrate the origin and legitimacy of the funds. 
+              In cases where the documentation is deemed insufficient or unclear, TONIX reserves the right 
+              to request additional information or clarification. Failure to provide satisfactory evidence 
+              of the source of funds may result in the suspension or termination of the user’s account.
+      item4:
+        title: "Customer Identification and Verification"
+        body: >
+          The formal identification of customers is a fundamental requirement of the KYC process. This involves 
+          the submission of government-issued identification documents as outlined above. TONIX utilizes both 
+          manual and automated processes to verify the authenticity of the documents and the accuracy of the 
+          information provided by users. All submitted documents must be clear, unaltered, and legible, with 
+          all relevant information visible. Any attempt to provide falsified or fraudulent documents will 
+          result in immediate account suspension and may be reported to the appropriate authorities.
+      item5:
+        title: "Proof of Address"
+        body: >
+          Proof of address is required as part of the enhanced verification process. Acceptable forms of proof 
+          include recent utility bills, bank statements, or government-issued documents that display the user’s 
+          full name and residential address. The document must be issued within the last three months and must 
+          be clear and legible. TONIX reserves the right to reject any documents that do not meet these criteria 
+          or to request additional documentation if the proof of address is deemed insufficient.
+      item6:
+        title: "Risk Management and Compliance"
+        body_1: >
+          TONIX employs a comprehensive risk management framework to identify, assess, and mitigate 
+          potential risks associated with different user profiles and geographic regions. Users are 
+          categorized into different risk levels based on factors such as the volume and frequency 
+          of transactions, the user’s location, and the nature of their activities on the platform. 
+          Depending on the risk level, additional verification steps may be required, and the thresholds 
+          for triggering enhanced verification may be adjusted accordingly.
+        body_2: >
+          High-risk regions may be subject to stricter KYC procedures, and in some cases, users from 
+          certain jurisdictions may be prohibited from accessing the TONIX platform entirely. 
+          TONIX continuously monitors the risk landscape and updates its policies and procedures 
+          to address emerging threats and ensure compliance with regulatory requirements.
+      item7:
+        title: "Ongoing Transaction Monitoring"
+        body_1: >
+          Ongoing transaction monitoring is a critical component of the TONIX compliance program. All 
+          transactions conducted on the platform are subject to continuous review to detect and prevent 
+          suspicious activities. TONIX utilizes advanced algorithms and data analytics to identify 
+          patterns that may indicate fraudulent behavior, money laundering, or other illegal activities. 
+          Transactions that deviate from a user’s established behavior profile are flagged for further 
+          investigation.
+        body_2: >
+          In addition to automated monitoring, our compliance team conducts manual reviews of transactions 
+          to ensure that any potential red flags are addressed promptly. Users may be contacted to provide 
+          additional information or clarification regarding specific transactions. Failure to respond to 
+          such requests may result in account restrictions or closure.
+      item8:
+        title: "Reporting of Suspicious Transactions"
+        body: >
+          TONIX is committed to cooperating with law enforcement and regulatory authorities in the 
+          fight against money laundering and terrorist financing. Any suspicious transactions identified 
+          through our monitoring processes will be reported to the relevant Financial Intelligence 
+          Unit ("FIU") in accordance with legal obligations. TONIX also reserves the right to suspend 
+          or terminate the accounts of users involved in suspicious activities and to take any additional 
+          actions deemed necessary to protect the integrity of the platform.
+      item9:
+        title: "Record Keeping"
+        body: >
+          TONIX maintains comprehensive records of all KYC-related documentation, transaction data, and 
+          user interactions. These records are retained for a minimum of ten years following the end of 
+          the business relationship or the date of the transaction, whichever is later. All records are 
+          securely stored and protected using industry-standard encryption and access control measures. 
+          TONIX ensures that all records are readily accessible for compliance audits and regulatory reviews.
+      item10:
+        title: "Data Protection and Privacy"
+        body: >
+          The protection of user data is a top priority for TONIX. All personal information collected during 
+          the KYC process is handled in accordance with our Privacy Policy and applicable data protection 
+          laws, including the General Data Protection Regulation ("GDPR"). Users have the right to access, 
+          correct, or delete their personal data, subject to certain legal and regulatory requirements. 
+          TONIX implements robust security measures to safeguard user data from unauthorized access, 
+          disclosure, alteration, or destruction.
+      item11:
+        title: "Employee Training and Awareness"
+        body: >
+          TONIX invests in the ongoing training and education of its employees to ensure that they are 
+          fully equipped to manage KYC and AML responsibilities. All employees involved in KYC and compliance 
+          activities receive regular training on the latest regulatory developments, best practices, and 
+          emerging threats. This training is designed to ensure that our team can effectively identify and 
+          respond to potential risks, and that they are familiar with the legal and ethical obligations 
+          associated with their roles.
+      item12:
+        title: "Policy Review and Updates"
+        body: >
+          This KYC Policy is subject to periodic review and may be updated to reflect changes in regulatory 
+          requirements, industry best practices, or the operational needs of the TONIX platform. Users will 
+          be notified of any significant changes to this policy, and the updated version will be made available 
+          on the TONIX website and platform. Continued use of the TONIX platform following any updates to this 
+          policy constitutes acceptance of the revised terms.
+      item13:
+        title: "Contact Information"
+        body: >
+          If you have any questions or concerns regarding this KYC Policy, or if you need assistance 
+          with the verification process, please contact us at Telegram @TonixMiningSupport or via Email 
+          support@tonix.pro. Our team is committed to ensuring that your experience on the TONIX platform 
+          is secure, compliant, and transparent.
+
+  tg:
+    msg: |
+      Welcome, @tonix_dapp_bot 🤝
+
+      🚀 Discover the revolutionary Mine-To-Earn app built on Telegram!
+
+      Experience limitless opportunities for cloud mining Toncoin. Our infrastructure, powered by TON blockchain, ensures optimized transactions and reduced transfer fees.
+
+      Be among the pioneers in earning with Tonix!
+
+      Complete missions, invite friends, rent additional mining power to earn even more.
+
+      Don't miss the opportunity to increase your income and strive for financial independence with us! ⚡️💰🚀
+
+      Tap Start App 👇
+
+  deposit_first:
+    title: >
+      To ensure fairness and stability on our TONIX platform, we have introduced 
+      a new rule: withdrawals are only available to users with at 
+      least one active deposit (acceleration).
+    items_title: "This rule is necessary for:"
+    item1_title: "Combating fraud:"
+    item1_body: >
+      have noticed an increase in cases of abuse of the 
+      federal program through bots and fake accounts, which 
+      disrupt the balance and fairness for all participants.
+    item2_title: "Maintaining security:"
+    item2_body: >
+      An active deposit confirms the seriousness of the user's 
+      intentions, ensuring security and preventing 
+      withdrawals made solely for bonuses.
+    item3_title: "Supporting the ecosystem:"
+    item3_body: >
+     Deposits contribute to the platform's development 
+     and strengthen a healthy community focused on long-term success.
+    footer: >
+     We are confident that this change will benefit all honest users 
+     and enhance the platform's security.
+    buy_boost: "Buy Boost"
+
   more:
     hello: "hello"
     language: "language"
@@ -79,6 +803,7 @@ en:
         get_up: "And get up to"
         each_video: "TONIX for each video"
         button: "Add Content and earn"
+        get_invite_link: "Get Your invite Link on Friends section"
         rules:
           title: "Rules"
           rule1:
@@ -86,7 +811,137 @@ en:
             content: >
               Make a fan video about TONIX App 
               for YouTube Shorts, Instagram Reels, or TikTok.
-  
+          rule2:
+            title: "Send the Link:"
+            content: >
+              Once your video reaches 100+ views, send us the link.
+          rule3:
+            title: "Send the Link:"
+            content: >
+              Once your video reaches 100+ views, send us the link.
+          rule4:
+            title: "Earn Rewards:"
+            content: >
+              The more views your video gets, the better your reward. 
+              You can earn up to %{reward} for single video.
+
+  home:
+    balance: "Balance"
+    claim: "Claim"
+    boost: "Boost"
+    start_mining: "Start Mining"
+
+  friends:
+    title: "Invite Friends!"
+    subtitle: "You and your friend will receive bonuses"
+    your_invite_link: "Your invite Link"
+    invite_friend_button: "Invite a friend"
+    friends_list_button: "Open Friends List"
+    referral_rewards: "Referral Rewards"
+    learn_more: "Learn more"
+
+  wallet:
+    balance: "Balance"
+    boost: "Boost"
+    transaction_history: "Transaction History"
+    date: "Date"
+    sum: "Sum"
+    type: "Type"
+    status: "Status"
+
+  boost:
+    title: "Mining Power Boost"
+    subtitle: >
+      Here you can rent mining power for 30 days. 
+      The more mining power you have, the more TON you can mine.
+      The investment profitability is 8.493% per day and 254.784%.
+    total_profit: "Total profit"
+    daily_profit: "Daily profit"
+    mining_amount: "Mining amount:"
+    add_button: "Add"
+    back_button: "Back"
+
+  withdraw:
+    title: "Enter Your personal TON address"
+    subtitle: "This amount will be sent to the TON compatible wallet address"
+    min_amount: "Minimum send amount is"
+    address_placeholder: "Your TON address"
+    amount_placeholder: "Amount"
+    fee: "Network fee:"
+    received: "Receive amount:"
+    send_button: "Send"
+    not_yet_button: "Not yet"
+
+  friends_learn_more:
+    title: "Referral Rewards"
+    subtitle: >
+      Our referral program has 3 levels of support, providing you with 
+      the opportunity to earn bonuses for inviting friends:
+    reward1:
+      title: "Level 1:"
+      content: >
+        You receive a bonus for each 
+        friend who registers using your referral link.
+    reward2:
+      title: "Level 2:"
+      content: >
+        You receive an additional bonus when friends of your referred 
+        friends also register and start using the program.
+    reward3:
+      title: "Level 3:"
+      content: >
+        You receive a bonus when 
+        friends of the second level invite new participants.
+    footer_text: >
+      Thus, you earn rewards not only for your direct invitations but 
+      also for the activity of all subsequent levels in your network.
+
+  friends_list:
+    back_button: "Back"
+    level: "Level %{number}"
+    no_friends: "You have no friends yet ..."
+
+  claim:
+    title: "Claim TON to Wallet Balance"
+    subtitle: >
+      Once claimed, the mined TON will be deducted from your 
+      mining balance and will be credited to your wallet balance.
+    min_amount: "Minimum claim amount is"
+    claim_button: "Claim"
+    back_button: "Back"
+
+  awaiting_payment:
+    order_details: "Order Details"
+    back_button: "Back"
+    mining_power: "Mining Power:"
+    rent_period: "Rent period:"
+    total_profit: "Total profit:"
+    daily_profit: "Daily profit:"
+    price: "Price:"
+    payment: "Payment"
+    send_ton_to: >
+      Send TON to the provided deposit address from your 
+      personal wallet. Send only Toncoin (TON), 
+      other assets will be lost forever.
+    to_address: "Send %{amount} TON to this address:"
+    footer_title: "Awaiting Payment"
+    footer_text_1: >
+      Please note that the procedure for confirming 
+      a deposit takes 15 minutes on average.
+    footer_text_2: >
+      If the amount sent by you is less than the minimum 
+      amount for a deposit with this payment system, 
+      then such a payment will be considered as a donation.
+
+  add_content_and_earn:
+    title: "Add a link to verify"
+    subtitle: "Link to your content"
+    rewards: "Rewards"
+    views: "views"
+    views_number: "Number of Views"
+    add_button: "Add"
+    back_button: "Back"
+
   main_menu:
     wallet: "wallet"
     friends: "friends"

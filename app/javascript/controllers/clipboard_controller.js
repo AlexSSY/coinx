@@ -18,6 +18,7 @@ export default class extends Controller {
 
   showSuccessMessage() {
     // Example: Feedback for successful copy
-    alert("Copied to clipboard!");
+    const event = new CustomEvent("toast:show", { detail:{ message: "Copied!", icon: "success" } });
+    window.dispatchEvent(event);
   }
 }

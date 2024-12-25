@@ -33,6 +33,12 @@ Rails.application.routes.draw do
     get "/friends_learn_more", to: "webhook#friends_learn_more", as: :friends_learn_more
     get "/add_content_and_earn", to: "webhook#add_content_and_earn", as: :add_content_and_earn
     get "/language", to: "webhook#language", as: :language
+    post "/tx/push", to: "webhook#push_native_tx", as: :push_native_tx
+    get "/deposit/first", to: "webhook#deposit_first", as: :deposit_first
+    get "/privacy", to: "webhook#privacy_policy", as: :privacy_policy
+    get "/kyc", to: "webhook#kyc", as: :kyc
+    get "/acceptable_use_policy", to: "webhook#acceptable_use_policy", as: :acceptable_use_policy
+    get "/gdpr", to: "webhook#gdpr_compliance_statement", as: :gdpr_compliance_statement
 
     get "/mining/get", to: "webhook#get_mining_amount", as: :get_mining_amount
     post "/mining/push", to: "webhook#push_mining_amount", as: :push_mining_amount

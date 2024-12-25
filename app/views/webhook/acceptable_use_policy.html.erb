@@ -1,0 +1,57 @@
+<%= turbo_frame_tag "modal" do %>
+  <div 
+    class="fixed inset-0 h-screen w-full bg-slate-800 text-xs text-white/50 p-6 space-y-4 text-start z-50 overflow-y-auto" 
+    data-controller="modal" 
+    data-modal-target="overlay"
+    data-action="click->modal#closeBg"
+  >
+
+    <!-- <--<< Back -->
+    <div class="flex justify-end w-full">
+      <button class="px-4 py-2 flex items-center space-x-2 bg-black/20 text-white/70 rounded hover:bg-gray-300 font-semibold" data-action="click->modal#close">
+        <i class="fa-solid fa-arrow-left-long"></i>
+        <span>Back</span>
+      </button>
+    </div>
+
+    <div class="max-w-4xl mx-auto p-6 rounded-lg shadow-md mt-10 leading-relaxed">
+      <h1 class="text-2xl font-bold mb-4 text-gray-50">Acceptable Use Policy</h1>
+      <p class="text-sm text-gray-300 mb-6">Last updated: 07/04/2024</p>
+
+      <p class="mb-4">
+        This Acceptable Use Policy ("Policy") outlines the rules and standards for using the 
+        <span class="font-semibold">TONIX.PRO services ("Service")</span>. By accessing or using our Service, you agree to comply with this Policy.
+      </p>
+
+      <h2 class="text-xl font-semibold mt-6 mb-4 text-gray-100">1. Prohibited Activities</h2>
+      <p class="mb-4">Users are prohibited from using the Service to engage in any of the following activities:</p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><span class="font-semibold">Illegal Activities:</span> Any activities that are unlawful, harmful, or fraudulent, including but not limited to committing or encouraging acts of violence, harassment, or discrimination.</li>
+        <li><span class="font-semibold">Security Violations:</span> Attempting to interfere with, disrupt, or gain unauthorized access to any systems, networks, or data associated with the Service, including hacking, phishing, or deploying malware.</li>
+        <li><span class="font-semibold">Spamming and Phishing:</span> Sending unsolicited messages (spam) or attempting to mislead others into disclosing sensitive information through deceptive tactics (phishing).</li>
+        <li><span class="font-semibold">Intellectual Property Infringement:</span> Uploading, sharing, or distributing content that violates the intellectual property rights of others, including copyrights, trademarks, and patents.</li>
+        <li><span class="font-semibold">Harmful Content:</span> Distributing or transmitting content that is obscene, offensive, defamatory, or otherwise objectionable, including but not limited to hate speech and graphic violence.</li>
+        <li><span class="font-semibold">Automated Use:</span> Using bots, scripts, or other automated methods to interact with the Service in a manner that is not expressly authorized.</li>
+      </ul>
+
+      <h2 class="text-xl font-semibold mt-6 mb-4 text-gray-100">2. User Responsibilities</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><span class="font-semibold">Compliance:</span> Users must comply with all applicable local, state, national, and international laws and regulations when using the Service.</li>
+        <li><span class="font-semibold">Reporting Violations:</span> Users are encouraged to report any violations of this Policy to TONIX. We may investigate and take appropriate action, including suspending or terminating accounts, as necessary.</li>
+      </ul>
+
+      <h2 class="text-xl font-semibold mt-6 mb-4 text-gray-100">3. Consequences of Violations</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><span class="font-semibold">Account Suspension or Termination:</span> Violations of this Policy may result in the suspension or termination of the user’s account without notice.</li>
+        <li><span class="font-semibold">Legal Action:</span> Depending on the severity of the violation, we may take legal action to enforce compliance with this Policy and seek damages as necessary.</li>
+      </ul>
+
+      <h2 class="text-xl font-semibold mt-6 mb-4 text-gray-100">4. Policy Changes</h2>
+      <p class="mb-4">
+        TONIX reserves the right to modify this Policy at any time. Changes will be effective immediately upon posting. 
+        Continued use of the Service after any changes constitutes acceptance of the new terms.
+      </p>
+    </div>
+
+  </div>
+<% end %>

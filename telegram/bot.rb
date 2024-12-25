@@ -42,16 +42,36 @@ Telegram::Bot::Client.run(TOKEN) do |bot|
     when Telegram::Bot::Types::Message
       chat_id = message.chat.id
       find_or_create_user_from_telegram message, bot
+      image_path = "#{__dir__}/photo.jpg"
 
-      bot.api.send_message(
+      bot.api.send_photo(
         chat_id: chat_id,
-        text: 'Click the button below to open the web app inside Telegram:',
+        photo: Faraday::UploadIO.new(image_path, 'image/jpeg'),
+        caption: I18n.t("tg.msg"),
         reply_markup: Telegram::Bot::Types::InlineKeyboardMarkup.new(
           inline_keyboard: [
             [
               Telegram::Bot::Types::InlineKeyboardButton.new(
-                text: 'Open Web App',
+                text: "⚡️ Start App ⚡️",
                 web_app: { url: web_app_url(chat_id) } # Web App configuration
+              )
+            ],
+            [
+              Telegram::Bot::Types::InlineKeyboardButton.new(
+                text: "🎁 Join Community 🎁",
+                url: "https://t.me/Tonix_Mining"
+              )
+            ],
+            [
+              Telegram::Bot::Types::InlineKeyboardButton.new(
+                text: "✅ Proof of Payment ✅",
+                url: "https://t.me/proof_of_pays"
+              )
+            ],
+            [
+              Telegram::Bot::Types::InlineKeyboardButton.new(
+                text: "📘 Information 📘",
+                url: "https://telegra.ph/FAQ-Information---TONIX-App-09-25"
               )
             ]
           ]

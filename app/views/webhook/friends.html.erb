@@ -2,26 +2,33 @@
 
   <!-- welcome text -->
   <div class="space-y-1">
-    <span class="block w-full text-center font-bold text-2xl">Invite Friends!</span>
-    <span class="block w-full text-center">You and your friend will receive bonuses</span>
+    <span class="block w-full text-center font-bold text-xl"><%= t("friends.title") %></span>
+    <span class="block w-full text-center"><%= t("friends.subtitle") %></span>
   </div>
 
   <!-- links and other invite stuff -->
   <div class="p-4 rounded-xl bg-black/20 space-y-2">
-    <span class="block w-full font-bold text-2xl">Your invite Link</span>
+    <span class="block w-full font-bold"><%= t("friends.your_invite_link") %></span>
     <button 
       class="bg-white/10 rounded-xl p-3 w-full flex justify-between items-center"
       data-controller="clipboard"
+      data-clipboard-content-value="<%= @invite_link %>"
+      data-action="click->clipboard#copy"
     >
-      <span class="text-white/50">https://t.me/tonix_dapp_bot?start=<%= current_user_id | 1234567890 %></span>
+      <span class="text-white/50"><%= truncate(@invite_link) %></span>
       <i class="fa-solid fa-copy"></i>
     </button>
     <div class="flex space-x-2">
-      <button class="flex-grow space-x-2 rounded-xl bg-amber-400 font-semibold text-black p-3">
+      <a href="tg://msg_url?url=<%= @invite_link %>" class="flex-grow flex justify-center space-x-2 rounded-xl bg-amber-400 font-semibold text-black p-3">
         <i class="fa-solid fa-user-plus"></i>
-        <span>Invite a friend</span>
-      </button>
-      <button class="rounded-xl bg-amber-400 text-black p-3 w-12">
+        <span><%= t("friends.invite_friend_button") %></span>
+      </a>
+      <button 
+        class="rounded-xl bg-amber-400 text-black p-3 w-12"
+        data-controller="clipboard"
+        data-clipboard-content-value="<%= @invite_link %>"
+        data-action="click->clipboard#copy"
+      >
         <i class="fa-solid fa-copy"></i>
       </button>
     </div>
@@ -30,7 +37,7 @@
   <!-- Friends list -->
   <%= link_to friends_list_path, class: "flex-grow flex items-center justify-center space-x-2 rounded-xl bg-amber-400 font-semibold text-black p-3 w-full", data: { turbo_frame: "modal" } do %>
     <i class="fa-solid fa-list"></i>
-    <span>Open Friends List</span>
+    <span><%= t("friends.friends_list_button") %></span>
   <% end %>
 
   <!-- Referral rewards -->
@@ -56,7 +63,7 @@
   %>
 
   <div class="p-4 rounded-xl bg-black/20 space-y-2">
-    <span class="block w-full font-bold text-2xl">Referral Rewards</span>
+    <span class="block w-full font-bold"><%= t("friends.referral_rewards") %></span>
     <% 3.times do |i| %>
     <div class="p-3 rounded-xl bg-white/10 flex items-center space-x-4">
       <div class="flex-none space-y-1 flex flex-col items-center">
@@ -81,6 +88,6 @@
       </div>
     </div>
     <% end %>
-    <%= link_to "Learn more", friends_learn_more_path, class: "flex items-center justify-center w-full space-x-2 rounded-xl bg-amber-400 font-semibold text-black p-3", data: { turbo_frame: "modal" } %>
+    <%= link_to t("friends.learn_more"), friends_learn_more_path, class: "flex items-center justify-center w-full space-x-2 rounded-xl bg-amber-400 font-semibold text-black p-3", data: { turbo_frame: "modal" } %>
   </div>
 </div>

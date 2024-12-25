@@ -1,0 +1,47 @@
+<!-- Balance 1 -->
+<%= tag.div id: "balances" do %>
+  <div class="space-y-3">
+    <div class="flex items-center justify-between bg-black/30 rounded-xl p-3">
+      <div class="flex items-center space-x-2">
+        <!-- Icon -->
+        <!--div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+          <span class="text-lg font-bold">V</span>
+        </div-->
+        <img src="/toncoin-ton-logo.svg" alt="ton-icon" class="w-10 h-10">
+        <!-- Balance Text -->
+        <div>
+          <p class="text-sm text-slate-300"><%= t("home.balance") %></p>
+          <p class="text-sm font-bold text-slate-200"><%= user.ton %> TON</p>
+        </div>
+      </div>
+      <div>
+        <%= link_to withdraw_path, class: "py-3 px-4 bg-amber-300/50 rounded-xl flex items-center justify-center", data: { turbo_frame: "modal" } do %>
+          <!--span class="text-gray-300 text-xl">🔒</span-->
+          <i class="text-lg fa-solid fa-wallet text-slate-200"></i>
+        <% end %>
+      </div>
+    </div>
+
+    <!-- Balance 2 -->
+    <div class="flex items-center justify-between bg-black/30 rounded-lg p-3">
+      <div class="flex items-center space-x-2">
+        <!-- Icon -->
+        <!--div class="w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center">
+          <span class="text-lg font-bold">V</span>
+        </div-->
+        <img src="/fan.png" alt="ton-icon" class="w-10 h-10">
+        <!-- Balance Text -->
+        <div>
+          <p class="text-sm text-gray-300"><%= t("home.balance") %></p>
+          <p class="text-sm font-bold text-slate-200"><%= user.tonix %> TONIX</p>
+        </div>
+      </div>
+      <div>
+        <%= link_to withdraw_path, class: "py-3 px-4 bg-amber-300/50 rounded-xl flex items-center justify-center", data: { turbo_frame: "modal" } do %>
+          <!--span class="text-gray-300 text-xl">🔒</span-->
+          <i class="text-lg fa-solid fa-wallet text-slate-200"></i>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>

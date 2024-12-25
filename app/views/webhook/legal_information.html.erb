@@ -13,10 +13,10 @@
       </div>
       <% [
         { title: t("legal_information.terms"), url: terms_path },
-        { title: t("legal_information.privacy"), url: "#" },
-        { title: t("legal_information.kyc"), url: "#" },
-        { title: t("legal_information.acceptable"), url: "#" },
-        { title: t("legal_information.gdpr"), url: "#" }
+        { title: t("legal_information.privacy"), url: privacy_policy_path },
+        { title: t("legal_information.kyc"), url: kyc_path },
+        { title: t("legal_information.acceptable"), url: acceptable_use_policy_path },
+        { title: t("legal_information.gdpr"), url: gdpr_compliance_statement_path }
       ].each do |desc| 
       %>
       <%= link_to desc[:title], desc[:url], class: "block px-4 py-3 w-full text-start text-white/80 bg-black/20 rounded-xl hover:bg-gray-300" %>

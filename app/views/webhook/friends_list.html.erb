@@ -9,24 +9,24 @@
     <div class="p-4 space-y-4">
       <button class="px-4 py-2 block bg-white/10 text-white/70 rounded hover:bg-gray-300" data-action="click->modal#close">
         <i class="fa-solid fa-arrow-left-long"></i>
-        <span>Back</span>
+        <span><%= t("friends_list.back_button") %></span>
       </button>
 
       <div class="flex gap-2">
         <div class="flex-grow flex flex-col justify-center p-3 rounded-xl bg-black/10">
-          <span class="text-sm">Level 1</span>
+          <span class="text-sm"><%= t("friends_list.level", number: 1) %></span>
           <span class="text-xl font-bold">0</span>
         </div>
         <div class="flex-grow flex flex-col justify-center p-3 rounded-xl bg-black/10">
-          <span class="text-sm">Level 2</span>
+          <span class="text-sm"><%= t("friends_list.level", number: 2) %></span>
           <span class="text-xl font-bold">0</span>
         </div>
         <div class="flex-grow flex flex-col justify-center p-3 rounded-xl bg-black/10">
-          <span class="text-sm">Level 3</span>
+          <span class="text-sm"><%= t("friends_list.level", number: 3) %></span>
           <span class="text-xl font-bold">0</span>
         </div>
       </div>
-      <span class="block text-center text-white/50">You have no friends yet ...</span>
+      <span class="block text-center text-white/50"><%= t("friends_list.no_friends") %></span>
     </div>
   </div>
 <% end %>

@@ -7,21 +7,21 @@
   >
     <!-- Modal Content -->
     <div class="bg-slate-800 rounded-lg p-6 w-96 shadow-lg text-white text-start space-y-3">
-      <span class="block font-bold">Referral Rewards</span>
+      <span class="block font-bold"><%= t("friends_learn_more.title") %></span>
       <p class="text-sm text-white/50">
-        Our referral program has 3 levels of support, providing you with the opportunity to earn bonuses for inviting friends:
+        <%= t("friends_learn_more.subtitle") %>
       </p>
       <p class="text-sm text-white/50">
-        1. <span class="text-white">Level 1:</span> You receive a bonus for each friend who registers using your referral link.
+        1. <span class="text-white"><%= t("friends_learn_more.reward1.title") %></span> <%= t("friends_learn_more.reward1.content") %>
       </p>
       <p class="text-sm text-white/50">
-        2. <span class="text-white">Level 2:</span> You receive an additional bonus when friends of your referred friends also register and start using the program.
+        2. <span class="text-white"><%= t("friends_learn_more.reward2.title") %></span> <%= t("friends_learn_more.reward2.content") %>
       </p>
       <p class="text-sm text-white/50">
-        3. <span class="text-white">Level 3:</span> You receive a bonus when friends of the second level invite new participants.
+        3. <span class="text-white"><%= t("friends_learn_more.reward3.title") %></span> <%= t("friends_learn_more.reward3.content") %>
       </p>
       <p class="text-sm text-white/50">
-        Thus, you earn rewards not only for your direct invitations but also for the activity of all subsequent levels in your network.
+        <%= t("friends_learn_more.footer_text") %>
       </p>
       <div class="flex flex-col justify-center space-y-3">
         <button class="px-4 py-2 block bg-black/20 text-white/70 rounded hover:bg-gray-300 font-semibold" data-action="click->modal#close">Back</button>

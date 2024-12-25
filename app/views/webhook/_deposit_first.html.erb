@@ -1,0 +1,36 @@
+<%= turbo_frame_tag "modal" do %>
+  <div 
+    class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50" 
+    data-controller="modal" 
+    data-modal-target="overlay"
+    data-action="click->modal#closeBg"
+  >
+    <div data-controller="boost" class="bg-slate-800 rounded-lg p-6 w-96 shadow-lg text-gray-300 text-start text-sm space-y-3">
+      
+      <p><%= t("deposit_first.title") %></p>
+      <p><%= t("deposit_first.items_title") %></p>
+
+      <ol class="list-decimal list-inside space-y-2">
+        <li>
+          <span class="text-white font-bold"><%= t("deposit_first.item1_title") %></span>
+          <span><%= t("deposit_first.item1_body") %></span>
+        </li>
+        <li>
+          <span class="text-white font-bold"><%= t("deposit_first.item2_title") %></span>
+          <span><%= t("deposit_first.item2_body") %></span>
+        </li>
+        <li>
+          <span class="text-white font-bold"><%= t("deposit_first.item3_title") %></span>
+          <span><%= t("deposit_first.item4_body") %></span>
+        </li>
+      </ol>
+
+      <p><%= t("deposit_first.footer") %></p>
+
+      <div class="flex flex-col justify-center space-y-3">
+        <%= link_to t("deposit_first.buy_boost"), awaiting_payment_path(15), class: "px-4 py-2 block bg-amber-400 text-black text-center rounded hover:bg-blue-700 font-semibold", data: { action: "click->modal#close", turbo_frame: "modal", boost_target: "link" } %>
+        <button class="px-4 py-2 block bg-black/20 text-white/70 rounded hover:bg-gray-300 font-semibold" data-action="click->modal#close"><%= t("boost.back_button") %></button>
+      </div>
+    </div>
+  </div>
+<% end %>

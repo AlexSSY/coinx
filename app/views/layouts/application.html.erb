@@ -72,5 +72,14 @@
     </div>
 
   <%= turbo_frame_tag "modal" %>
+
+  <div 
+    data-controller="client-toast" 
+    class="fixed hidden z-[55] items-center space-x-2 top-4 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white p-3 rounded-xl shadow-lg opacity-0 transition-opacity duration-300"
+  >
+    <i data-client-toast-target="icon" class="fa-solid block"></i>
+    <span data-client-toast-target="message" class="text-sm"></span>
+  </div>
+
   </body>
 </html>
