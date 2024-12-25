@@ -1,0 +1,9 @@
+ua:
+  friends:
+    title: "Запросіть друзів!"
+    subtitle: "Ви та ваш друг отримаєте бонуси"
+    your_invite_link: "Ваше реферальне посилання"
+    invite_friend_button: "Запросити друга"
+    friends_list_button: "Відкрити список друзів"
+    referral_rewards: "Реферальні нагороди"
+    learn_more: "Дізнатися більше"

@@ -1,0 +1,9 @@
+ua:
+  add_content_and_earn:
+    title: "Додайте посилання для перевірки"
+    subtitle: "Посилання на ваш контент"
+    rewards: "Нагороди"
+    views: "перегляди"
+    views_number: "Кількість переглядів"
+    add_button: "Додати"
+    back_button: "Назад"

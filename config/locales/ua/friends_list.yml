@@ -1,0 +1,5 @@
+ua:
+  friends_list:
+    back_button: "Назад"
+    level: "Рівень %{number}"
+    no_friends: "У вас поки що немає друзів ..."

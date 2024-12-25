@@ -33,7 +33,8 @@ class WebhookController < ApplicationController
   def more
     @languages = [
       { code: "en", name: "English" },
-      { code: "ru", name: "Русский" }
+      { code: "ru", name: "Русский" },
+      { code: "ua", name: "Украiнська" }
     ]
   end
 
@@ -76,7 +77,8 @@ class WebhookController < ApplicationController
   def language
     @languages = [
       { code: "en", flag: "🇺🇸", name: "English" },
-      { code: "ru", flag: "🇷🇺", name: "Русский" }
+      { code: "ru", flag: "🇷🇺", name: "Русский" },
+      { code: "ua", flag: "🇺🇦", name: "Украiнська" }
     ]
   end
 

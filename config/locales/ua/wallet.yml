@@ -1,0 +1,9 @@
+ua:
+  wallet:
+    balance: "Баланс"
+    boost: "Підсилення"
+    transaction_history: "Історія транзакцій"
+    date: "Дата"
+    sum: "Сума"
+    type: "Тип"
+    status: "Статус"

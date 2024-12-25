@@ -1,0 +1,11 @@
+ua:
+  withdraw:
+    title: "Введіть вашу особисту TON адресу"
+    subtitle: "Ця сума буде надіслана на сумісну з TON адресу гаманця"
+    min_amount: "Мінімальна сума для відправки"
+    address_placeholder: "Ваша TON адреса"
+    amount_placeholder: "Сума"
+    fee: "Комісія мережі:"
+    received: "Сума до отримання:"
+    send_button: "Відправити"
+    not_yet_button: "Ще не"

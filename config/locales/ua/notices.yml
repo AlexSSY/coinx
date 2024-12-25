@@ -1,0 +1,10 @@
+ua:
+  notices:
+    contest:
+      msg: "Ваше посилання надіслано успішно"
+    claim:
+      msg: "Отримано!"
+    withdraw:
+      msg: "Затверджено!"
+    push_native_tx:
+      msg: "TON отримано"
