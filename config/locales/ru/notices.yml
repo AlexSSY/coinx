@@ -1,0 +1,8 @@
+en:
+  notices:
+    contest:
+      msg: "Ваша ссылка отправлена"
+    claim:
+      msg: "Подтверждено"
+    withdraw:
+      msg: "Отправлено"

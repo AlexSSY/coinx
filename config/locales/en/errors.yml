@@ -1,0 +1,11 @@
+en:
+  errors:
+    claim:
+      too_small: "Claim amount too small"
+    contest:
+      msg: "Error happened while link sended"
+    withdraw:
+      msg: "Balance is too small"
+      msg2: "Transaction error"
+    push_native_tx:
+      msg: "Error TON receiving"

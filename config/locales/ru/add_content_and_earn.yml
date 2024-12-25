@@ -1,0 +1,9 @@
+ru:
+  add_content_and_earn:
+    title: "Добавьте ссылку для проверки"
+    subtitle: "Ссылка на ваш контент"
+    rewards: "Награды"
+    views: "просмотры"
+    views_number: "Количество просмотров"
+    add_button: "Добавить"
+    back_button: "Назад"

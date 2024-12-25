@@ -1,0 +1,23 @@
+en:
+  awaiting_payment:
+    order_details: "Order Details"
+    back_button: "Back"
+    mining_power: "Mining Power:"
+    rent_period: "Rent period:"
+    total_profit: "Total profit:"
+    daily_profit: "Daily profit:"
+    price: "Price:"
+    payment: "Payment"
+    send_ton_to: >
+      Send TON to the provided deposit address from your 
+      personal wallet. Send only Toncoin (TON), 
+      other assets will be lost forever.
+    to_address: "Send %{amount} TON to this address:"
+    footer_title: "Awaiting Payment"
+    footer_text_1: >
+      Please note that the procedure for confirming 
+      a deposit takes 15 minutes on average.
+    footer_text_2: >
+      If the amount sent by you is less than the minimum 
+      amount for a deposit with this payment system, 
+      then such a payment will be considered as a donation.

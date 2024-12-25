@@ -1,0 +1,5 @@
+ru:
+  friends_list:
+    back_button: "Назад"
+    level: "Уровень %{number}"
+    no_friends: "У вас пока нет друзей ..."

@@ -172,7 +172,7 @@ class WebhookController < ApplicationController
   end
 
   def claim_create
-    @min_claim_amount = 0.000001# 0.015
+    @min_claim_amount = 0.015
 
     if current_user.mining < @min_claim_amount
       render(

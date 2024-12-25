@@ -1,0 +1,9 @@
+en:
+  claim:
+    title: "Claim TON to Wallet Balance"
+    subtitle: >
+      Once claimed, the mined TON will be deducted from your 
+      mining balance and will be credited to your wallet balance.
+    min_amount: "Minimum claim amount is"
+    claim_button: "Claim"
+    back_button: "Back"

@@ -1,0 +1,9 @@
+en:
+  add_content_and_earn:
+    title: "Add a link to verify"
+    subtitle: "Link to your content"
+    rewards: "Rewards"
+    views: "views"
+    views_number: "Number of Views"
+    add_button: "Add"
+    back_button: "Back"

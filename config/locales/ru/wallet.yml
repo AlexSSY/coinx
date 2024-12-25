@@ -1,0 +1,9 @@
+ru:
+  wallet:
+    balance: "Баланс"
+    boost: "Увеличить"
+    transaction_history: "История транзакций"
+    date: "Дата"
+    sum: "Сумма"
+    type: "Тип"
+    status: "Статус"

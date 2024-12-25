@@ -1,0 +1,9 @@
+en:
+  legal_information:
+    title: "Legal Information"
+    terms: "Terms and Conditions"
+    privacy: "Privacy Policy"
+    kyc: "KYC Policy"
+    acceptable: "Acceptable Use Policy"
+    gdpr: "GDPR Compliance Statement"
+    back_button: "Back"

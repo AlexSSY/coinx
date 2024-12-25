@@ -40,5 +40,6 @@ module Coinx
     config.generators.system_tests = nil
 
     config.i18n.default_locale = :en
+    config.i18n.fallbacks = [ :en ]
   end
 end

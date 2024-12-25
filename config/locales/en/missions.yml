@@ -1,0 +1,49 @@
+en:
+  missions:
+    title: "New Missions"
+    subtitle: "Complete tasks and earn more"
+    tabs:
+      tab1: "promo"
+      tab2: "ref"
+      tab3: "contest"
+    bodies:
+      tab1:
+        item1: "Boost Mining Power"
+        item2: "Welcome Bonus"
+      tab2:
+        friends: "Friends (Lv. 1)"
+        item1: "Invite 1 Friend"
+        item2: "Invite 3 Friends"
+        item3: "Invite 10 Friends"
+        item4: "Invite 25 Friends"
+        item5: "Invite 50 Friends"
+        item6: "Invite 100 Friends"
+        item7: "Invite 500 Friends"
+        item8: "Invite 1000 Friends"
+        item9: "Invite 10000 friends"
+      tab3:
+        title: "Tell others about TONIX App"
+        get_up: "And get up to"
+        each_video: "TONIX for each video"
+        button: "Add Content and earn"
+        get_invite_link: "Get Your invite Link on Friends section"
+        rules:
+          title: "Rules"
+          rule1:
+            title: "Create content:"
+            content: >
+              Make a fan video about TONIX App 
+              for YouTube Shorts, Instagram Reels, or TikTok.
+          rule2:
+            title: "Send the Link:"
+            content: >
+              Once your video reaches 100+ views, send us the link.
+          rule3:
+            title: "Send the Link:"
+            content: >
+              Once your video reaches 100+ views, send us the link.
+          rule4:
+            title: "Earn Rewards:"
+            content: >
+              The more views your video gets, the better your reward. 
+              You can earn up to %{reward} for single video.

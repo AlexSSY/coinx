@@ -1,0 +1,9 @@
+ru:
+  errors:
+    claim:
+      too_small: "Сумма недостаточна"
+    contest:
+      msg: "Ошибка отправки"
+    withdraw:
+      msg: "Ошибка вывода."
+      msg2: "Ошибка транзакции"

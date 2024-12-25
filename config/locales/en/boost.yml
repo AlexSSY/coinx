@@ -1,0 +1,12 @@
+en:
+  boost:
+    title: "Mining Power Boost"
+    subtitle: >
+      Here you can rent mining power for 30 days. 
+      The more mining power you have, the more TON you can mine.
+      The investment profitability is 8.493% per day and 254.784%.
+    total_profit: "Total profit"
+    daily_profit: "Daily profit"
+    mining_amount: "Mining amount:"
+    add_button: "Add"
+    back_button: "Back"

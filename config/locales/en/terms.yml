@@ -1,0 +1,306 @@
+en:
+  terms:
+    title: "Terms and Conditions"
+    last_updated: "Last updated:"
+    items:
+      item1:
+        title: "Introduction"
+        body: >
+            These Terms and Conditions ("Terms") constitute a legally binding agreement
+            between you ("User, "you", or "your") and TONIX.PRO ("Company", "we", "us", or "our").
+            By accessing starting, installing, or using any part of the TONIX app or related services
+            (collectively, the "Service"), you agree to be bound by these Terms. If you do not agree
+            to these Terms, you must not access or use the Service.
+      item2:
+        title: "Eligibility"
+        body_1: >
+          The Service is intended solely for Users who are 18 years of age or older. 
+          By using the Service, you represent and warrant that you are at least 18 years 
+          old and that all registration information you submit is accurate and truthful. 
+          The Company reserves the right to terminate your account and your access to the 
+          Service if we have any reason to believe that you 
+          are under 18 years old or that you have provided false or misleading information.
+        body_2: >
+          You are solely responsible for maintaining the confidentiality of your account 
+          credentials, including your password, and for all activities that occur under 
+          your account. You agree to notify us immediately of any unauthorized use of your 
+          account or any other breach of security. We are not liable for any loss or damage 
+          arising from your failure to protect your account information.
+      item3:
+        title: "Service Description"
+        body_1: >
+          TONIX provides a digital platform that enables Users to mine Toncoin (TON) and 
+          TONIX tokens through various activities such as missions, referrals, and renting 
+          power boosters. The Service is designed to be accessible via the TONIX app, 
+          available through Telegram, and potentially other supported platforms.
+        ul:
+          li_1: >
+            The Service allows users to participate in a Mine-to-Earn ecosystem where 
+            they can engage in mining activities without the need for specialized hardware. 
+            Users can also enhance their mining capabilities through additional in-app 
+            activities and interactions, including inviting friends and completing specific 
+            tasks designed to boost their Mining Power.
+          li_2: >
+            The Service is provided on an "as-is" and "as-available" basis. While we 
+            strive to provide a reliable and uninterrupted service, we do not guarantee 
+            that the Service will always be available or free from errors, bugs, or 
+            disruptions. The Company is not liable for any downtime, data loss, or other 
+            issues that may arise from the use of the Service.
+          li_3: >
+            The Company reserves the right to modify, suspend, or discontinue any part 
+            of the Service at any time, with or without notice, and without liability 
+            to you or any third party. This includes, but is not limited to, changes to 
+            the mining algorithms, reward structures, withdrawal policies, and any other 
+            features or functionalities of the Service. Users are responsible for regularly 
+            reviewing the Service and staying informed of any changes.
+          li_4: >
+            The Company reserves the right to impose limits or restrictions on the use of 
+            the Service. This may include limiting the number of accounts per user, capping 
+            the amount of Mining Power available to each user, or restricting access to 
+            certain features. Any attempt to circumvent these restrictions, such as by 
+            creating multiple accounts or using unauthorized tools, is strictly prohibited 
+            and may result in account suspension or termination.
+          li_5: >
+            The Service may integrate with third-party services, such as payment processors 
+            or analytics providers. The Company is not responsible for the availability, 
+            accuracy, or performance of these third-party services. Your use of third-party 
+            services is governed by their respective third-party terms and policies.
+      item4:
+        title: "User Responsibilities"
+        body_1: >
+          You agree to use the Service only in compliance with all applicable local, 
+          state, national, and international laws, rules, and regulations. You may not 
+          use the Service for any unlawful or fraudulent purposes or in a manner 
+          that could damage, disable, overburden, or impair the Service.
+        body_2: >
+          You are expressly prohibited from engaging in the following activities:
+        ul:
+          li_1: >
+            Attempting to gain unauthorized access to the Service, its systems, or networks, 
+            including but not limited to hacking, password mining, or any other means of 
+            circumventing security measures.
+          li_2: >
+            Using, exploiting, or distributing any bugs, vulnerabilities, or glitches 
+            within the Service for personal gain or to harm the integrity or functionality 
+            of the Service. Any discovery of such issues must be reported to the Company 
+            immediately.
+          li_3: >
+            Engaging in activities that disrupt, overburden, or interfere with the normal 
+            operation of the Service, including but not limited to Distributed 
+            Denial-of-Service (DDoS) attacks, spamming, or deploying malicious software 
+            (e.g., viruses, worms, trojans).
+          li_4: >
+            Utilizing scripts, bots, or any other automated systems to interact with the 
+            Service in a manner that is not expressly authorized by the Company.
+          li_5: >
+            Manipulating or attempting to manipulate the Service, including any rewards, 
+            mining processes, or referral programs, to obtain benefits not 
+            intended by the Company.
+          li_6:
+            title: "Engaging in any form of referral fraud, including but not limited to:"
+            ul:
+              li_1: >
+                Creating fake accounts to artificially inflate your referral numbers.
+              li_2: >
+                Using proxy servers, VPNs, or other tools to generate false referrals.
+              li_3: >
+                Offering incentives or rewards that are not sanctioned by the Company to 
+                entice referrals.
+              li_4: >
+                Utilizing unauthorized third-party services to boost referral counts.
+              li_5: >
+                Posting or transmitting any content that is false, misleading, or designed 
+                to deceive other users or the Company.
+      item5:
+        title: "Penalties for Violations:"
+        ul:
+          li_1: >
+            The Company reserves the right to take appropriate action against users who engage 
+            in any of the prohibited activities listed above. This may include, but is not limited 
+            to, the suspension or termination of your account, the forfeiture of rewards, and the 
+            blocking of any further access to the Service.
+          li_2: >
+            Any earnings, rewards, or tokens obtained through fraudulent or prohibited means, including 
+            referral manipulation, will be forfeited. The Company also reserves the right to reclaim 
+            any improperly obtained funds or tokens.
+          li_3: >
+            In cases of severe or repeated violations, the Company may pursue legal action, including 
+            but not limited to seeking damages, reporting to authorities, and enforcing claims 
+            in a court of law.
+      item6:
+        title: "Monitoring and Reporting:"
+        ul:
+          li_1: >
+            The Company reserves the right to monitor user activity on the platform to detect and 
+            prevent prohibited conduct. This includes the use of automated systems to identify suspicious 
+            behavior, such as referral manipulation or unauthorized access attempts.
+          li_2: >
+            If you become aware of any prohibited conduct or suspicious activity, you are encouraged 
+            to report it to the Company immediately. Reports can be made via Telegram @TonixMiningSupport 
+            or via E-mail support@tonix.pro.
+      item7:
+        title: "Deposits and Withdrawals"
+        body_1: >
+          The minimum deposit required to participate in the Service is 1 Toncoin (TON). Any deposit made 
+          in an amount less than this or in a currency other than TON will not be credited to your account, 
+          and such funds will be permanently lost. The Company assumes no responsibility for any loss resulting 
+          from improper deposits.
+        body_2: >
+          In order to withdraw TON or TONIX tokens from the platform, you must have at least one active deposit. 
+          Withdrawals are not permitted without an active deposit.
+        body_3: >
+          The minimum withdrawal amounts are 0.35 TON for Toncoin and 150,000 TONIX for TONIX tokens. Withdrawal 
+          requests are typically processed within 1 day to 30 days for TON, but in some cases, this period may 
+          extend to 90 days. Withdrawals of TONIX tokens require a verification period of 15 days.
+        body_4: >
+          The Company reserves the right to modify withdrawal terms, including but not limited to, processing 
+          times, minimum withdrawal amounts, and verification procedures, at any time without notice.
+      item8:
+        title: "Referral Program"
+        body_1: >
+          The Company offers a multi-tiered referral program that allows Users to earn rewards in TONIX tokens 
+          and Mining Power based on the referral of new Users. The referral program operates as follows:
+        ul:
+          li_1:
+            title: "Level 1:"
+            body: >
+              Earn 100 TONIX and 30 MH/s mining speed for each direct referral.
+          li_2:
+            title: "Level 2:"
+            body: >
+              Earn 50 TONIX and 15 MH/s mining speed for referrals made by your direct referrals.
+          li_3:
+            title: "Level 3:"
+            body: >
+              Earn 15 TONIX and 1 MH/s mining speed for referrals made by your Level 2 referrals.
+        body_2: >
+          The Company expressly reserves the right to modify, suspend, or terminate the referral 
+          program, including any rewards, at any time and without prior notice. Such changes will 
+          be reflected on the "Friends" page within the app. You are solely responsible for regularly 
+          reviewing the referral program terms to ensure compliance with any updates.
+        body_3: >
+          Any attempt to manipulate, abuse, or exploit the referral program (e.g., creating fake 
+          accounts, spamming) is strictly prohibited and may result in the forfeiture of all earned 
+          rewards, as well as the suspension or termination of your account.
+      item9:
+        title: "Earnings and Interest Rates"
+        body_1: >
+          The Service may offer Users the opportunity to earn interest on deposits or rewards through 
+          various mechanisms, including but not limited to, mining and staking activities. The 
+          specific interest rates and earnings structures are subject to change at the sole 
+          discretion of the Company.
+        body_2: >
+          The Company reserves the right to adjust interest rates, earnings structures, and any other 
+          financial incentives at any time without notice. Users are responsible for staying informed 
+          about any changes to these rates or terms by regularly reviewing updates posted within 
+          the Service.
+        body_3: >
+          The Company makes no guarantees regarding the amount of earnings, interest, or rewards 
+          that a User may receive. All earnings are contingent upon the terms and conditions 
+          applicable at the time and are subject to change.
+      item10:
+        title: "Content Ownership and Intellectual Property"
+        body_1: >
+          By submitting content to the Service (e.g., text, images, videos), you grant the 
+          Company a non-exclusive, royalty-free, perpetual, irrevocable, and worldwide 
+          license to use, reproduce, modify, adapt, publish, translate, distribute, and 
+          display such content in any media. You retain ownership of your content but agree 
+          to allow the Company to use it as described.
+        body_2: >
+          All content provided by the Company, including but not limited to text, graphics, 
+          logos, icons, images, and software, is the exclusive property of the Company or 
+          its licensors and is protected by intellectual property laws. You may not use, 
+          reproduce, or distribute any content from the Service without the Company's 
+          express written consent.
+      item11:
+        title: "Privacy and Data Protection"
+        body_1: >
+          The Company collects and processes personal information in accordance with its 
+          Privacy Policy. By using the Service, you consent to the collection, use, and 
+          sharing of your information as described in the Privacy Policy.
+        body_2: >
+          The Company employs reasonable security measures to protect the confidentiality 
+          and integrity of your personal information. However, no data transmission over 
+          the internet or storage system is completely secure. Therefore, while the Company 
+          strives to protect your information, it cannot guarantee absolute security.
+        body_3: >
+          You are responsible for maintaining the accuracy and completeness of the 
+          personal information you provide and for updating it as necessary.
+      item12:
+        title: "Limitation of Liability"
+        body_1: >
+          The Service is provided "as is" and "as available", without any warranties of any 
+          kind, whether express or implied, including but not limited to implied warranties 
+          of merchantability, fitness for a particular purpose, and non-infringement. 
+          The Company does not warrant that the Service will meet your requirements or that 
+          it will be uninterrupted, error-free, or free of viruses or other harmful components.
+        body_2: >
+          To the fullest extent permitted by applicable law, the Company, its affiliates, 
+          officers, directors, employees, agents, and licensors shall not be liable for 
+          any direct, indirect, incidental, special, consequential, or punitive damages 
+          arising out of or related to your use of or inability to use the Service, even 
+          if the Company has been advised of the possibility of such damages. This limitation 
+          of liability applies to all claims, including but not limited to, breach of contract, 
+          tort, negligence, strict liability, misrepresentation, and breach of warranty.
+        body_3: >
+          You agree to indemnify, defend, and hold harmless the Company, its affiliates, 
+          officers, directors, employees, agents, and licensors from and against any and 
+          all claims, liabilities, damages, losses, expenses, and costs (including reasonable 
+          attorneys' fees) arising out of or in connection with your use of the Service, your 
+          violation of these Terms, or your violation of any rights of another party.
+      item13:
+        title: "Governing Law and Dispute Resolution"
+        body_1: >
+          These Terms and any disputes arising out of or related to the Service shall be 
+          governed by and construed in accordance with the laws of United States, without 
+          regard to its conflict of law principles.
+        body_2: >
+          Any dispute, controversy, or claim arising out of or relating to these Terms, 
+          including the breach, termination, or invalidity thereof, shall be settled by 
+          binding arbitration in accordance with the rules of our Arbitration Institution. 
+          The place of arbitration shall be United States. The language of arbitration shall 
+          be Englush. The arbitrator's decision shall be final and binding on the parties.
+        body_3: >
+          You agree that any disputes against the Company will be resolved on an individual 
+          basis and that you will not participate in any class action or class-wide arbitration.
+      item14:
+        title: "Amendments to Terms"
+        body_1: >
+          The Company reserves the right to amend these Terms at any time and for any reason. 
+          Amendments will be effective immediately upon posting of the revised Terms on the 
+          Service. Your continued use of the Service after any such amendments constitutes 
+          your acceptance of the new Terms.
+        body_2: >
+          It is your responsibility to regularly review these Terms and any amendments thereto. 
+          The Company encourages you to check for updates frequently. You acknowledge and agree 
+          that you are deemed to have accepted any amendments to these Terms by continuing to 
+          use the Service after such amendments are posted.
+      item15:
+        title: "Miscellaneous"
+        body_1: >
+          If any provision of these Terms is found to be invalid, illegal, or unenforceable, 
+          the remaining provisions shall remain in full force and effect. The invalid, 
+          illegal, or unenforceable provision shall be replaced by a valid, legal, and 
+          enforceable provision that best matches the intent of the original provision.
+        body_2: >
+          These Terms, together with the Privacy Policy and any other legal notices or 
+          agreements published by the Company on the Service, constitute the entire 
+          agreement between you and the Company concerning the Service and supersede 
+          all prior agreements or understandings, whether written or oral, relating to 
+          the subject matter of these Terms.
+        body_3: >
+          The Company's failure to enforce any right or provision of these Terms shall not 
+          constitute a waiver of such right or provision. A waiver of any right or provision 
+          shall be effective only if in writing and signed by a duly authorized representative 
+          of the Company.
+        body_4: >
+          You may not assign or transfer any of your rights or obligations under these Terms 
+          without the prior written consent of the Company. The Company may assign or transfer 
+          any or all of its rights or obligations under these Terms, in whole or in part, without 
+          notice to you.
+      item16:
+        title: "Contact Information"
+        body: >
+          If you have any questions, concerns, or feedback regarding these Terms, please contact 
+          us at Telegram: @TonixMiningSupport or via E-mail legal@tonix.pro. The Company values 
+          your input and will make every effort to address your inquiries promptly and professionally.

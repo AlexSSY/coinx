@@ -1,0 +1,11 @@
+en:
+  withdraw:
+    title: "Enter Your personal TON address"
+    subtitle: "This amount will be sent to the TON compatible wallet address"
+    min_amount: "Minimum send amount is"
+    address_placeholder: "Your TON address"
+    amount_placeholder: "Amount"
+    fee: "Network fee:"
+    received: "Receive amount:"
+    send_button: "Send"
+    not_yet_button: "Not yet"

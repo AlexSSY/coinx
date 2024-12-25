@@ -1,0 +1,11 @@
+ru:
+  withdraw:
+    title: "Введите ваш личный TON-адрес"
+    subtitle: "Эта сумма будет отправлена на совместимый с TON кошелек"
+    min_amount: "Минимальная сумма отправки"
+    address_placeholder: "Ваш TON-адрес"
+    amount_placeholder: "Сумма"
+    fee: "Сетевая комиссия:"
+    received: "Получаемая сумма:"
+    send_button: "Отправить"
+    not_yet_button: "Еще нет"
