@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
-  scope "(:locale)", locale: /en|ru|ua/ do
+  scope "(:locale)", locale: /en|ru|ua|uz/ do
     # Defines the root path route ("/")
     root "webhook#home"
 
@@ -29,7 +29,7 @@ Rails.application.routes.draw do
     get "/legal_information", to: "webhook#legal_information", as: :legal_information
     get "/friends_list", to: "webhook#friends_list", as: :friends_list
     get "/withdraw", to: "webhook#withdraw", as: :withdraw
-    post "/withdraw/create", to: "webhook#create_withdraw", as: :create_withdraw
+    # post "/withdraw/create", to: "webhook#create_withdraw", as: :create_withdraw
     get "/friends_learn_more", to: "webhook#friends_learn_more", as: :friends_learn_more
     get "/add_content_and_earn", to: "webhook#add_content_and_earn", as: :add_content_and_earn
     get "/language", to: "webhook#language", as: :language
@@ -44,7 +44,6 @@ Rails.application.routes.draw do
     post "/mining/push", to: "webhook#push_mining_amount", as: :push_mining_amount
     post "/mining/start", to: "webhook#start_mining", as: :start_mining
 
-    # this is for webhook mode
-    post "/webhooks/telegram", to: "webhook#home", as: :webhook_telegram
+    resource :withdraw, only: %i[ new create ]
   end
 end

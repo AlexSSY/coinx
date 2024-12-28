@@ -1,0 +1,11 @@
+uz:
+  withdraw:
+    title: "Shaxsiy TON manzilingizni kiriting"
+    subtitle: "Ushbu miqdor TON bilan mos keladigan hamyon manziliga yuboriladi"
+    min_amount: "Eng kam yuborish miqdori"
+    address_placeholder: "Sizning TON manzilingiz"
+    amount_placeholder: "Miqdor"
+    fee: "Tarmoq to'lovi:"
+    received: "Qabul qilingan miqdor:"
+    send_button: "Yuborish"
+    not_yet_button: "Hali emas"

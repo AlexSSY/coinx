@@ -1,0 +1,157 @@
+uz:
+  privacy:
+    title: "Maxfiylik Siyosati"
+    last_updated: "So'nggi yangilanish:"
+    body: >
+      Ushbu Maxfiylik Siyosati ("Siyosat") TONIX.PRO ("Kompaniya," "biz," "bizning" yoki "bizlar") 
+      tomonidan sizga oid ma'lumotlarni yig'ish, ishlatish va oshkor qilishni tushuntiradi, 
+      siz bizning xizmatlarimizga, shu jumladan TONIX ilovasi, Telegram Mini ilovasi, veb-sayti 
+      va ushbu Siyosatga havola qiluvchi boshqa onlayn mahsulotlar va xizmatlar (umumiy qilib "Xizmat") 
+      orqali kirganingizda.
+    items:
+      item1:
+        title: "Yig'adigan Ma'lumotlarimiz"
+        body: >
+          Xizmatga aloqador turli ma'lumotlarni yig'amiz, shu jumladan:
+        ul:
+          li_1:
+            title: "Shaxsiy Ma'lumotlar:"
+            body: >
+              Hisob qaydnomangizni ro'yxatdan o'tkazganda biz sizning ismingiz, foydalanuvchi nomingiz, 
+              elektron pochta manzilingiz va hamyon manzilingiz kabi shaxsiy ma'lumotlarni yig'ishimiz mumkin.
+          li_2:
+            title: "Foydalanish Ma'lumotlari:"
+            body: >
+              Xizmat bilan o'zaro aloqangiz, ya'ni ko'rgan sahifalaringiz yoki kontentingiz, 
+              qidiruvlaringiz, tranzaksiyalar va boshqa harakatlaringiz haqida ma'lumot yig'amiz.
+          li_3:
+            title: "Uskuna Ma'lumotlari:"
+            body: >
+              Xizmatga kirish uchun ishlatgan qurilmangiz haqida, shu jumladan apparat modeli, 
+              operatsion tizim va versiya, noyob qurilma identifikatorlari va mobil tarmoq ma'lumotlari.
+          li_4:
+            title: "Joylashuv Ma'lumotlari:"
+            body: >
+              Qurilmangizdan joylashuv ma'lumotlarini yig'ishimiz mumkin, shu jumladan IP manzilingiz va 
+              agar yoqilgan bo'lsa, GPS ma'lumotlari.
+          li_5:
+            title: "Cookie fayllari va Kuzatish Texnologiyalari:"
+            body: >
+              Xizmatdan foydalanishingiz haqida ma'lumot yig'ish va sizga shaxsiylashtirilgan 
+              kontent va reklamalarni taqdim etish uchun cookie fayllari va shunga o'xshash kuzatish 
+              texnologiyalaridan foydalanamiz.
+      item2:
+        title: "Ma'lumotlaringizni Qanday Foydalanamiz"
+        body: >
+          Yig'gan ma'lumotlaringizni turli maqsadlar uchun ishlatamiz, jumladan:
+        ul:
+          li_1: >
+            Xizmatni taqdim etish, saqlash va yaxshilash uchun.
+          li_2: >
+            Tranzaksiyalarni qayta ishlash va sizga tegishli ma'lumotlarni, jumladan sotib olish 
+            tasdiqlovlari va hisob-fakturalarni yuborish uchun.
+          li_3: >
+            Kompaniya va boshqalar tomonidan taklif etilayotgan mahsulotlar, xizmatlar, takliflar, 
+            aksiyalar, mukofotlar va tadbirlar haqida siz bilan muloqot qilish, shuningdek bizning 
+            fikrimizcha sizni qiziqtirishi mumkin bo'lgan yangiliklar va ma'lumotlarni taqdim etish uchun.
+          li_4: >
+            Xizmatga aloqador tendentsiyalarni, foydalanish va faoliyatni kuzatish va tahlil qilish uchun.
+          li_5: >
+            Firibgarlik tranzaksiyalarini va boshqa noqonuniy faoliyatlarni aniqlash, tekshirish va oldini olish, 
+            shuningdek Kompaniya va boshqalarning huquqlarini va mulkini himoya qilish uchun.
+          li_6: >
+            Xizmatni shaxsiylashtirish va foydalanuvchi profiliga yoki qiziqishlariga mos reklama, kontent yoki 
+            xususiyatlarni taqdim etish uchun.
+          li_7: >
+            Yuridik majburiyatlarga rioya qilish va kelishuvlarimizni amalga oshirish uchun.
+      item3:
+        title: "Ma'lumotlarni Bo'lishish"
+        body: >
+          Biz siz haqingizda yig'gan ma'lumotlarni quyidagicha bo'lishishimiz mumkin:
+        ul:
+          li_1:
+            title: "Xizmat Ko'rsatuvchilar Bilan:"
+            body: >
+              Biz sizning ma'lumotlaringizni uchinchi tomon yetkazib beruvchilari, 
+              maslahatchilar va boshqa xizmat ko'rsatuvchilari bilan bo'lishishimiz mumkin, 
+              ular bizning nomimizdan ishni amalga oshirish uchun ushbu ma'lumotlarga kirishlari kerak.
+          li_2:
+            title: "Biznes Hamkorlar Bilan:"
+            body: >
+              Biz sizning ma'lumotlaringizni bizning biznes hamkorlarimiz bilan 
+              ba'zi mahsulotlar, xizmatlar yoki aksiyalarni taklif qilish uchun bo'lishishimiz mumkin.
+          li_3:
+            title: "Yuridik Sabablarga Ko'ra:"
+            body: >
+              Biz sizning ma'lumotlaringizni so'rovga javoban bo'lishishimiz mumkin, 
+              agar biz oshkor qilishni qo'llaniladigan qonun, me'yoriy hujjat yoki yuridik jarayon 
+              talab qilsa yoki bunga muvofiq bo'lsa.
+          li_4:
+            title: "Biznes O'tkazmalari Bilan Bog'liq:"
+            body: >
+              Biz sizning ma'lumotlaringizni bo'lishishimiz yoki o'tkazishimiz mumkin, 
+              yoki har qanday birlashish, kompaniya aktivlarini sotish, moliyalashtirish yoki 
+              boshqa kompaniyaga biznesning barcha yoki bir qismidan sotish jarayonida.
+          li_5:
+            title: "Sizning Roziligingiz Bilan:"
+            body: >
+               Biz sizning ma'lumotlaringizni sizning roziligingiz yoki yo'riqnomangiz bilan bo'lishishimiz mumkin.
+      item4:
+        title: "Ma'lumotlarni Saqlash"
+        body: >
+          Biz shaxsiy ma'lumotlaringizni faqat ularni yig'ish maqsadlaridan foydalanish uchun zarur bo'lgan muddatga 
+          saqlaymiz, shu jumladan yuridik, hisob-kitob yoki hisobot talablari uchun. Agar shaxsiy ma'lumotlaringiz 
+          kerak bo'lmasa, biz uni xavfsiz usulda yo'q qilamiz, o'chiramiz yoki anonimlashtiramiz.
+      item5:
+        title: "Ma'lumotlar Xavfsizligi"
+        body: >
+          Biz shaxsiy ma'lumotlaringizni ruxsatsiz kirish, foydalanish yoki oshkor qilishdan himoya qilish uchun 
+          turli xil xavfsizlik choralari amal qilamiz. Biroq, internet orqali yuborish usuli yoki elektron saqlash 
+          usuli mutlaqo xavfsiz emas, va biz sizning ma'lumotlaringizning mutlaq xavfsizligini kafolatlay olmaymiz.
+      item6:
+        title: "Sizning Huquqlaringiz va Tanlovlaringiz"
+        body: >
+          Joylashuvingizga qarab, sizning shaxsiy ma'lumotlaringiz bilan bog'liq ba'zi huquqlaringiz bo'lishi mumkin, jumladan:
+        ul:
+          li_1: >
+            Bizda saqlanayotgan shaxsiy ma'lumotlaringizga kirish huquqi.
+          li_2: >
+            Shaxsiy ma'lumotlaringizni to'g'irlash yoki yangilashni so'rash huquqi.
+          li_3: >
+            Shaxsiy ma'lumotlaringizni o'chirishni so'rash huquqi.
+          li_4: >
+            Bizdan marketing materiallarini olishdan voz kechish huquqi.
+          li_5: >
+            Bizning shaxsiy ma'lumotlaringizni ishlashga bo'lgan roziligingizni bekor qilish huquqi, 
+            agar rozilikni ishlashning yuridik asos sifatida belgilangan bo'lsa.
+      item7:
+        title: "Xalqaro Ma'lumot O'tkazmalari"
+        body: >
+          Sizning ma'lumotlaringiz, shu jumladan shaxsiy ma'lumotlaringiz, yig'ilgan mamlakatdan boshqa 
+          bir mamlakatga o'tkazilishi, saqlanishi va qayta ishlanishi mumkin. Ushbu mamlakatlarda ma'lumotlarni 
+          himoya qilish qonunlari sizning mamlakatingiznikidan farq qilishi mumkin. Biz ushbu Siyosatga va 
+          amal qiluvchi qonunlarga muvofiq, sizning shaxsiy ma'lumotlaringizni himoya qilish uchun 
+          tegishli choralar ko'ramiz.
+      item8:
+        title: "Cookies fayllari va Kuzatish Texnologiyalari"
+        body: >
+          Biz cookies fayllari va shunga o'xshash kuzatish texnologiyalaridan foydalanamiz, 
+          xizmatdan foydalanishingiz haqidagi ma'lumotlarni yig'ish, foydalanuvchi tajribasini yaxshilash 
+          va sizga shaxsiylashtirilgan kontent va reklama taqdim etish uchun. Siz cookies fayllaridan foydalanishni 
+          brauzer sozlamalaridan boshqarishingiz mumkin, lekin cookies fayllarini o'chirish 
+          ba'zi xizmat funksiyalaridan foydalanishga ta'sir qilishi mumkin.
+      item9:
+        title: "Ushbu Maxfiylik Siyosatini O'zgartirish"
+        body: >
+          Biz ushbu Maxfiylik Siyosatini qonuniy, texnik yoki biznes o'zgarishlariga javoban vaqti-vaqti bilan 
+          yangilashimiz mumkin. Biz Maxfiylik Siyosatini yangilaganimizda, o'zgartirishlarimizning ahamiyatiga 
+          mos ravishda sizni xabardor qilish uchun tegishli choralar ko'ramiz. Biz, agar kerak bo'lsa, 
+          ma'lumotlarni himoya qilish qonunlari tomonidan talab qilinsa, har qanday muhim o'zgarishlar uchun 
+          sizning roziligingizni olamiz.
+      item10:
+        title: "Aloqa Ma'lumotlari"
+        body: >
+          Agar sizda ushbu Maxfiylik Siyosati yoki bizning ma'lumotlar amaliyotimiz bilan bog'liq savollar yoki tashvishlar 
+          bo'lsa, iltimos biz bilan Telegram orqali @TonixMiningSupport yoki elektron pochta orqali 
+          support@tonix.pro manzili orqali bog'laning. Biz sizning tashvishlaringizni hal qilish uchun barcha 
+          sa'y-harakatlarni qilishga harakat qilamiz.

@@ -15,10 +15,7 @@
         </div>
       </div>
       <div>
-        <%= link_to withdraw_path, class: "py-3 px-4 bg-amber-300/50 rounded-xl flex items-center justify-center", data: { turbo_frame: "modal" } do %>
-          <!--span class="text-gray-300 text-xl">🔒</span-->
-          <i class="text-lg fa-solid fa-wallet text-slate-200"></i>
-        <% end %>
+        <%= component "icon_button", url: new_withdraw_path, fa: "fa-solid fa-wallet", data: { turbo_frame: "modal" } %>
       </div>
     </div>
 
@@ -37,10 +34,7 @@
         </div>
       </div>
       <div>
-        <%= link_to withdraw_path, class: "py-3 px-4 bg-amber-300/50 rounded-xl flex items-center justify-center", data: { turbo_frame: "modal" } do %>
-          <!--span class="text-gray-300 text-xl">🔒</span-->
-          <i class="text-lg fa-solid fa-wallet text-slate-200"></i>
-        <% end %>
+        <%= component "icon_button", url: new_withdraw_path, fa: "fa-solid fa-wallet", data: { turbo_frame: "modal" } %>
       </div>
     </div>
   </div>

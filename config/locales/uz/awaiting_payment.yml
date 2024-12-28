@@ -1,0 +1,21 @@
+uz:
+  awaiting_payment:
+    order_details: "Buyurtma tafsilotlari"
+    back_button: "Orqaga"
+    mining_power: "Ruda qazib olish quvvati:"
+    rent_period: "Ijara muddati:"
+    total_profit: "Jami foyda:"
+    daily_profit: "Kunlik foyda:"
+    price: "Narx:"
+    payment: "To'lov"
+    send_ton_to: >
+      Shaxsiy hamyoningizdan taqdim etilgan depozit manziliga TON yuboring.
+      Faqat Toncoin (TON) yuboring, boshqa aktivlar abadiy yo'qoladi.
+    to_address: "%{amount} TONni ushbu manzilga yuboring:"
+    footer_title: "To'lovni kutish"
+    footer_text_1: >
+      Iltimos, depozitni tasdiqlash jarayoni o'rtacha 15 daqiqa davom etishini 
+      unutmang.
+    footer_text_2: >
+      Agar siz yuborgan summa ushbu to'lov tizimi orqali depozit qilish uchun 
+      minimal miqdordan kam bo'lsa, bunday to'lov xayriya sifatida hisoblanadi.

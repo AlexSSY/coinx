@@ -149,6 +149,7 @@ GEM
       net-pop
       net-smtp
     marcel (1.0.4)
+    method_source (1.1.0)
     mini_mime (1.1.5)
     minitest (5.25.4)
     msgpack (1.7.5)
@@ -165,6 +166,8 @@ GEM
       timeout
     net-smtp (0.5.0)
       net-protocol
+    nice_partials (0.10.1)
+      actionview (>= 4.2.6)
     nio4r (2.7.4)
     nokogiri (1.17.2-aarch64-linux)
       racc (~> 1.4)
@@ -261,6 +264,9 @@ GEM
       rubocop-rails
     ruby-progressbar (1.13.0)
     securerandom (0.4.1)
+    simple_form (5.3.1)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -307,6 +313,10 @@ GEM
     unicode-emoji (4.0.4)
     uri (1.0.2)
     useragent (0.16.11)
+    view_component (3.21.0)
+      activesupport (>= 5.2.0, < 8.1)
+      concurrent-ruby (~> 1.0)
+      method_source (~> 1.0)
     web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -341,9 +351,11 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   mysql2 (~> 0.5.6)
+  nice_partials (~> 0.10.1)
   puma (>= 5.0)
   rails (~> 7.2.2, >= 7.2.2.1)
   rubocop-rails-omakase
+  simple_form (~> 5.3)
   sprockets-rails
   sqlite3 (>= 1.4)
   stimulus-rails
@@ -351,6 +363,7 @@ DEPENDENCIES
   telegram-bot-ruby (~> 2.2)
   turbo-rails
   tzinfo-data
+  view_component (~> 3.21)
   web-console
 
 BUNDLED WITH

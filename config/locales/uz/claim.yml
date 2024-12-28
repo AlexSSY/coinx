@@ -1,0 +1,9 @@
+uz:
+  claim:
+    title: "TONni hamyon balansiga olish"
+    subtitle: >
+      Bir marta olish amalga oshirilgach, qazib olingan TON 
+      sizning qazib olish balansingizdan olinadi va hamyon balansingizga qo'shiladi.
+    min_amount: "Minimal olish miqdori"
+    claim_button: "Olish"
+    back_button: "Orqaga"

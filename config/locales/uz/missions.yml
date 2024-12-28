@@ -1,0 +1,48 @@
+uz:
+  missions:
+    title: "Yangi Missiyalar"
+    subtitle: "Vazifalarni bajarib, ko'proq daromad oling"
+    tabs:
+      tab1: "promo"
+      tab2: "ref"
+      tab3: "tanlov"
+    bodies:
+      tab1:
+        item1: "Konfiguratsiya kuchini oshirish"
+        item2: "Xush kelibsiz bonus"
+      tab2:
+        friends: "Do'stlar (Lv. 1)"
+        item1: "1 do'stni taklif eting"
+        item2: "3 do'stni taklif eting"
+        item3: "10 do'stni taklif eting"
+        item4: "25 do'stni taklif eting"
+        item5: "50 do'stni taklif eting"
+        item6: "100 do'stni taklif eting"
+        item7: "500 do'stni taklif eting"
+        item8: "1000 do'stni taklif eting"
+        item9: "10000 do'stni taklif eting"
+      tab3:
+        title: "TONIX ilovasini boshqalarga aytib bering"
+        get_up: "Va"
+        each_video: "har bir video uchun TONIX oling"
+        button: "Kontent qo'shing va daromad oling"
+        get_invite_link: "Do'stlar bo'limidan taklif havolasini oling"
+        rules:
+          title: "Qoidalar"
+          rule1:
+            title: "Kontent yarating:"
+            content: >
+              TONIX ilovasi haqida YouTube Shorts, Instagram Reels yoki TikTok uchun video yarating.
+          rule2:
+            title: "Havolani yuboring:"
+            content: >
+              Videongiz 100+ ko'rishlar olgandan so'ng, havolani bizga yuboring.
+          rule3:
+            title: "Havolani yuboring:"
+            content: >
+              Videongiz 100+ ko'rishlar olgandan so'ng, havolani bizga yuboring.
+          rule4:
+            title: "Mukofotlar oling:"
+            content: >
+              Videongiz qancha ko'p ko'rish olsa, shuncha yaxshi mukofot oling. 
+              Bir video uchun %{reward} gacha daromad olishingiz mumkin.

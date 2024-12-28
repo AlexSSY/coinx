@@ -1,0 +1,12 @@
+uz:
+  boost:
+    title: "Ruda qazib olish quvvatini oshirish"
+    subtitle: >
+      Bu yerda siz 30 kun davomida ruda qazib olish quvvatini ijaraga olishingiz mumkin.
+      Qancha ko'p qazib olish quvvatingiz bo'lsa, shuncha ko'p TON qazishingiz mumkin.
+      Investitsiya rentabelligi kuniga 8.493% va jami 254.784%.
+    total_profit: "Jami foyda"
+    daily_profit: "Kunlik foyda"
+    mining_amount: "Qazib olish miqdori:"
+    add_button: "Qo'shish"
+    back_button: "Orqaga"

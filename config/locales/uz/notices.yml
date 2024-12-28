@@ -1,0 +1,10 @@
+uz:
+  notices:
+    contest:
+      msg: "Havolangiz muvaffaqiyatli yuborildi"
+    claim:
+      msg: "Olindi!"
+    withdraw:
+      msg: "Ma'qullandi!"
+    push_native_tx:
+      msg: "TON qabul qilindi"

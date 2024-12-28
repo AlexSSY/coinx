@@ -1,0 +1,5 @@
+uz:
+  friends_list:
+    back_button: "Orqaga"
+    level: "Daraja %{number}"
+    no_friends: "Hali do'stlaringiz yo'q ..."

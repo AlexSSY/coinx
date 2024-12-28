@@ -1,0 +1,73 @@
+<%= turbo_frame_tag "withdraw_form" do %>
+  <%= simple_form_for transaction, url: withdraw_path, data: { controller: "withdraw", withdraw_ton_value: current_user.ton, withdraw_tonix_value: current_user.tonix, withdraw_fee_value: "0.3" } do |f| %>
+    <div class="space-y-2" >
+      <span class="block text-center text-sm">
+        <%= t("withdraw.min_amount") %> 
+        <span data-withdraw-target="minSend">-</span>
+        </span>
+      <div class="relative">
+        <select 
+          class="block w-full appearance-none bg-black/20 rounded-xl py-2 px-3 pl-8 border-transparent focus:outline-none focus:ring-transparent"
+          data-withdraw-target="select"
+          data-action="change->withdraw#selectCurrency"
+          name="transaction[assembly]"
+        >
+          <option class="text-white bg-black/20" value="ton" <% if transaction.assembly == "ton" %>selected<% end %>>
+            TON
+          </option>
+          <option class="text-white bg-black/20" value="tonix" <% if transaction.assembly == "tonix" %>selected<% end %>>
+            TONIX
+          </option>
+        </select>
+        <img 
+          class="absolute w-5 h-5 top-0 left-2 translate-y-1/2"
+          src=""
+          data-withdraw-target="icon">
+      </div>
+      <div class="space-y-1">
+        <input 
+          class="<%= 'ring-1 ring-red-500' if transaction.errors[:receiver].any? %> text-center text-sm w-full appearance-none bg-black/20 rounded-xl py-2 px-3 border-transparent" 
+          type="text" 
+          placeholder="<%= t("withdraw.address_placeholder") %>"
+          name="transaction[receiver]"
+          value="<%= transaction.receiver %>"
+        >
+        <% if transaction.errors[:receiver].any? %>
+          <div class="text-red-500 text-sm">
+            <%= transaction.errors[:receiver].first %>
+          </div>
+        <% end %>
+      </div>
+      <div class="space-y-1">
+        <div class="relative">
+          <input 
+            class="<%= 'ring-1 ring-red-500' if transaction.errors[:amount].any? %> border-0 text-center text-sm w-full appearance-none bg-black/20 focus:ring-1 focus:ring-indigo-500 rounded-xl py-2 px-3" 
+            type="number" 
+            placeholder="<%= t("withdraw.amount_placeholder") %>"
+            data-withdraw-target="amount"
+            data-action="input->withdraw#amountChanged"
+            name="transaction[amount]"
+            step="any"
+            value="<%= transaction.amount %>"
+          >
+          <span 
+            class="absolute block text-sm text-blue-500 cursor-pointer right-1 bottom-1/2 -translate-x-2 translate-y-1/2"
+            data-action="click->withdraw#max"
+          >
+            MAX
+          </span>
+        </div>
+        <% if transaction.errors[:amount].any? %>
+          <div class="text-red-500 text-sm">
+            <%= transaction.errors[:amount].first %>
+          </div>
+        <% end %>
+      </div>
+      <div class="space-y-1">
+        <span class="text-white/50 block text-sm text-center"><%= t("withdraw.fee") %> <span data-withdraw-target="fee">0,3</span> TON</span>
+        <span class="text-white/50 block text-sm text-center font-bold"><%= t("withdraw.received") %> <span data-withdraw-target="received">0</span> <span data-withdraw-target="currency">TON</span></span>
+      </div>
+      <%= component "button", text: t("withdraw.send_button") %>
+    </div>
+  <% end %>
+<% end %>

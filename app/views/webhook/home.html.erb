@@ -1,50 +1,45 @@
 <!-- Top Balances -->
-<div class="w-full space-y-2 px-4 py-4">
+<div class="space-y-3 w-full overflow-hidden">
+  <div class="w-full space-y-4 px-4 py-4">
 
-  <%= turbo_stream_from "user_#{current_user.id}" %>
-  <%= render partial: "webhook/balances", locals: { user: current_user } %>
+    <%= turbo_stream_from "user_#{current_user.id}" %>
+    <%= render partial: "webhook/balances", locals: { user: current_user } %>
 
-</div>
+  </div>
 
-<div 
-  data-controller="fan" 
-  data-fan-mining-started-value="<%= current_user_mining_started? %>"
-  data-fan-gh-amount-value="<%= current_user.gh %>"
->
-  <!-- Centered Icon -->
-  <div class="relative mb-2">
+  <div 
+    class="w-full space-y-2 overflow-hidden"
+    data-controller="fan" 
+    data-fan-mining-started-value="<%= current_user_mining_started? %>"
+    data-fan-gh-amount-value="<%= current_user.gh %>"
+  >
     <!-- Circle with Image -->
-    <div class="rounded-full bg-transparent flex items-center justify-center relative" data-action="click->fan#fanClicked">
-      <div src="/fan.png" alt="Fan Icon" class="w-64 h-64 rounded-full inset-0 bg-[url('/fan.png')] bg-cover" data-fan-target="fan"></div>
-      <div class="absolute z-100 bg-[length:300px_300px] bg-center bg-[url('fan.png')] rounded-full w-16 h-16"></div>
+    <div class="rounded-full overflow-hidden flex items-center justify-center mx-auto relative" style="overflow: visible; width: 260px; height: 260px;" data-fan-target="fan" data-action="click->fan#fanClicked">
+      <!-- div src="/fan.png" alt="Fan Icon" class="w-64 h-64 rounded-full inset-0 bg-[url('/fan.png')] bg-cover" data-fan-target="fan"></div -->
+      <!-- div class="absolute z-100 bg-[length:300px_300px] bg-center bg-[url('fan.png')] rounded-full w-16 h-16"></div -->
+      <div class="user-select-none absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+        <img class="h-auto max-w-[260px] user-select-none animate-[spin_4s_linear_infinite]" src="/image.png" draggable="false" alt="Spinner">
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="13.84 15.63 28.31 28.31" class="w-9 h-9 text-white absolute inset-0 m-auto top-1 mix-blend-overlay"><path d="M37.56 15.628H18.44c-3.516 0-5.745 3.792-3.976 6.858l11.801 20.455c.77 1.335 2.7 1.335 3.47 0l11.804-20.455c1.767-3.06-.462-6.858-3.975-6.858h-.003zM26.255 36.807l-2.57-4.974-6.202-11.092c-.409-.71.096-1.62.953-1.62h7.816V36.81l.003-.002zM38.51 20.739l-6.2 11.096-2.57 4.972V19.119h7.817c.857 0 1.362.91.953 1.62z" fill="#fff"></path></svg>
+    </div>
+
+    <!-- Balance with Speed -->
+    <div class="text-center mb-4">
+      <p class="text-2xl font-semibold text-gray-100">
+        <span class="font-roboto-mono" data-fan-target="average">0.0000000000</span>
+        <span class="text-amber-300 text-center">TON</span>
+      </p>
+      <p class="text-gray-400 text-sm">⚙️ <%= current_user.gh %> GH/s ⚡</p>
     </div>
   </div>
 
-  <!-- Balance with Speed -->
-  <div class="text-center mb-4">
-    <p class="text-2xl font-semibold text-gray-100">
-      <span class="font-roboto-mono" data-fan-target="average">0.0000000000</span>
-      <span class="text-amber-300 text-center">TON</span>
-    </p>
-    <p class="text-gray-400 text-sm">⚙️ <%= current_user.gh %> GH/s ⚡</p>
-  </div>
-</div>
-
-<!-- Action Buttons -->
-<% if current_user_mining_started? %>
+  <!-- Action Buttons -->
   <div class="flex space-x-4 w-full px-4">
-    <%= link_to claim_path, class: "flex-1 bg-amber-400 text-black text-center font-semibold py-3 rounded-2xl space-x-2", data: { turbo_frame: "modal" } do %>
-      <i class="fa-duotone fa-solid fa-coins text-xl"></i>
-      <span><%= t("home.claim") %></span>
+    <% if current_user_mining_started? %>
+      <%= component "icon_button", url: claim_path, text: t("home.claim"), fa: "fa-solid fa-coins", data: { turbo_frame: "modal" } %>
+      <%= component "icon_button", url: boost_path, text: t("home.boost"), fa: "fa-solid fa-circle-up", data: { turbo_frame: "modal" } %>
+    <% else %>
+      <%= component "icon_button", url: start_mining_path, text: t("home.start_mining"), fa: "fa-solid fa-circle-up", data: { turbo_method: :post } %>
     <% end %>
-    <%= link_to boost_path, class: "flex-1 bg-amber-400 text-black text-center font-semibold py-3 rounded-2xl space-x-2", data: { turbo_frame: "modal" } do %>
-      <i class="fa-solid fa-circle-up text-xl"></i>
-      <span><%= t("home.boost") %></span>
-    <% end %>
-  <% else %>
-    <%= button_to start_mining_path, class: "bg-amber-400 text-black text-center font-semibold py-3 px-12 rounded-2xl space-x-2", form_class: "w-full flex justify-center" do %>
-      <i class="fa-solid fa-circle-up text-xl"></i>
-      <span><%= t("home.start_mining") %></span>
-    <% end %>
-  <% end %>
+  </div>
 </div>

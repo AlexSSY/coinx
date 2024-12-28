@@ -5,7 +5,8 @@ module.exports = {
     './public/*.html',
     './app/helpers/**/*.rb',
     './app/javascript/**/*.js',
-    './app/views/**/*.{erb,haml,html,slim}'
+    './app/views/**/*.{erb,haml,html,slim}',
+    './app/components/**/*.{erb,rb,haml,html,slim}'
   ],
   safelist: [
     'opacity-0',
@@ -36,6 +37,11 @@ module.exports = {
           "0%": { opacity: 1 },
           "100%": { opacity: 0 },
         },
+        boeing: {
+          "0%": { rotate: "0deg", transform: "scale(1)", },
+          "30%": { transform: "scale(0.85)" },
+          "to": { rotate: "360deg", transform: "scale(1)", },
+        }
       },
       animation: {
         'spin-slow': 'spin 2s linear infinite',
@@ -43,6 +49,7 @@ module.exports = {
         'rotate-bg': 'rotate-bg 10s linear infinite',
         'zoom-out-in': 'zoom-out-in 1s linear',
         fade: "fadeOut 4s ease-in-out",
+        "boeing": "boeing .5s ease-in-out infinite",
       },
     },
   },

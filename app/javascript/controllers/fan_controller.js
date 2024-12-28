@@ -26,15 +26,6 @@ export default class extends Controller {
         if (this.averageTarget !== null)
           this.averageTarget.textContent = this.mining.toFixed(10)
       }, 1)
-
-      let rotation = 0
-
-      setInterval(() => {
-        rotation += (this.speed + this.tapSpeed)
-        // element.style.backgroundImage = `url('your-image-url.jpg')`;
-        if (this.fanTarget)
-          this.fanTarget.style.transform = `rotate(${rotation}deg)`
-      }, 16) // Roughly 60 FPS
       // update server side mining amount
       this.pushIntervalHandler = setInterval(() => {
         this._pushMining()
@@ -97,8 +88,10 @@ export default class extends Controller {
   fanClicked() {
     clearTimeout(this.speedHandler)
     this.tapSpeed = 5
+    this.fanTarget.classList.add("animate-boeing")
     this.speedHandler = setTimeout(() => {
       this.tapSpeed = 0
-    }, 1000)
+      this.fanTarget.classList.remove("animate-boeing")
+    }, 500)
   }
 }

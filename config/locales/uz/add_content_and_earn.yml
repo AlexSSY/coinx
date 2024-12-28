@@ -1,0 +1,9 @@
+uz:
+  add_content_and_earn:
+    title: "Havolani tasdiqlash uchun qo'shing"
+    subtitle: "Sizning kontentingizga havola"
+    rewards: "Mukofotlar"
+    views: "ko'rishlar"
+    views_number: "Ko'rishlar soni"
+    add_button: "Qo'shish"
+    back_button: "Orqaga"

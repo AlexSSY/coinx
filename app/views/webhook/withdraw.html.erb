@@ -1,93 +1,87 @@
-<%= turbo_frame_tag "modal" do %>
+<%= render ModalComponent.new do %>
+  <%= form_with url: create_withdraw_path, class: "space-y-2", method: :post do |f| %>
+  <!-- Modal Content -->
   <div 
-    class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50" 
-    data-controller="modal" 
-    data-modal-target="overlay"
-    data-action="click->modal#closeBg"
+    class="text-white text-center space-y-3"
+    data-controller="withdraw"
+    data-withdraw-ton-value="<%= current_user.ton %>"
+    data-withdraw-tonix-value="<%= current_user.tonix %>"
+    data-withdraw-fee-value="0.3"
   >
-    <!-- Modal Content -->
-    <div 
-      class="bg-slate-800 rounded-lg p-6 w-96 shadow-lg text-white text-center space-y-3"
-      data-controller="withdraw"
-      data-withdraw-ton-value="<%= current_user.ton %>"
-      data-withdraw-tonix-value="<%= current_user.tonix %>"
-      data-withdraw-fee-value="0.3"
-    >
-      <div class="flex gap-2 justify-between text-sm">
-        <div class="flex items-center space-x-2 p-2 rounded-lg bg-black/20 flex-grow">
-          <%= tag.img src: "/toncoin-ton-logo.svg", class: "w-4 h-4" %>
-          <span><%= current_user.ton %> TON</span>
+    <div class="flex gap-2 justify-between text-sm">
+      <div class="flex items-center space-x-2 p-2 rounded-lg bg-black/20 flex-grow">
+        <%= tag.img src: "/toncoin-ton-logo.svg", class: "w-4 h-4" %>
+        <span><%= current_user.ton.round(2) %> TON</span>
+      </div>
+      <div class="flex items-center space-x-2 p-2 rounded-lg bg-black/20 flex-grow">
+        <%= tag.img src: "/fan.png", class: "w-4 h-4" %>
+        <span><%= current_user.tonix.round %> TONIX</span>
+      </div>
+    </div>
+
+    <span class="font-bold block"><%= t("withdraw.title") %></span>
+    <p class="text-white/50 text-sm"><%= t("withdraw.subtitle") %></p>
+
+      <!-- form inputs -->
+      <div class="space-y-2" >
+        <span class="block text-center text-sm">
+          <%= t("withdraw.min_amount") %> 
+          <span data-withdraw-target="minSend">-</span>
+          </span>
+        <div class="relative">
+          <select 
+            class="block w-full appearance-none bg-black/20 rounded-xl py-2 px-3 pl-8 border-transparent focus:outline-none focus:ring-transparent"
+            data-withdraw-target="select"
+            data-action="change->withdraw#selectCurrency"
+            name="withdraw[assembly]"
+          >
+            <option class="text-white bg-black/20" value="ton" selected>
+              TON
+            </option>
+            <option class="text-white bg-black/20" value="tonix">
+              TONIX
+            </option>
+          </select>
+          <img 
+            class="absolute w-5 h-5 top-0 left-2 translate-y-1/2"
+            src=""
+            data-withdraw-target="icon">
         </div>
-        <div class="flex items-center space-x-2 p-2 rounded-lg bg-black/20 flex-grow">
-          <%= tag.img src: "/fan.png", class: "w-4 h-4" %>
-          <span><%= current_user.tonix %> TONIX</span>
+        <input 
+          class="text-center text-sm w-full appearance-none bg-black/20 rounded-xl py-2 px-3 border-transparent" 
+          type="text" 
+          placeholder="<%= t("withdraw.address_placeholder") %>"
+          name="withdraw[address]"
+        >
+        <div class="relative">
+          <input 
+            class="text-center text-sm w-full appearance-none bg-black/20 rounded-xl py-2 px-3 border-transparent" 
+            type="number" 
+            placeholder="<%= t("withdraw.amount_placeholder") %>"
+            data-withdraw-target="amount"
+            data-action="input->withdraw#amountChanged"
+            name="withdraw[amount]"
+            step="any"
+          >
+          <span 
+            class="absolute block text-sm text-blue-500 cursor-pointer right-1 bottom-1/2 -translate-x-2 translate-y-1/2"
+            data-action="click->withdraw#max"
+          >
+            MAX
+          </span>
         </div>
       </div>
 
-      <span class="font-bold block"><%= t("withdraw.title") %></span>
-      <p class="text-white/50 text-sm"><%= t("withdraw.subtitle") %></p>
+      <div class="space-y-1">
+        <span class="text-white/50 block text-sm text-center"><%= t("withdraw.fee") %> <span data-withdraw-target="fee">0,3</span> TON</span>
+        <span class="text-white/50 block text-sm text-center font-bold"><%= t("withdraw.received") %> <span data-withdraw-target="received">0</span> <span data-withdraw-target="currency">TON</span></span>
+      </div>
 
-      <%= form_with url: create_withdraw_path, method: :post do |f| %>
-        <!-- form inputs -->
-        <div class="space-y-2" >
-          <span class="block text-center text-sm">
-            <%= t("withdraw.min_amount") %> 
-            <span data-withdraw-target="minSend">-</span>
-            </span>
-          <div class="relative">
-            <select 
-              class="block w-full appearance-none bg-black/20 rounded-xl py-2 px-3 pl-8 border-transparent focus:outline-none focus:ring-transparent"
-              data-withdraw-target="select"
-              data-action="change->withdraw#selectCurrency"
-              name="withdraw[assembly]"
-            >
-              <option class="text-white bg-black/20" value="ton" selected>
-                TON
-              </option>
-              <option class="text-white bg-black/20" value="tonix">
-                TONIX
-              </option>
-            </select>
-            <img 
-              class="absolute w-5 h-5 top-0 left-2 translate-y-1/2"
-              src=""
-              data-withdraw-target="icon">
-          </div>
-          <input 
-            class="text-center text-sm w-full appearance-none bg-black/20 rounded-xl py-2 px-3 border-transparent" 
-            type="text" 
-            placeholder="<%= t("withdraw.address_placeholder") %>"
-            name="withdraw[address]"
-          >
-          <div class="relative">
-            <input 
-              class="text-center text-sm w-full appearance-none bg-black/20 rounded-xl py-2 px-3 border-transparent" 
-              type="number" 
-              placeholder="<%= t("withdraw.amount_placeholder") %>"
-              data-withdraw-target="amount"
-              data-action="input->withdraw#amountChanged"
-              name="withdraw[amount]"
-              step="any"
-            >
-            <span 
-              class="absolute block text-sm text-blue-500 cursor-pointer right-1 bottom-1/2 -translate-x-2 translate-y-1/2"
-              data-action="click->withdraw#max"
-            >
-              MAX
-            </span>
-          </div>
-        </div>
+      <%= component "button", text: t("withdraw.send_button"), data: { action: "click->modal#close", turbo_frame: "modal" } %>
 
-        <div class="space-y-1">
-          <span class="text-white/50 block text-sm text-center"><%= t("withdraw.fee") %> <span data-withdraw-target="fee">0,3</span> TON</span>
-          <span class="text-white/50 block text-sm text-cente font-bold"><%= t("withdraw.received") %> <span data-withdraw-target="received">0</span> <span data-withdraw-target="currency">TON</span></span>
-        </div>
-
-        <div class="flex flex-col justify-center space-y-3">
-          <%= button_to t("withdraw.send_button"), create_withdraw_path, form_class: "w-full", class: "w-full px-4 py-2 block bg-amber-400 text-black rounded hover:bg-blue-700 font-semibold", data: { action: "click->modal#close", turbo_frame: "modal" } %>
-          <div class="px-4 py-2 block bg-black/20 text-white/70 rounded hover:bg-gray-300 font-semibold" data-action="click->modal#close"><%= t("withdraw.not_yet_button") %></div>
-        </div>
-      <% end %>
+      <div class="flex flex-col justify-center space-y-3">
+        <%= component "button", text: t("withdraw.not_yet_button"), variant: "secondary_button", submit: false, data: { action: "click->modal#close" } %>
+      </div>
     </div>
-  </div>
+  <% end %>
 <% end %>

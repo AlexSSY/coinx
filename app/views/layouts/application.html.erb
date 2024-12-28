@@ -21,7 +21,7 @@
   </head>
 
   <body 
-    class="bg-slate-800" 
+    class="bg-slate-800 min-h-screen w-screen" 
     data-controller="transactions"
     data-transactions-address-value="<%= current_user.ton_address %>"
   >
@@ -35,7 +35,7 @@
 
       <!-- Bottom Navigation -->
       <div class="fixed bottom-0 w-full px-7 mb-2">
-        <div class="flex bg-slate-900 px-3 py-2 rounded-2xl text-white text-base">
+        <div class="flex bg-slate-900 px-3 py-2 rounded-2xl text-white text-base text-center">
           <% class_list = "flex flex-1 flex-col space-y-1 items-center py-2" + (current_page?(wallet_path) ? " text-amber-400 bg-white/5 rounded-xl" : "") %>
           <%= link_to wallet_path, class: class_list do %>
             <i class="fa-solid fa-wallet text-xl"></i>

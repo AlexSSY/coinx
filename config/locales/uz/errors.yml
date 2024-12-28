@@ -1,0 +1,11 @@
+uz:
+  errors:
+    claim:
+      too_small: "Talab qilinayotgan summa juda kichik"
+    contest:
+      msg: "Havola yuborishda xato yuz berdi"
+    withdraw:
+      msg: "Balans juda kichik"
+      msg2: "Tranzaksiya xatosi"
+    push_native_tx:
+      msg: "TON olishda xato"

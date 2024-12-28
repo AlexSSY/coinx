@@ -1,0 +1,32 @@
+<%= render ModalComponent.new do %>
+  <!-- Modal Content -->
+  <div 
+    class="text-white text-center space-y-3"
+    data-controller="withdraw"
+    data-withdraw-ton-value="<%= current_user.ton %>"
+    data-withdraw-tonix-value="<%= current_user.tonix %>"
+    data-withdraw-fee-value="0.3"
+  >
+    <div class="flex gap-2 justify-between text-sm">
+      <div class="flex items-center space-x-2 p-2 rounded-lg bg-black/20 flex-grow">
+        <%= tag.img src: "/toncoin-ton-logo.svg", class: "w-4 h-4" %>
+        <span><%= current_user.ton.round(2) %> TON</span>
+      </div>
+      <div class="flex items-center space-x-2 p-2 rounded-lg bg-black/20 flex-grow">
+        <%= tag.img src: "/fan.png", class: "w-4 h-4" %>
+        <span><%= current_user.tonix.round %> TONIX</span>
+      </div>
+    </div>
+
+    <span class="font-bold block"><%= t("withdraw.title") %></span>
+    <p class="text-white/50 text-sm"><%= t("withdraw.subtitle") %></p>
+
+      <!-- form -->
+      <%= render partial: "form", locals: { transaction: @transaction } %>
+
+      <div class="flex flex-col justify-center space-y-3">
+        <%= component "button", text: t("withdraw.not_yet_button"), submit: false, variant: "secondary_button", data: { action: "click->modal#close" } %>
+      </div>
+    </div>
+  </div>
+<% end %>

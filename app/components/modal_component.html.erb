@@ -1,0 +1,25 @@
+<%= turbo_frame_tag "modal" do %>
+  <div 
+
+    <% if full_screen %>
+      class="fixed inset-0 h-screen w-full bg-slate-800 text-white p-6 space-y-3 text-center z-50 overflow-y-auto" 
+    <% else %>
+      class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50"
+    <% end %>
+
+    data-controller="modal" 
+    data-modal-target="overlay"
+    data-action="click->modal#closeBg"
+  >
+    <div 
+
+      <% if full_screen %>
+        class="bg-slate-800 rounded-md p-3 w-96 shadow-lg"
+      <% else %>
+        class="bg-slate-800 rounded-md p-3 mx-4 shadow-lg"
+      <% end %>
+    >
+      <%= content %>
+    </div>
+  </div>
+<% end %>

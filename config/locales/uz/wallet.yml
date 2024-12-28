@@ -1,0 +1,9 @@
+uz:
+  wallet:
+    balance: "Balans"
+    boost: "Kuchaytirish"
+    transaction_history: "Transaksiya Tarixi"
+    date: "Sana"
+    sum: "Summa"
+    type: "Tur"
+    status: "Holat"

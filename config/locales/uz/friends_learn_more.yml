@@ -1,0 +1,24 @@
+uz:
+  friends_learn_more:
+    title: "Yo'ldosh mukofotlari"
+    subtitle: >
+      Bizning yo'ldosh dasturimizda 3 daraja qo'llab-quvvatlash mavjud bo'lib, 
+      bu sizga do'stlarni taklif qilganingiz uchun bonuslar olish imkonini beradi:
+    reward1:
+      title: "1-daraja:"
+      content: >
+        Siz har bir do'stingiz ro'yxatdan o'tganida bonus olasiz, 
+        agar ular sizning yo'ldosh havolalaringiz orqali ro'yxatdan o'tgan bo'lsa.
+    reward2:
+      title: "2-daraja:"
+      content: >
+        Agar sizning yo'ldoshingizning do'stlari ham ro'yxatdan o'tib, 
+        dasturdan foydalansa, siz qo'shimcha bonus olasiz.
+    reward3:
+      title: "3-daraja:"
+      content: >
+        Agar ikkinchi darajali do'stlaringiz yangi ishtirokchilarni taklif qilsa, 
+        siz bonus olasiz.
+    footer_text: >
+      Shunday qilib, siz nafaqat bevosita takliflaringiz uchun, balki 
+      tarmog'ingizdagi barcha keyingi darajalardagi faolliklar uchun ham mukofot olasiz.

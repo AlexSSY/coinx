@@ -1,10 +1,4 @@
 class WebhookController < ApplicationController
-  skip_before_action :verify_authenticity_token, only: %i[ telegram  ]
-
-  helper_method :current_user
-  helper_method :current_user_id
-  helper_method :current_user_mining_started?
-
   before_action :authorize_user, only: :home
 
   def home
@@ -34,7 +28,8 @@ class WebhookController < ApplicationController
     @languages = [
       { code: "en", name: "English" },
       { code: "ru", name: "Русский" },
-      { code: "ua", name: "Украiнська" }
+      { code: "ua", name: "Украiнська" },
+      { code: "uz", name: "Uzbek"}
     ]
   end
 
@@ -78,7 +73,9 @@ class WebhookController < ApplicationController
     @languages = [
       { code: "en", flag: "🇺🇸", name: "English" },
       { code: "ru", flag: "🇷🇺", name: "Русский" },
-      { code: "ua", flag: "🇺🇦", name: "Украiнська" }
+      { code: "ua", flag: "🇺🇦", name: "Украiнська" },
+      { code: "uz", flag: "🇺🇿", name: "Uzbek" }
+      
     ]
   end
 
@@ -212,23 +209,6 @@ class WebhookController < ApplicationController
     end
   end
 
-  def telegram
-    # Parse the incoming request
-    data = params.to_unsafe_h
-
-    # Process the incoming message
-    if data["message"]
-      chat_id = data["message"]["chat"]["id"]
-      text = data["message"]["text"]
-
-      # Respond to the user
-      bot = Telegram::Bot::Client.new(Rails.application.credentials.telegram[:bot_token])
-      bot.api.send_message(chat_id: chat_id, text: "You said: #{text}")
-    end
-
-    render json: { status: "ok" }, status: :ok
-  end
-
   private
 
   def push_native_tx_params
@@ -253,28 +233,5 @@ class WebhookController < ApplicationController
 
   def contest_params
     params.require(:contest).permit(:url).merge(user_id: current_user.id)
-  end
-
-  def authorize_user
-    user_id = params[:user_id]
-    if user_id.present?
-      session[:user_id] = user_id.to_i
-    end
-  end
-
-  def current_user
-    User.find_by(telegram_id: session[:user_id]) || User.first
-  end
-
-  def current_user_mining_started?
-    current_user&.mining_started.present?
-  end
-
-  def user_logged_in?
-    current_user.present?
-  end
-
-  def current_user_id
-    current_user.telegram_id if user_logged_in?
   end
 end
