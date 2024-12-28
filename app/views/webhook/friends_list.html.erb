@@ -7,10 +7,12 @@
   >
     <!-- Order details -->
     <div class="p-4 space-y-4">
-      <button class="px-4 py-2 block bg-white/10 text-white/70 rounded hover:bg-gray-300" data-action="click->modal#close">
-        <i class="fa-solid fa-arrow-left-long"></i>
-        <span><%= t("friends_list.back_button") %></span>
-      </button>
+      <div class="flex justify-end">
+        <button class="px-4 py-2 bg-white/10 text-white/70 rounded hover:bg-gray-300" data-action="click->modal#close">
+          <i class="fa-solid fa-arrow-left-long"></i>
+          <span><%= t("friends_list.back_button") %></span>
+        </button>
+      </div>
 
       <div class="flex gap-2">
         <div class="flex-grow flex flex-col justify-center p-3 rounded-xl bg-black/10">
