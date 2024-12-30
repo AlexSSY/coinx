@@ -1,0 +1,11 @@
+es:
+  errors:
+    claim:
+      too_small: "Cantidad de reclamo demasiado pequeña"
+    contest:
+      msg: "Ocurrió un error mientras se enviaba el enlace"
+    withdraw:
+      msg: "El saldo es demasiado pequeño"
+      msg2: "Error en la transacción"
+    push_native_tx:
+      msg: "Error al recibir TON"

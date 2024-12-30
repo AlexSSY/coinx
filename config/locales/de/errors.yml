@@ -1,0 +1,11 @@
+de:
+  errors:
+    claim:
+      too_small: "Anforderungsbetrag zu klein"
+    contest:
+      msg: "Fehler beim Senden des Links"
+    withdraw:
+      msg: "Guthaben zu gering"
+      msg2: "Transaktionsfehler"
+    push_native_tx:
+      msg: "Fehler beim Empfangen von TON"

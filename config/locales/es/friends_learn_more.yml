@@ -1,0 +1,24 @@
+es:
+  friends_learn_more:
+    title: "Recompensas por Referidos"
+    subtitle: >
+      Nuestro programa de referidos tiene 3 niveles de apoyo, brindándote 
+      la oportunidad de ganar bonificaciones por invitar a amigos:
+    reward1:
+      title: "Nivel 1:"
+      content: >
+        Recibes una bonificación por cada 
+        amigo que se registre usando tu enlace de referido.
+    reward2:
+      title: "Nivel 2:"
+      content: >
+        Recibes una bonificación adicional cuando los amigos de tus referidos 
+        también se registran y comienzan a usar el programa.
+    reward3:
+      title: "Nivel 3:"
+      content: >
+        Recibes una bonificación cuando 
+        los amigos del segundo nivel invitan a nuevos participantes.
+    footer_text: >
+      Así, ganas recompensas no solo por tus invitaciones directas, sino 
+      también por la actividad de todos los niveles posteriores en tu red.

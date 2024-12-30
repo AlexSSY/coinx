@@ -1,0 +1,9 @@
+in:
+  legal_information:
+    title: "Informasi Hukum"
+    terms: "Syarat dan Ketentuan"
+    privacy: "Kebijakan Privasi"
+    kyc: "Kebijakan KYC"
+    acceptable: "Kebijakan Penggunaan yang Dapat Diterima"
+    gdpr: "Pernyataan Kepatuhan GDPR"
+    back_button: "Kembali"

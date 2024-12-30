@@ -1,0 +1,24 @@
+in:
+  deposit_first:
+    title: >
+      Untuk memastikan keadilan dan stabilitas di platform TONIX kami, 
+      kami telah memperkenalkan aturan baru: penarikan hanya tersedia 
+      bagi pengguna dengan setidaknya satu deposit aktif (akselerasi).
+    items_title: "Aturan ini diperlukan untuk:"
+    item1_title: "Memerangi penipuan:"
+    item1_body: >
+      Kami telah melihat peningkatan kasus penyalahgunaan program 
+      federal melalui bot dan akun palsu, yang mengganggu keseimbangan 
+      dan keadilan bagi semua peserta.
+    item2_title: "Menjaga keamanan:"
+    item2_body: >
+      Deposit aktif mengonfirmasi keseriusan niat pengguna, memastikan 
+      keamanan, dan mencegah penarikan yang hanya dilakukan untuk bonus.
+    item3_title: "Mendukung ekosistem:"
+    item3_body: >
+      Deposit berkontribusi pada pengembangan platform dan memperkuat 
+      komunitas yang sehat dengan fokus pada keberhasilan jangka panjang.
+    footer: >
+      Kami yakin bahwa perubahan ini akan menguntungkan semua pengguna 
+      jujur dan meningkatkan keamanan platform.
+    buy_boost: "Beli Boost"

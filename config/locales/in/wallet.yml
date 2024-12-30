@@ -1,0 +1,9 @@
+in:
+  wallet:
+    balance: "Saldo"
+    boost: "Boost"
+    transaction_history: "Riwayat Transaksi"
+    date: "Tanggal"
+    sum: "Jumlah"
+    type: "Tipe"
+    status: "Status"

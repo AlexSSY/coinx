@@ -1,0 +1,5 @@
+tr:
+  friends_list:
+    back_button: "Geri"
+    level: "Seviye %{number}"
+    no_friends: "Henüz arkadaşınız yok ..."

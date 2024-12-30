@@ -1,0 +1,25 @@
+en:
+  deposit_first:
+    title: >
+      To ensure fairness and stability on our TONIX platform, we have introduced 
+      a new rule: withdrawals are only available to users with at 
+      least one active deposit (acceleration).
+    items_title: "This rule is necessary for:"
+    item1_title: "Combating fraud:"
+    item1_body: >
+      have noticed an increase in cases of abuse of the 
+      federal program through bots and fake accounts, which 
+      disrupt the balance and fairness for all participants.
+    item2_title: "Maintaining security:"
+    item2_body: >
+      An active deposit confirms the seriousness of the user's 
+      intentions, ensuring security and preventing 
+      withdrawals made solely for bonuses.
+    item3_title: "Supporting the ecosystem:"
+    item3_body: >
+     Deposits contribute to the platform's development 
+     and strengthen a healthy community focused on long-term success.
+    footer: >
+     We are confident that this change will benefit all honest users 
+     and enhance the platform's security.
+    buy_boost: "Buy Boost"

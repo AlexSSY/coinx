@@ -1,0 +1,23 @@
+es:
+  awaiting_payment:
+    order_details: "Detalles del pedido"
+    back_button: "Volver"
+    mining_power: "Potencia de minería:"
+    rent_period: "Periodo de alquiler:"
+    total_profit: "Beneficio total:"
+    daily_profit: "Beneficio diario:"
+    price: "Precio:"
+    payment: "Pago"
+    send_ton_to: >
+      Envía TON a la dirección de depósito proporcionada desde tu 
+      billetera personal. Envía solo Toncoin (TON), 
+      otros activos se perderán para siempre.
+    to_address: "Envía %{amount} TON a esta dirección:"
+    footer_title: "Esperando el pago"
+    footer_text_1: >
+      Ten en cuenta que el procedimiento para confirmar 
+      un depósito toma en promedio 15 minutos.
+    footer_text_2: >
+      Si la cantidad enviada por ti es menor que la cantidad mínima 
+      para un depósito con este sistema de pago, 
+      el pago se considerará como una donación.

@@ -1,0 +1,11 @@
+in:
+  errors:
+    claim:
+      too_small: "Jumlah klaim terlalu kecil"
+    contest:
+      msg: "Terjadi kesalahan saat tautan dikirim"
+    withdraw:
+      msg: "Saldo terlalu kecil"
+      msg2: "Kesalahan transaksi"
+    push_native_tx:
+      msg: "Kesalahan penerimaan TON"

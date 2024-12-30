@@ -1,0 +1,9 @@
+in:
+  friends:
+    title: "Undang Teman!"
+    subtitle: "Anda dan teman Anda akan menerima bonus"
+    your_invite_link: "Tautan Undangan Anda"
+    invite_friend_button: "Undang Teman"
+    friends_list_button: "Buka Daftar Teman"
+    referral_rewards: "Bonus Referensi"
+    learn_more: "Pelajari lebih lanjut"

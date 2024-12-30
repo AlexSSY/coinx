@@ -1,0 +1,9 @@
+es:
+  wallet:
+    balance: "Saldo"
+    boost: "Aumento"
+    transaction_history: "Historial de Transacciones"
+    date: "Fecha"
+    sum: "Cantidad"
+    type: "Tipo"
+    status: "Estado"

@@ -1,0 +1,10 @@
+ir:
+  notices:
+    contest:
+      msg: "لینک شما با موفقیت ارسال شد"
+    claim:
+      msg: "درخواست شد!"
+    withdraw:
+      msg: "تایید شد!"
+    push_native_tx:
+      msg: "TON دریافت شد"

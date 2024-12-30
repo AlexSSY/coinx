@@ -1,0 +1,9 @@
+ir:
+  legal_information:
+    title: "اطلاعات قانونی"
+    terms: "شرایط و مقررات"
+    privacy: "سیاست حریم خصوصی"
+    kyc: "سیاست KYC"
+    acceptable: "سیاست استفاده قابل قبول"
+    gdpr: "بیانیه تطابق با GDPR"
+    back_button: "بازگشت"

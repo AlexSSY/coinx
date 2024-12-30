@@ -1,0 +1,49 @@
+es:
+  missions:
+    title: "Nuevas Misiones"
+    subtitle: "Completa tareas y gana más"
+    tabs:
+      tab1: "promo"
+      tab2: "ref"
+      tab3: "concurso"
+    bodies:
+      tab1:
+        item1: "Aumentar potencia de minería"
+        item2: "Bono de bienvenida"
+      tab2:
+        friends: "Amigos (Lv. 1)"
+        item1: "Invitar 1 amigo"
+        item2: "Invitar 3 amigos"
+        item3: "Invitar 10 amigos"
+        item4: "Invitar 25 amigos"
+        item5: "Invitar 50 amigos"
+        item6: "Invitar 100 amigos"
+        item7: "Invitar 500 amigos"
+        item8: "Invitar 1000 amigos"
+        item9: "Invitar 10000 amigos"
+      tab3:
+        title: "Habla sobre la aplicación TONIX"
+        get_up: "Y gana hasta"
+        each_video: "TONIX por cada video"
+        button: "Añadir contenido y ganar"
+        get_invite_link: "Obtén tu enlace de invitación en la sección de amigos"
+        rules:
+          title: "Reglas"
+          rule1:
+            title: "Crea contenido:"
+            content: >
+              Haz un video de fan sobre la aplicación TONIX 
+              para YouTube Shorts, Instagram Reels o TikTok.
+          rule2:
+            title: "Envía el enlace:"
+            content: >
+              Una vez que tu video alcance más de 100 vistas, envíanos el enlace.
+          rule3:
+            title: "Envía el enlace:"
+            content: >
+              Una vez que tu video alcance más de 100 vistas, envíanos el enlace.
+          rule4:
+            title: "Gana recompensas:"
+            content: >
+              Cuantas más vistas obtenga tu video, mejor será tu recompensa. 
+              Puedes ganar hasta %{reward} por un solo video.

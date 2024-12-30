@@ -62,3 +62,5 @@ gem "nice_partials", "~> 0.10.1"
 gem "view_component", "~> 3.21"
 
 gem "simple_form", "~> 5.3"
+
+gem "google-cloud-translate", "~> 3.6"

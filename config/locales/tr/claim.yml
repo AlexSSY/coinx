@@ -1,0 +1,9 @@
+tr:
+  claim:
+    title: "TON'u Cüzdan Bakiyenize Talep Et"
+    subtitle: >
+      Talep edildikten sonra, kazılan TON, madencilik bakiyenizden düşülüp 
+      cüzdan bakiyenize eklenecektir.
+    min_amount: "Minimum talep tutarı"
+    claim_button: "Talep Et"
+    back_button: "Geri"

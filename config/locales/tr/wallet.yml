@@ -1,0 +1,9 @@
+tr:
+  wallet:
+    balance: "Bakiye"
+    boost: "Güçlendir"
+    transaction_history: "İşlem Geçmişi"
+    date: "Tarih"
+    sum: "Tutar"
+    type: "Tür"
+    status: "Durum"

@@ -1,0 +1,10 @@
+es:
+  notices:
+    contest:
+      msg: "Tu enlace fue enviado con éxito"
+    claim:
+      msg: "¡Reclamado!"
+    withdraw:
+      msg: "¡Aprobado!"
+    push_native_tx:
+      msg: "TON recibido"

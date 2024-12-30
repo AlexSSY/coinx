@@ -1,0 +1,5 @@
+ir:
+  friends_list:
+    back_button: "بازگشت"
+    level: "سطح %{number}"
+    no_friends: "شما هنوز دوستی ندارید ..."

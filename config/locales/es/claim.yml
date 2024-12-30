@@ -1,0 +1,9 @@
+es:
+  claim:
+    title: "Reclamar TON al saldo de la billetera"
+    subtitle: >
+      Una vez reclamado, el TON minado se deducirá de tu 
+      saldo de minería y se acreditará en tu saldo de billetera.
+    min_amount: "La cantidad mínima para reclamar es"
+    claim_button: "Reclamar"
+    back_button: "Volver"

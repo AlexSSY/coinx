@@ -1,0 +1,11 @@
+tr:
+  withdraw:
+    title: "Kişisel TON adresinizi girin"
+    subtitle: "Bu miktar TON uyumlu cüzdan adresine gönderilecektir"
+    min_amount: "Gönderilebilecek minimum tutar"
+    address_placeholder: "TON adresiniz"
+    amount_placeholder: "Tutar"
+    fee: "Ağ ücreti:"
+    received: "Alınacak tutar:"
+    send_button: "Gönder"
+    not_yet_button: "Henüz değil"

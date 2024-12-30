@@ -1,0 +1,11 @@
+ir:
+  withdraw:
+    title: "آدرس شخصی TON خود را وارد کنید"
+    subtitle: "این مبلغ به آدرس کیف پول سازگار با TON ارسال خواهد شد"
+    min_amount: "حداقل مبلغ قابل ارسال"
+    address_placeholder: "آدرس TON شما"
+    amount_placeholder: "مقدار"
+    fee: "هزینه شبکه:"
+    received: "مقدار دریافتی:"
+    send_button: "ارسال"
+    not_yet_button: "هنوز نه"

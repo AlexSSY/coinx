@@ -1,0 +1,49 @@
+in:
+  missions:
+    title: "Misi Baru"
+    subtitle: "Selesaikan tugas dan dapatkan lebih banyak"
+    tabs:
+      tab1: "promo"
+      tab2: "ref"
+      tab3: "kontes"
+    bodies:
+      tab1:
+        item1: "Tingkatkan Daya Penambangan"
+        item2: "Bonus Selamat Datang"
+      tab2:
+        friends: "Teman (Lv. 1)"
+        item1: "Undang 1 Teman"
+        item2: "Undang 3 Teman"
+        item3: "Undang 10 Teman"
+        item4: "Undang 25 Teman"
+        item5: "Undang 50 Teman"
+        item6: "Undang 100 Teman"
+        item7: "Undang 500 Teman"
+        item8: "Undang 1000 Teman"
+        item9: "Undang 10000 Teman"
+      tab3:
+        title: "Beritahukan orang lain tentang Aplikasi TONIX"
+        get_up: "Dan dapatkan hingga"
+        each_video: "TONIX untuk setiap video"
+        button: "Tambahkan Konten dan dapatkan"
+        get_invite_link: "Dapatkan Tautan Undangan Anda di bagian Teman"
+        rules:
+          title: "Aturan"
+          rule1:
+            title: "Buat konten:"
+            content: >
+              Buat video penggemar tentang Aplikasi TONIX 
+              untuk YouTube Shorts, Instagram Reels, atau TikTok.
+          rule2:
+            title: "Kirim Tautan:"
+            content: >
+              Setelah video Anda mencapai 100+ tampilan, kirimkan tautannya kepada kami.
+          rule3:
+            title: "Kirim Tautan:"
+            content: >
+              Setelah video Anda mencapai 100+ tampilan, kirimkan tautannya kepada kami.
+          rule4:
+            title: "Dapatkan Hadiah:"
+            content: >
+              Semakin banyak tampilan yang diperoleh video Anda, semakin baik hadiah Anda. 
+              Anda dapat mendapatkan hingga %{reward} untuk satu video.

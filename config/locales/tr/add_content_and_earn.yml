@@ -1,0 +1,9 @@
+tr:
+  add_content_and_earn:
+    title: "Doğrulamak için bir bağlantı ekle"
+    subtitle: "İçeriğinize bağlantı"
+    rewards: "Ödüller"
+    views: "görüntülenme"
+    views_number: "Görüntülenme Sayısı"
+    add_button: "Ekle"
+    back_button: "Geri"

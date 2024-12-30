@@ -1,0 +1,9 @@
+in:
+  claim:
+    title: "Klaim TON ke Saldo Dompet"
+    subtitle: >
+      Setelah diklaim, TON yang ditambang akan dikurangkan dari 
+      saldo penambangan Anda dan akan dikreditkan ke saldo dompet Anda.
+    min_amount: "Jumlah klaim minimum adalah"
+    claim_button: "Klaim"
+    back_button: "Kembali"

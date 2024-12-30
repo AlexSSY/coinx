@@ -1,0 +1,9 @@
+es:
+  legal_information:
+    title: "Información Legal"
+    terms: "Términos y Condiciones"
+    privacy: "Política de Privacidad"
+    kyc: "Política KYC"
+    acceptable: "Política de Uso Aceptable"
+    gdpr: "Declaración de Cumplimiento de GDPR"
+    back_button: "Volver"

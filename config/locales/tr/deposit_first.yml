@@ -1,0 +1,22 @@
+tr:
+  deposit_first:
+    title: >
+      TONIX platformumuzda adalet ve istikrarı sağlamak için yeni bir kural getirdik: 
+      Çekimler yalnızca en az bir aktif depozitosu olan kullanıcılara açıktır (hızlandırma).
+    items_title: "Bu kuralın gerekliliği:"
+    item1_title: "Dolandırıcılıkla mücadele:"
+    item1_body: >
+      Botlar ve sahte hesaplar aracılığıyla federal programın kötüye kullanım vakalarında artış gözlemledik, 
+      bu da tüm katılımcılar için dengeyi ve adaleti bozmaktadır.
+    item2_title: "Güvenliği sağlama:"
+    item2_body: >
+      Aktif bir depozito, kullanıcının niyetlerinin ciddiyetini doğrular, 
+      güvenliği sağlar ve yalnızca bonuslar için yapılan çekimleri engeller.
+    item3_title: "Ekosistemi destekleme:"
+    item3_body: >
+      Depozitolar, platformun gelişimine katkı sağlar 
+      ve uzun vadeli başarıya odaklanmış sağlıklı bir topluluk oluşturur.
+    footer: >
+      Bu değişikliğin tüm dürüst kullanıcılara fayda sağlayacağından 
+      ve platformun güvenliğini artıracağından eminiz.
+    buy_boost: "Hızlandırma Satın Al"

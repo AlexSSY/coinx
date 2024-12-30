@@ -1,0 +1,11 @@
+es:
+  withdraw:
+    title: "Ingresa tu dirección personal de TON"
+    subtitle: "Esta cantidad será enviada a la dirección de billetera compatible con TON"
+    min_amount: "La cantidad mínima para enviar es"
+    address_placeholder: "Tu dirección TON"
+    amount_placeholder: "Cantidad"
+    fee: "Comisión de red:"
+    received: "Cantidad recibida:"
+    send_button: "Enviar"
+    not_yet_button: "Aún no"

@@ -1,0 +1,9 @@
+tr:
+  legal_information:
+    title: "Hukuki Bilgiler"
+    terms: "Şartlar ve Koşullar"
+    privacy: "Gizlilik Politikası"
+    kyc: "KYC Politikası"
+    acceptable: "Kabul Edilebilir Kullanım Politikası"
+    gdpr: "GDPR Uyumluluk Beyanı"
+    back_button: "Geri"

@@ -1,0 +1,23 @@
+in:
+  awaiting_payment:
+    order_details: "Detail Pesanan"
+    back_button: "Kembali"
+    mining_power: "Daya Penambangan:"
+    rent_period: "Periode Sewa:"
+    total_profit: "Keuntungan Total:"
+    daily_profit: "Keuntungan Harian:"
+    price: "Harga:"
+    payment: "Pembayaran"
+    send_ton_to: >
+      Kirim TON ke alamat deposit yang disediakan dari 
+      dompet pribadi Anda. Kirim hanya Toncoin (TON), 
+      aset lain akan hilang selamanya.
+    to_address: "Kirim %{amount} TON ke alamat ini:"
+    footer_title: "Menunggu Pembayaran"
+    footer_text_1: >
+      Harap diperhatikan bahwa prosedur untuk 
+      mengonfirmasi deposit rata-rata memakan waktu 15 menit.
+    footer_text_2: >
+      Jika jumlah yang Anda kirimkan kurang dari jumlah 
+      minimum deposit dengan sistem pembayaran ini, 
+      maka pembayaran tersebut akan dianggap sebagai donasi.

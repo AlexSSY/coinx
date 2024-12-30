@@ -1,0 +1,11 @@
+ir:
+  errors:
+    claim:
+      too_small: "مقدار درخواست خیلی کم است"
+    contest:
+      msg: "خطا در ارسال لینک"
+    withdraw:
+      msg: "موجودی کافی نیست"
+      msg2: "خطای تراکنش"
+    push_native_tx:
+      msg: "خطا در دریافت TON"

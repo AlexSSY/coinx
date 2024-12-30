@@ -1,0 +1,9 @@
+de:
+  claim:
+    title: "TON auf Wallet-Guthaben anfordern"
+    subtitle: >
+      Sobald angefordert, wird das geschürfte TON von Ihrem 
+      Mining-Guthaben abgezogen und Ihrem Wallet-Guthaben gutgeschrieben.
+    min_amount: "Der Mindestbetrag für die Anforderung beträgt"
+    claim_button: "Anfordern"
+    back_button: "Zurück"

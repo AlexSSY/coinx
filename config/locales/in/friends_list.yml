@@ -1,0 +1,5 @@
+in:
+  friends_list:
+    back_button: "Kembali"
+    level: "Tingkat %{number}"
+    no_friends: "Anda belum memiliki teman ..."

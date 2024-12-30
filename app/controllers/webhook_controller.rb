@@ -29,7 +29,12 @@ class WebhookController < ApplicationController
       { code: "en", name: "English" },
       { code: "ru", name: "Русский" },
       { code: "ua", name: "Украiнська" },
-      { code: "uz", name: "Uzbek"}
+      { code: "uz", name: "Uzbek" },
+      { code: "ir", name: "فارسی" },
+      { code: "tr", name: "Türkçe" },
+      { code: "es", name: "Español" },
+      { code: "de", name: "Deutsch" },
+      { code: "in", name: "Indonesian" }
     ]
   end
 
@@ -74,8 +79,13 @@ class WebhookController < ApplicationController
       { code: "en", flag: "🇺🇸", name: "English" },
       { code: "ru", flag: "🇷🇺", name: "Русский" },
       { code: "ua", flag: "🇺🇦", name: "Украiнська" },
-      { code: "uz", flag: "🇺🇿", name: "Uzbek" }
-      
+      { code: "uz", flag: "🇺🇿", name: "Uzbek" },
+      { code: "ir", flag: "🇮🇷", name: "فارسی" },
+      { code: "tr", flag: "🇹🇷", name: "Türkçe" },
+      { code: "es", flag: "🇪🇸", name: "Español" },
+      { code: "de", flag: "🇩🇪", name: "Deutsch" },
+      { code: "in", flag: "🇮🇩", name: "Indonesian" }
+
     ]
   end
 

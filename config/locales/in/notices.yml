@@ -1,0 +1,10 @@
+in:
+  notices:
+    contest:
+      msg: "Tautan Anda berhasil dikirim"
+    claim:
+      msg: "Klaim Berhasil!"
+    withdraw:
+      msg: "Disetujui!"
+    push_native_tx:
+      msg: "TON diterima"

@@ -1,0 +1,9 @@
+ir:
+  wallet:
+    balance: "موجودی"
+    boost: "تقویت"
+    transaction_history: "تاریخچه تراکنش"
+    date: "تاریخ"
+    sum: "مجموع"
+    type: "نوع"
+    status: "وضعیت"

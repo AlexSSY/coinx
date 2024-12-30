@@ -1,0 +1,12 @@
+de:
+  boost:
+    title: "Mining-Power Boost"
+    subtitle: >
+      Hier können Sie Mining-Power für 30 Tage mieten. 
+      Je mehr Mining-Power Sie haben, desto mehr TON können Sie schürfen.
+      Die Rentabilität der Investition beträgt 8,493% pro Tag und 254,784%.
+    total_profit: "Gesamtgewinn"
+    daily_profit: "Täglicher Gewinn"
+    mining_amount: "Mining-Menge:"
+    add_button: "Hinzufügen"
+    back_button: "Zurück"

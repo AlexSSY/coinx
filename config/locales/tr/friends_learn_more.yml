@@ -1,0 +1,19 @@
+tr:
+  friends_learn_more:
+    title: "Yönlendirme Ödülleri"
+    subtitle: >
+      Yönlendirme programımız, 3 destek seviyesi sunarak, arkadaşlarınızı davet ederek bonus kazanma fırsatı sağlar:
+    reward1:
+      title: "Seviye 1:"
+      content: >
+        Yönlendirme linkinizle kaydolan her arkadaşınız için bonus kazanırsınız.
+    reward2:
+      title: "Seviye 2:"
+      content: >
+        Yönlendirdiğiniz arkadaşlarınızın arkadaşları da kaydolup programı kullanmaya başladığında ek bonus kazanırsınız.
+    reward3:
+      title: "Seviye 3:"
+      content: >
+        İkinci seviye arkadaşlarınız yeni katılımcılar davet ettiğinde bonus kazanırsınız.
+    footer_text: >
+      Böylece, yalnızca doğrudan davetleriniz için değil, aynı zamanda ağınızdaki tüm sonraki seviyelerin aktiviteleri için de ödüller kazanırsınız.

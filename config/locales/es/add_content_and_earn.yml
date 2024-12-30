@@ -1,0 +1,9 @@
+es:
+  add_content_and_earn:
+    title: "Añadir un enlace para verificar"
+    subtitle: "Enlace a tu contenido"
+    rewards: "Recompensas"
+    views: "vistas"
+    views_number: "Número de vistas"
+    add_button: "Añadir"
+    back_button: "Volver"

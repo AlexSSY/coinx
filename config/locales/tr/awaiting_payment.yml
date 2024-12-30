@@ -1,0 +1,20 @@
+tr:
+  awaiting_payment:
+    order_details: "Sipariş Detayları"
+    back_button: "Geri"
+    mining_power: "Madencilik Gücü:"
+    rent_period: "Kiralama Süresi:"
+    total_profit: "Toplam Kar:"
+    daily_profit: "Günlük Kar:"
+    price: "Fiyat:"
+    payment: "Ödeme"
+    send_ton_to: >
+      Kişisel cüzdanınızdan sağlanan depozit adresine TON gönderin. 
+      Sadece Toncoin (TON) gönderin, diğer varlıklar sonsuza kadar kaybolacaktır.
+    to_address: "%{amount} TON'u bu adrese gönderin:"
+    footer_title: "Ödeme Bekleniyor"
+    footer_text_1: >
+      Lütfen dikkat edin, depozito onaylama işlemi ortalama 15 dakika sürmektedir.
+    footer_text_2: >
+      Gönderdiğiniz miktar, bu ödeme sistemi için depozito için asgari tutardan azsa, 
+      bu tür bir ödeme bağış olarak kabul edilecektir.

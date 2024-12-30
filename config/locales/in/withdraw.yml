@@ -1,0 +1,11 @@
+in:
+  withdraw:
+    title: "Masukkan Alamat TON Pribadi Anda"
+    subtitle: "Jumlah ini akan dikirim ke alamat dompet yang kompatibel dengan TON"
+    min_amount: "Jumlah kirim minimum adalah"
+    address_placeholder: "Alamat TON Anda"
+    amount_placeholder: "Jumlah"
+    fee: "Biaya jaringan:"
+    received: "Jumlah yang diterima:"
+    send_button: "Kirim"
+    not_yet_button: "Belum"

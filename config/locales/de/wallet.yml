@@ -1,0 +1,9 @@
+de:
+  wallet:
+    balance: "Guthaben"
+    boost: "Boost"
+    transaction_history: "Transaktionsverlauf"
+    date: "Datum"
+    sum: "Betrag"
+    type: "Typ"
+    status: "Status"

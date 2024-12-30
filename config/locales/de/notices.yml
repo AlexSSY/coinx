@@ -1,0 +1,10 @@
+de:
+  notices:
+    contest:
+      msg: "Ihr Link wurde erfolgreich gesendet"
+    claim:
+      msg: "Angefordert!"
+    withdraw:
+      msg: "Genehmigt!"
+    push_native_tx:
+      msg: "TON erhalten"

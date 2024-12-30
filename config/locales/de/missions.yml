@@ -1,0 +1,49 @@
+de:
+  missions:
+    title: "Neue Missionen"
+    subtitle: "Schließen Sie Aufgaben ab und verdienen Sie mehr"
+    tabs:
+      tab1: "Promo"
+      tab2: "Freunde"
+      tab3: "Wettbewerb"
+    bodies:
+      tab1:
+        item1: "Mining-Power steigern"
+        item2: "Willkommensbonus"
+      tab2:
+        friends: "Freunde (Lv. 1)"
+        item1: "1 Freund einladen"
+        item2: "3 Freunde einladen"
+        item3: "10 Freunde einladen"
+        item4: "25 Freunde einladen"
+        item5: "50 Freunde einladen"
+        item6: "100 Freunde einladen"
+        item7: "500 Freunde einladen"
+        item8: "1000 Freunde einladen"
+        item9: "10000 Freunde einladen"
+      tab3:
+        title: "Erzählen Sie anderen von der TONIX App"
+        get_up: "Und erhalten Sie bis zu"
+        each_video: "TONIX für jedes Video"
+        button: "Inhalt hinzufügen und verdienen"
+        get_invite_link: "Holen Sie sich Ihren Einladung-Link im Bereich Freunde"
+        rules:
+          title: "Regeln"
+          rule1:
+            title: "Erstellen Sie Inhalt:"
+            content: >
+              Machen Sie ein Fan-Video über die TONIX App 
+              für YouTube Shorts, Instagram Reels oder TikTok.
+          rule2:
+            title: "Link senden:"
+            content: >
+              Sobald Ihr Video 100+ Aufrufe erreicht, senden Sie uns den Link.
+          rule3:
+            title: "Link senden:"
+            content: >
+              Sobald Ihr Video 100+ Aufrufe erreicht, senden Sie uns den Link.
+          rule4:
+            title: "Belohnungen verdienen:"
+            content: >
+              Je mehr Aufrufe Ihr Video erhält, desto besser ist Ihre Belohnung. 
+              Sie können bis zu %{reward} für ein einzelnes Video verdienen.

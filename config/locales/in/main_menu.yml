@@ -1,0 +1,7 @@
+in:
+  main_menu:
+    wallet: "dompet"
+    friends: "teman"
+    home: "beranda"
+    missions: "misi"
+    more: "lainnya"

@@ -1,0 +1,24 @@
+in:
+  friends_learn_more:
+    title: "Bonus Referensi"
+    subtitle: >
+      Program referensi kami memiliki 3 tingkat dukungan, memberikan Anda 
+      kesempatan untuk mendapatkan bonus dengan mengundang teman:
+    reward1:
+      title: "Tingkat 1:"
+      content: >
+        Anda menerima bonus untuk setiap teman 
+        yang mendaftar menggunakan tautan referensi Anda.
+    reward2:
+      title: "Tingkat 2:"
+      content: >
+        Anda menerima bonus tambahan ketika teman dari 
+        teman yang Anda referensikan juga mendaftar dan mulai menggunakan program.
+    reward3:
+      title: "Tingkat 3:"
+      content: >
+        Anda menerima bonus ketika teman di tingkat kedua 
+        mengundang peserta baru.
+    footer_text: >
+      Dengan demikian, Anda mendapatkan bonus tidak hanya dari undangan langsung Anda, 
+      tetapi juga dari aktivitas semua tingkat berikutnya dalam jaringan Anda.

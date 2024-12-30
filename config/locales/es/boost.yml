@@ -1,0 +1,12 @@
+es:
+  boost:
+    title: "Aumento de Potencia de Minería"
+    subtitle: >
+      Aquí puedes alquilar potencia de minería por 30 días. 
+      Cuanta más potencia de minería tengas, más TON podrás minar.
+      La rentabilidad de la inversión es del 8.493% por día y del 254.784%.
+    total_profit: "Beneficio total"
+    daily_profit: "Beneficio diario"
+    mining_amount: "Cantidad de minería:"
+    add_button: "Añadir"
+    back_button: "Volver"

@@ -1,0 +1,5 @@
+de:
+  friends_list:
+    back_button: "Zurück"
+    level: "Level %{number}"
+    no_friends: "Sie haben noch keine Freunde ..."

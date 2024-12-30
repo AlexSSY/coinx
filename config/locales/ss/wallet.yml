@@ -1,0 +1,9 @@
+en:
+  wallet:
+    balance: "Balance"
+    boost: "Boost"
+    transaction_history: "Transaction History"
+    date: "Date"
+    sum: "Sum"
+    type: "Type"
+    status: "Status"

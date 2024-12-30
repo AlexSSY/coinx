@@ -1,0 +1,6 @@
+tr:
+  home:
+    balance: "Bakiye"
+    claim: "Talep Et"
+    boost: "Hızlandır"
+    start_mining: "Madenciliğe Başla"

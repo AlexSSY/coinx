@@ -1,0 +1,24 @@
+de:
+  deposit_first:
+    title: >
+      Um Fairness und Stabilität auf unserer TONIX-Plattform zu gewährleisten, haben wir 
+      eine neue Regel eingeführt: Auszahlungen sind nur für Benutzer mit mindestens 
+      einer aktiven Einzahlung (Beschleunigung) verfügbar.
+    items_title: "Diese Regel ist notwendig für:"
+    item1_title: "Bekämpfung von Betrug:"
+    item1_body: >
+      Wir haben einen Anstieg von Missbrauchsfällen des 
+      Bundesprogramms durch Bots und Fake-Accounts bemerkt, die 
+      das Gleichgewicht und die Fairness für alle Teilnehmer stören.
+    item2_title: "Wahrung der Sicherheit:"
+    item2_body: >
+      Eine aktive Einzahlung bestätigt die Ernsthaftigkeit der Absichten des Benutzers, 
+      gewährleistet Sicherheit und verhindert Auszahlungen, die nur für Boni getätigt werden.
+    item3_title: "Unterstützung des Ökosystems:"
+    item3_body: >
+      Einzahlungen tragen zur Entwicklung der Plattform bei 
+      und stärken eine gesunde Gemeinschaft, die auf langfristigen Erfolg ausgerichtet ist.
+    footer: >
+      Wir sind zuversichtlich, dass diese Änderung allen ehrlichen Benutzern zugutekommt 
+      und die Sicherheit der Plattform verbessert.
+    buy_boost: "Boost kaufen"

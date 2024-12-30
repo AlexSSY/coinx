@@ -1,0 +1,23 @@
+de:
+  awaiting_payment:
+    order_details: "Bestelldetails"
+    back_button: "Zurück"
+    mining_power: "Mining-Power:"
+    rent_period: "Mietdauer:"
+    total_profit: "Gesamtgewinn:"
+    daily_profit: "Täglicher Gewinn:"
+    price: "Preis:"
+    payment: "Zahlung"
+    send_ton_to: >
+      Senden Sie TON an die angegebene Einzahlungsadresse 
+      von Ihrem persönlichen Wallet. Senden Sie nur Toncoin (TON), 
+      andere Vermögenswerte gehen verloren.
+    to_address: "Senden Sie %{amount} TON an diese Adresse:"
+    footer_title: "Warten auf Zahlung"
+    footer_text_1: >
+      Bitte beachten Sie, dass die Bestätigung einer Einzahlung 
+      im Durchschnitt 15 Minuten dauert.
+    footer_text_2: >
+      Wenn der von Ihnen gesendete Betrag unter dem Mindestbetrag 
+      für eine Einzahlung mit diesem Zahlungssystem liegt, 
+      wird eine solche Zahlung als Spende betrachtet.

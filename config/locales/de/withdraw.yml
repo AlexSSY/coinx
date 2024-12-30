@@ -1,0 +1,11 @@
+de:
+  withdraw:
+    title: "Geben Sie Ihre persönliche TON-Adresse ein"
+    subtitle: "Dieser Betrag wird an die kompatible TON-Wallet-Adresse gesendet"
+    min_amount: "Der Mindestbetrag für die Auszahlung beträgt"
+    address_placeholder: "Ihre TON-Adresse"
+    amount_placeholder: "Betrag"
+    fee: "Netzwerkgebühr:"
+    received: "Erhaltener Betrag:"
+    send_button: "Senden"
+    not_yet_button: "Noch nicht"

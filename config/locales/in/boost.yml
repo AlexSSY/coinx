@@ -1,0 +1,12 @@
+in:
+  boost:
+    title: "Peningkatan Daya Penambangan"
+    subtitle: >
+      Di sini Anda dapat menyewa daya penambangan selama 30 hari. 
+      Semakin banyak daya penambangan yang Anda miliki, semakin banyak TON yang dapat Anda tambang. 
+      Profitabilitas investasi adalah 8,493% per hari dan 254,784%.
+    total_profit: "Keuntungan Total"
+    daily_profit: "Keuntungan Harian"
+    mining_amount: "Jumlah Penambangan:"
+    add_button: "Tambah"
+    back_button: "Kembali"

@@ -1,0 +1,6 @@
+es:
+  home:
+    balance: "Saldo"
+    claim: "Reclamar"
+    boost: "Aumentar"
+    start_mining: "Comenzar a minar"

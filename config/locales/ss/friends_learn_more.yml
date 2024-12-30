@@ -1,0 +1,24 @@
+en:
+  friends_learn_more:
+    title: "Referral Rewards"
+    subtitle: >
+      Our referral program has 3 levels of support, providing you with 
+      the opportunity to earn bonuses for inviting friends:
+    reward1:
+      title: "Level 1:"
+      content: >
+        You receive a bonus for each 
+        friend who registers using your referral link.
+    reward2:
+      title: "Level 2:"
+      content: >
+        You receive an additional bonus when friends of your referred 
+        friends also register and start using the program.
+    reward3:
+      title: "Level 3:"
+      content: >
+        You receive a bonus when 
+        friends of the second level invite new participants.
+    footer_text: >
+      Thus, you earn rewards not only for your direct invitations but 
+      also for the activity of all subsequent levels in your network.

@@ -1,0 +1,6 @@
+in:
+  home:
+    balance: "Saldo"
+    claim: "Klaim"
+    boost: "Boost"
+    start_mining: "Mulai Penambangan"

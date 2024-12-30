@@ -1,0 +1,12 @@
+tr:
+  boost:
+    title: "Madencilik Gücü Artışı"
+    subtitle: >
+      Burada 30 gün boyunca madencilik gücü kiralayabilirsiniz. 
+      Sahip olduğunuz madencilik gücü ne kadar fazla olursa, o kadar fazla TON kazabilirsiniz. 
+      Yatırım kârlılığı günlük %8.493 ve toplamda %254.784'tir.
+    total_profit: "Toplam Kar"
+    daily_profit: "Günlük Kar"
+    mining_amount: "Madencilik Miktarı:"
+    add_button: "Ekle"
+    back_button: "Geri"

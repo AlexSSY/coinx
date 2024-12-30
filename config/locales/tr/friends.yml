@@ -1,0 +1,9 @@
+tr:
+  friends:
+    title: "Arkadaş Davet Et!"
+    subtitle: "Sen ve arkadaşın bonuslar kazanacaksınız"
+    your_invite_link: "Davet Linkiniz"
+    invite_friend_button: "Bir Arkadaş Davet Et"
+    friends_list_button: "Arkadaşlar Listesini Aç"
+    referral_rewards: "Yönlendirme Ödülleri"
+    learn_more: "Daha fazla bilgi"

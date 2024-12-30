@@ -1,0 +1,24 @@
+de:
+  friends_learn_more:
+    title: "Referral-Belohnungen"
+    subtitle: >
+      Unser Referral-Programm bietet 3 Unterstützungslevel und gibt Ihnen 
+      die Möglichkeit, Boni für das Einladen von Freunden zu verdienen:
+    reward1:
+      title: "Level 1:"
+      content: >
+        Sie erhalten einen Bonus für jeden 
+        Freund, der sich über Ihren Referral-Link registriert.
+    reward2:
+      title: "Level 2:"
+      content: >
+        Sie erhalten einen zusätzlichen Bonus, wenn Freunde Ihrer geworbenen 
+        Freunde sich ebenfalls registrieren und das Programm nutzen.
+    reward3:
+      title: "Level 3:"
+      content: >
+        Sie erhalten einen Bonus, wenn 
+        Freunde des zweiten Levels neue Teilnehmer einladen.
+    footer_text: >
+      So verdienen Sie Belohnungen nicht nur für Ihre direkten Einladungen, sondern 
+      auch für die Aktivitäten aller nachfolgenden Levels in Ihrem Netzwerk.

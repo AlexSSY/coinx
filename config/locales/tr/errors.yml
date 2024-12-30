@@ -1,0 +1,11 @@
+tr:
+  errors:
+    claim:
+      too_small: "Talep tutarı çok küçük"
+    contest:
+      msg: "Bağlantı gönderilirken hata oluştu"
+    withdraw:
+      msg: "Bakiye çok küçük"
+      msg2: "İşlem hatası"
+    push_native_tx:
+      msg: "TON alırken hata"

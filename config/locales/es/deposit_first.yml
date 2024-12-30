@@ -1,0 +1,24 @@
+es:
+  deposit_first:
+    title: >
+      Para garantizar la equidad y estabilidad en nuestra plataforma TONIX, hemos introducido 
+      una nueva regla: los retiros solo están disponibles para usuarios con al 
+      menos un depósito activo (aceleración).
+    items_title: "Esta regla es necesaria para:"
+    item1_title: "Combatir el fraude:"
+    item1_body: >
+      Hemos notado un aumento en los casos de abuso del 
+      programa federal mediante bots y cuentas falsas, lo que 
+      interrumpe el equilibrio y la equidad para todos los participantes.
+    item2_title: "Mantener la seguridad:"
+    item2_body: >
+      Un depósito activo confirma la seriedad de las intenciones del usuario, 
+      garantizando seguridad y previniendo retiros realizados solo para obtener bonos.
+    item3_title: "Apoyar el ecosistema:"
+    item3_body: >
+      Los depósitos contribuyen al desarrollo de la plataforma 
+      y refuerzan una comunidad saludable enfocada en el éxito a largo plazo.
+    footer: >
+      Estamos seguros de que este cambio beneficiará a todos los usuarios honestos 
+      y mejorará la seguridad de la plataforma.
+    buy_boost: "Comprar Aumento"

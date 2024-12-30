@@ -1,0 +1,49 @@
+tr:
+  missions:
+    title: "Yeni Görevler"
+    subtitle: "Görevleri tamamla ve daha fazla kazan"
+    tabs:
+      tab1: "promo"
+      tab2: "ref"
+      tab3: "contest"
+    bodies:
+      tab1:
+        item1: "Madencilik Gücünü Artır"
+        item2: "Hoş Geldin Bonusu"
+      tab2:
+        friends: "Arkadaşlar (Lv. 1)"
+        item1: "1 Arkadaş Davet Et"
+        item2: "3 Arkadaş Davet Et"
+        item3: "10 Arkadaş Davet Et"
+        item4: "25 Arkadaş Davet Et"
+        item5: "50 Arkadaş Davet Et"
+        item6: "100 Arkadaş Davet Et"
+        item7: "500 Arkadaş Davet Et"
+        item8: "1000 Arkadaş Davet Et"
+        item9: "10000 Arkadaş Davet Et"
+      tab3:
+        title: "TONIX Uygulamasını Başkalarına Tanıt"
+        get_up: "Ve kazanmak için"
+        each_video: "her video başına TONIX"
+        button: "İçerik Ekle ve Kazan"
+        get_invite_link: "Arkadaşlar bölümünden Davet Linkini Al"
+        rules:
+          title: "Kurallar"
+          rule1:
+            title: "İçerik Oluştur:"
+            content: >
+              TONIX Uygulaması hakkında bir fan videosu yap 
+              YouTube Shorts, Instagram Reels veya TikTok için.
+          rule2:
+            title: "Linki Gönder:"
+            content: >
+              Videonuz 100+ görüntüleme aldıktan sonra, linki bize gönderin.
+          rule3:
+            title: "Linki Gönder:"
+            content: >
+              Videonuz 100+ görüntüleme aldıktan sonra, linki bize gönderin.
+          rule4:
+            title: "Ödülleri Kazan:"
+            content: >
+              Videonuz ne kadar çok izlenirse, ödülünüz o kadar iyi olur. 
+              Tek bir video için %{reward} kadar kazanabilirsiniz.

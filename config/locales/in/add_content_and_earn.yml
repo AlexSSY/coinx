@@ -1,0 +1,9 @@
+in:
+  add_content_and_earn:
+    title: "Tambahkan tautan untuk memverifikasi"
+    subtitle: "Tautkan ke konten Anda"
+    rewards: "Hadiah"
+    views: "tampilan"
+    views_number: "Jumlah Tampilan"
+    add_button: "Tambah"
+    back_button: "Kembali"

@@ -1,0 +1,10 @@
+tr:
+  notices:
+    contest:
+      msg: "Linkiniz Başarıyla Gönderildi"
+    claim:
+      msg: "Talep Edildi!"
+    withdraw:
+      msg: "Onaylandı!"
+    push_native_tx:
+      msg: "TON Alındı"
