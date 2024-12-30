@@ -53,7 +53,7 @@ end
 
 gem "telegram-bot-ruby", "~> 2.2"
 
-gem "tailwindcss-rails", "~> 3.0"
+gem "tailwindcss-rails", "~> 3.1"
 
 gem "mysql2", "~> 0.5.6"
 
