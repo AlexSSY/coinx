@@ -51,7 +51,7 @@ group :development do
 end
 
 
-gem "telegram-bot-ruby", "~> 2.2"
+gem "telegram-bot-ruby", "~> 2.4"
 
 gem "tailwindcss-rails", "~> 3.0"
 
